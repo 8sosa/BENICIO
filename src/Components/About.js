@@ -25,60 +25,66 @@ export default function About () {
           </div>
         </section>
         <section className='aboutContent'>
-          <div className='aboutContBox'>
-            <p className='textgrey'>Welcome to Benicio Group</p>
-            <h1 className='blackHeader'>Our Story</h1>
-            <p className='greyPgraph'>
-              Benicio's journey is fuelled by a passion for solving the national water crisis. The cases of several deaths and hospitalization of citizens due to diarrhoea and several other water-borne diseases is our drive. Our commitment is evident through partnerships with esteemed institutions like  National Association of Proprietors of Private schools (NAPPS) 
-              <br />
-              <br />
-              The inspiration for Benicio's inception occurred in 2017, when a tragic outbreak of waterborne diseases in claimed the lives of students and left hundreds hospitalized in a prominent school in the country. This pivotal moment underscored the urgent need for comprehensive water solutions that transcend geographical boundaries and societal sectors.
-              <br />
-              <br />
-              Our approach integrates standard technology, rigorous scientific analysis, and unwavering dedication to sustainability. From community water projects to upscale real estate developments, from hospitality ventures to individual households, our solutions transcend boundaries and redefine standards.
-              <br />
-              <br />
-              We actively seek partnerships with global entities, governmental bodies, and NGOs to amplify our impact and drive systemic change. Together, we aspire to create a future where clean, sustainable water is not a luxury but a universal right.
-            </p>
-            <div>
-              <Row md={2} className='mt-5 mb-5'>
-                <Col className='mb-4'>
-                  <div className='d-flex flex-row align-items-center'>
-                    <div className='socialIcon' ><IoCheckmark className='white'/></div>
-                    <p className='checkText'>We provide 24/7 service</p>
+          <Row>
+            <Col xs={6}>
+              <div className='aboutContBox'>
+                <p className='textgrey'>Welcome to Benicio Group</p>
+                <h1 className='blackHeader'>Our Story</h1>
+                <p className='greyPgraph'>
+                  Benicio's journey is fuelled by a passion for solving the national water crisis. The cases of several deaths and hospitalization of citizens due to diarrhoea and several other water-borne diseases is our drive. Our commitment is evident through partnerships with esteemed institutions like  National Association of Proprietors of Private schools (NAPPS) 
+                  <br />
+                  <br />
+                  The inspiration for Benicio's inception occurred in 2017, when a tragic outbreak of waterborne diseases in claimed the lives of students and left hundreds hospitalized in a prominent school in the country. This pivotal moment underscored the urgent need for comprehensive water solutions that transcend geographical boundaries and societal sectors.
+                  <br />
+                  <br />
+                  Our approach integrates standard technology, rigorous scientific analysis, and unwavering dedication to sustainability. From community water projects to upscale real estate developments, from hospitality ventures to individual households, our solutions transcend boundaries and redefine standards.
+                  <br />
+                  <br />
+                  We actively seek partnerships with global entities, governmental bodies, and NGOs to amplify our impact and drive systemic change. Together, we aspire to create a future where clean, sustainable water is not a luxury but a universal right.
+                </p>
+                <div>
+                  <Row md={2} className='mt-4 mb-3'>
+                    <Col className='mb-4'>
+                      <div className='d-flex flex-row align-items-center'>
+                        <div className='socialIcon' ><IoCheckmark className='white'/></div>
+                        <p className='checkText'>We provide 24/7 service</p>
+                      </div>
+                    </Col>
+                    <Col className='mb-4'>
+                      <div className='d-flex flex-row align-items-center'>
+                        <div className='socialIcon' ><IoCheckmark className='white'/></div>
+                        <p className='checkText'>We provide 24/7 service</p>
+                      </div>
+                    </Col>
+                    <Col className='mb-4'>
+                      <div className='d-flex flex-row align-items-center'>
+                        <div className='socialIcon' ><IoCheckmark className='white'/></div>
+                        <p className='checkText'>We provide 24/7 service</p>
+                      </div>
+                    </Col>
+                    <Col className='mb-4'>
+                      <div className='d-flex flex-row align-items-center'>
+                        <div className='socialIcon' ><IoCheckmark className='white'/></div>
+                        <p className='checkText'>We provide 24/7 service</p>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+                <div className='aboutBtnBox'>
+                  <a href='/contact'><button className='contactUsBtn'>Contact Us</button></a>
+                  <div>
+                    <p className='aboutTextdark'>For Emergency Fixing or Appointment</p>
+                    <p className='aboutTextPurp'>09090391793</p>
                   </div>
-                </Col>
-                <Col className='mb-4'>
-                  <div className='d-flex flex-row align-items-center'>
-                    <div className='socialIcon' ><IoCheckmark className='white'/></div>
-                    <p className='checkText'>We provide 24/7 service</p>
-                  </div>
-                </Col>
-                <Col className='mb-4'>
-                  <div className='d-flex flex-row align-items-center'>
-                    <div className='socialIcon' ><IoCheckmark className='white'/></div>
-                    <p className='checkText'>We provide 24/7 service</p>
-                  </div>
-                </Col>
-                <Col className='mb-4'>
-                  <div className='d-flex flex-row align-items-center'>
-                    <div className='socialIcon' ><IoCheckmark className='white'/></div>
-                    <p className='checkText'>We provide 24/7 service</p>
-                  </div>
-                </Col>
-              </Row>
-            </div>
-            <div className='aboutBtnBox'>
-              <button href='/teams' className='contactUsBtn'>Contact Us</button>
-              <div>
-                <p className='aboutTextdark'>For Emergency Fixing or Appointment</p>
-                <p className='aboutTextPurp'>09090391793</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className='aboutPicBox'>
-            <img src={Pic2} alt='' />
-          </div>
+            </Col>
+            <Col xs={6}>
+              <div className='aboutPicBox'>
+                <img src={Pic2} alt='person' className='aboutPicBoxpic'/>
+              </div>
+            </Col>
+          </Row>
         </section>
         <section className='aboutContent'>
           <div className='margin50'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar} from 'react-bootstrap'
+import { Navbar, Nav} from 'react-bootstrap'
 
 import { IoLocationOutline, IoMailOutline, IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io5";
 import Logo from './Images/Logo.png'
@@ -30,27 +30,17 @@ export default function BenNavbar () {
             </div>
             <div className='bottomBar'>
                 <div>
-                    <img src={Logo} alt='logo' href="/"/>
+                    <img src={Logo} alt='logo' />
                 </div>
-                <div className='navLinks'>
-                    <div href='/'>
-                        <h1 className='navLink'>Home</h1>
-                    </div>
-                    <div href='/about-us'>
-                        <h1 className='navLink'>About Us</h1>
-                    </div>
-                    <div href='/services'>
-                        <h1 className='navLink'>Services</h1>
-                    </div>
-                    <div href='/testimonials'>
-                        <h1 className='navLink'>Testimonials</h1>
-                    </div>
-                    <div href='/teams'>
-                        <h1 className='navLink'>Teams</h1>
-                    </div>
-                </div>
+                <Nav className='navLinks'>
+                <Nav.Link href='/' className='navLink'>Home</Nav.Link>
+                <Nav.Link href="/About-Us" className='navLink'>About Us</Nav.Link>
+                <Nav.Link href='/services' className='navLink'>Services</Nav.Link>
+                <Nav.Link href='/testimonials' className='navLink'>Testimonials</Nav.Link>
+                <Nav.Link href='/teams' className='navLink'>Teams</Nav.Link>
+                </Nav>
                 <div>
-                    <button href='/teams' className='contactBtn'>Contact Us</button>
+                    <a href='/contact'><button className='contactBtn'>Contact Us</button></a>
                 </div>
             </div>
         </Navbar>
