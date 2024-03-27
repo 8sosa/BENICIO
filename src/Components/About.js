@@ -18,7 +18,7 @@ export default function About () {
         <section className='aboutHero'>
           <div className='aboutHeroContent'>
             <li>About Us</li>
-            <h1>Know About Us</h1>
+            <h1 className='heroHeader'>Know About Us</h1>
             <p>Benicio's journey is fuelled by a passion for solving the national water crisis.</p>
           </div>
           <div className='aboutHeroImg'>
@@ -95,7 +95,7 @@ export default function About () {
           <div>
             <div>
               <h1 className='blackHeader'>Our Goals</h1>
-              <Row md={'auto'} className='mt-5'>
+              <Row md={'auto'}>
                 <Col>
                   <div className='greyBg'>
                     <div className='checkIcon' ><IoCheckmark className='blueish'/></div>

@@ -40,7 +40,7 @@ export default function BenNavbar () {
                 <Nav.Link href='/teams' className='navLink'>Teams</Nav.Link>
                 </Nav>
                 <div>
-                    <a href='/contact'><button className='contactBtn'>Contact Us</button></a>
+                    <a href='/contact-us'><button className='contactBtn'>Contact Us</button></a>
                 </div>
             </div>
         </Navbar>

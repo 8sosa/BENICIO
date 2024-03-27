@@ -6,6 +6,7 @@ import Footer from './Footer'
 import About from './About'
 import OurProjects from './OurProjects'
 import Project from './Project'
+import ContactUs from './ContactUs'
 
 
 export default function BenicioRouter() {
@@ -16,6 +17,7 @@ export default function BenicioRouter() {
                 <Route path = "/About-Us" element={<About/>} exact/>
                 <Route path = "/services" element={<OurProjects/>} exact/>
                 <Route path = "/testimonials" element={<Project/>} exact/>
+                <Route path = "/contact-us" element={<ContactUs/>} exact/>
             </Routes>
             <Footer />
         </Router>

@@ -16,9 +16,9 @@ export default function OurProjects () {
         <section className='aboutHero'>
           <div className='aboutHeroContent'>
             <li>The Case Studies</li>
-            <h1>Our Latest Projects</h1>
+            <h1 className='heroHeader'>Our Latest Projects</h1>
           </div>
-          <div className='aboutHeroImg'>
+          <div className='testiHeroImg'>
           </div>
         </section>
         <section className='projectsContent'>

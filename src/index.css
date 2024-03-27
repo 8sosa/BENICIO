@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @font-face {
   font-family: 'Verdana';
-  src: url('./Components/fonts/verdana.ttf') format('truetype');
+  src: url('./Components/fonts/verdana-bold.ttf') format('truetype');
 }
 
 body {
@@ -131,7 +131,7 @@ code {
   }
   .footerBrandName {
     font-family: "Inter", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
     margin: 0px;
   }
@@ -163,12 +163,16 @@ code {
   }
   .footerCard {
     background-color: #5845B1;
-    padding: 50px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
     border-radius: 25px;
     width: 100%;
   }
   .footerList {
     list-style: none;
+    padding: 0px;
   }
   .footerListHeader {
     font-family: "Inter", sans-serif;
@@ -178,7 +182,7 @@ code {
   }
   .footerListItem {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
   }
   .footerListItemBold {
@@ -195,6 +199,12 @@ code {
     background-color: #5845B1;
     padding: 150px;
     color: #fff;
+  }
+  .heroHeader {
+    color: #fff;
+    font-family: "Verdana", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
   }
   .aboutHeroImg {
     background-image: url('./Components/Images/pic1.jpg');
@@ -216,13 +226,14 @@ code {
     font-size: 12px;
     font-weight: 500;
     width: max-content;
-    padding: 15px;
+    padding: 10px;
   }
   .blackHeader {
     color: #1C2752;
-    font-family: "Inter", sans-serif;
+    font-family: "Verdana", sans-serif;
     font-size: 40px;
     font-weight: 800;
+    margin-bottom: 25px;
   }
   .greyPgraph {
     color: #7E7E7E;
@@ -266,7 +277,7 @@ code {
   }
   .aboutTextPurp {
     color: #5845B1;
-    font-family: "Inter", sans-serif;
+    font-family: "Verdana", sans-serif;
     font-size: 25px;
     font-weight: 800;
     margin: 0px;
@@ -285,13 +296,14 @@ code {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 15px;
+    width: max-content;
   }
   .greyBgText {
     color: #797979;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     margin: 0px;
   }
@@ -302,7 +314,7 @@ code {
     width: fit-content;
     padding: 2px;
     margin-right: 5px;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,14 +346,17 @@ code {
   }
   .clientsSection {
     background-color: #5845B1;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 18.7%;
+    padding-right: 18.7%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .whiteHeader {
     color: #fff;
-    font-family: "Inter", sans-serif;
+    font-family: "Verdana", sans-serif;
     font-size: 45px;
     font-weight: bold;
     margin: 0px;
@@ -370,7 +385,7 @@ code {
   }
   .greenCardText1 {
     color: #37393F;
-    font-family: "Inter", sans-serif;
+    font-family: "Verdana", sans-serif;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -384,7 +399,7 @@ code {
     margin-bottom: 25px;
     text-align: center;
   }
-  .aboutHeroImg {
+  .testiHeroImg {
     background-image: url('./Components/Images/pic8.png');
     background-size: cover;
     width: 100%;
@@ -443,13 +458,23 @@ code {
     padding-top: 150px;
     padding-bottom: 150px;
   }
+  .projectContentImg {
+    width: 100%;
+    height: 100%;
+  }
   .greyBackText {
     color: #1C2752;
     font-family: 'Verdana', sans-serif;
     padding-bottom: 15px;
-    border-bottom: 1px solid #D2D2D2;
     font-size: 16px;
     font-weight: 800;
+  }
+  .styledLine {
+    border-top: 3px solid #FFB342;
+    margin-bottom: 20px;
+  }
+  .styledLine1 {
+    border-top: 1px solid #D2D2D2;
     margin-bottom: 20px;
   }
   .greyBackText1 {
@@ -472,5 +497,201 @@ code {
   .projectContent1 {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+  .contactHeroImg {
+    background-image: url('./Components/Images/pic11.png');
+    background-size: cover;
+    width: 100%;
+  }
+  .contactTopText {
+    color: #37393F;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+  .contactTopText1 {
+    color: #37393F;
+    font-family: "Verdana", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+  .contactTopText2 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .contactTopText3 {
+    color: #37393F;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    text-align: start;
+  }
+  .grey-Bg {
+    background-color: #F2F2F2;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    width: max-content;
+  }
+  .purple {
+    color: #5845B1;
+    font-size: 30px;
+  }
+  .purpCard {
+    background-color: #5845B1;
+    color: #fff;
+    border-radius: 24px;
+    padding: 50px;
+  }
+  .purpCardText1 {
+    color: #fff;
+    font-family: "Verdana", sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+  .purpCardText2 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .purpCardText3 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: start;
+  }
+  .purpCardIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .yellow {
+    color: #FFB342;
+    font-size: 20px;
+  }
+  .transCard {
+    border: 1px solid #DDDDDD;
+    border-radius: 24px;
+    padding: 40px;
+    margin-bottom: 35px;
+  }
+  .transCardFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .transCardFooterText {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #000;
+  }
+  .transCardFooterIcon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .transCardFooterIcon2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #40DDB6;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .transCardFooterIcon3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6B77E5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .proPicBox {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  .transCardText {
+    border-top: 1px solid #dcdcdc;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .transCardText1 {
+    color: #1C2752;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .contactForm {
+    background-color: #f4f4f4;
+    border-radius: 24px;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+  .contactFormField {
+    padding: 20px !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400;
+  }
+  .contactFormBtn {
+    width: 100%;
+    background-color: #40DDB6;
+    color: #1C2752;
+    border-radius: 40px;
+    border: 0px;
+    padding: 20px;
+    font-family: "Inter", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600;
+    margin-top: 45px;
   }
 }

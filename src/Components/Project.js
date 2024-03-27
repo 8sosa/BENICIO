@@ -21,10 +21,14 @@ export default function Project () {
             </div>
         </section>
         <section className='projectContent'>
-            <Row >
-                <Col>
+            <Row xs={2}>
+                <Col xs={3} className='greyBack'>
                     <div className='greyBack'>
                         <h1 className='greyBackText'>Project Information</h1>
+                        <Row>
+                            <Col className='styledLine' xs={3}></Col>
+                            <Col className='styledLine1' xs={9}></Col>
+                        </Row>
                         <h1 className='greyBackText1'>Client :</h1>
                         <p className='greyBackText2'>Marygoal International School </p>
                         <h1 className='greyBackText1'>Location :</h1>
@@ -37,7 +41,7 @@ export default function Project () {
                         <p className='greyBackText2'>Video</p>
                     </div>
                 </Col>
-                <Col><img src={Pic10} alt='location'/></Col>
+                <Col xs={9}><img src={Pic10} alt='location' className='projectContentImg'/></Col>
             </Row>
             <div className='projectContent1'>
                 <h1 className='blackHeader'>Project Description</h1>
@@ -60,7 +64,7 @@ export default function Project () {
                 <p className='greyPgraph'>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
             </div>
             <div>
-                <h1 className='blackHeader'>Project Description</h1>
+                <h1 className='blackHeader'>Related Projects</h1>
                 <Row md={3}>
                     <Col>
                         <Card className='projects'>
