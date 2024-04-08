@@ -48,7 +48,7 @@ export default function Footer () {
                   <Col>
                     <ul className='footerList'>
                       <li className='footerListHeader'>Contact Us</li>
-                      <li className='footerListItem'>Beniciogroups@gmail.com 09090391793</li>
+                      <li className='footerListItem'>Beniciogroups@gmail.com 08032912543</li>
                     </ul>
                   </Col>
                 </Row>

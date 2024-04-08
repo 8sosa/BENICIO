@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @font-face {
-  font-family: 'Verdana';
+  font-family: 'VerdanaBold';
   src: url('./Components/fonts/verdana-bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Verdana';
+  src: url('./Components/fonts/verdana.ttf') format('truetype');
 }
 
 body {
@@ -40,6 +44,26 @@ code {
   display: flex;
   flex-direction: column;
   padding: 30px;
+}
+.darkbghome {
+  background-color: #202D33;
+  padding: 100px !important;
+}
+.purpbghome {
+  background-color: #5845B1;
+  padding: 125px !important;
+}
+.graybg {
+  background-color: #F4F4F4;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+.topListBox {
+  list-style-type: square;  
+  color: #40DDB6;
 }
 
 @media (min-width: 1440px) {
@@ -99,6 +123,31 @@ code {
     font-weight: 400;
     color: #37393F;
     margin: 0px;
+  }
+  .contactBtnHome {
+    background-color: #40DDB6;
+    border: 0px;
+    width: 175px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 47px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .contactBtnHome1 {
+    background-color: #40DDB6;
+    border: 0px;
+    width: 175px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 47px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #37393F;
+    margin-right: 30px;
   }
   .contactBtn {
     background-color: #5845B1;
@@ -200,15 +249,35 @@ code {
     padding: 150px;
     color: #fff;
   }
+  .heroHeadertext {
+    color: #B9B9B9;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
   .heroHeader {
     color: #fff;
-    font-family: "Verdana", sans-serif;
-    font-size: 40px;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 60px;
     font-weight: 800;
   }
   .aboutHeroImg {
     background-image: url('./Components/Images/pic1.jpg');
     background-size: cover;
+    width: 100%;
+  }
+  .servicesHeroImg {
+    background-image: url('./Components/Images/pic38.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .homeHeroImg {
+    background-image: url('./Components/Images/Pic14.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
   }
   .aboutContent {
@@ -230,7 +299,7 @@ code {
   }
   .blackHeader {
     color: #1C2752;
-    font-family: "Verdana", sans-serif;
+    font-family: "VerdanaBold", sans-serif;
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 25px;
@@ -240,6 +309,31 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 12px;
     font-weight: 400;
+  }
+  .greyPgraph1 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    list-style-type: none;
+  }
+  .greyPgraph12 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    list-style-type: none;
+  }
+  .greyPgraph1:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -20px;
+  }
+  .greyPgraph12:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -20px;
   }
   .checkText {
     color: #1C2752;
@@ -277,7 +371,7 @@ code {
   }
   .aboutTextPurp {
     color: #5845B1;
-    font-family: "Verdana", sans-serif;
+    font-family: "VerdanaBold", sans-serif;
     font-size: 25px;
     font-weight: 800;
     margin: 0px;
@@ -285,6 +379,7 @@ code {
   .aboutPicBox {
     padding: 0px;
     width: 100%;
+    height: 100%;
   }
   .aboutPicBoxpic {
     width: 100%;
@@ -320,8 +415,14 @@ code {
     align-items: center;
     justify-content: center;
   }
+  .blueish3 {
+    color: #1C2752;
+  }
   .blueish {
     color: #6B77E5;
+  }
+  .blueish2 {
+    color: #40DDB6;
   }
   .margin50 {
     margin-right: 50px;
@@ -341,22 +442,37 @@ code {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .missText2 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
   .aboutpiclogo {
     margin-top: 50px;
   }
   .clientsSection {
     background-color: #5845B1;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 18.7%;
     padding-right: 18.7%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .whiteHeader1 {
+    color: #fff;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+  }
   .whiteHeader {
     color: #fff;
-    font-family: "Verdana", sans-serif;
+    font-family: "VerdanaBold", sans-serif;
     font-size: 45px;
     font-weight: bold;
     margin: 0px;
@@ -385,7 +501,7 @@ code {
   }
   .greenCardText1 {
     color: #37393F;
-    font-family: "Verdana", sans-serif;
+    font-family: "VerdanaBold", sans-serif;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -399,14 +515,44 @@ code {
     margin-bottom: 25px;
     text-align: center;
   }
+  .servHeroImg {
+    background-image: url('./Components/Images/pic45.png');
+    background-size: cover;
+    width: 100%;
+  }
+  .teamsHeroImg {
+    background-image: url('./Components/Images/pic39.png');
+    background-size: cover;
+    width: 100%;
+  }
   .testiHeroImg {
     background-image: url('./Components/Images/pic8.png');
     background-size: cover;
     width: 100%;
   }
   .projects {
-    padding: 10px;
+    padding: 2px;
     margin: 20px;
+    max-width: fit-content;
+  }
+  .teams {
+    max-width: fit-content;
+    min-width: 400px;
+    min-height: 350px;
+  }
+  .teamTitle {
+    color: #1C2752;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 20px !important;
+  }
+  .teamText {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0px;
   }
   .projectsTitle {
     color: #1C2752;
@@ -424,7 +570,8 @@ code {
   }
   .projectsContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding-left: 300px;
     padding-right: 300px;
     padding-top: 150px;
@@ -439,7 +586,7 @@ code {
     background-color: #37393F;
   }
   .projectTitle {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'VerdanaBold', sans-serif;
     font-weight: bold;
     font-size: 60px;
     color: #fff;
@@ -464,7 +611,7 @@ code {
   }
   .greyBackText {
     color: #1C2752;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'VerdanaBold', sans-serif;
     padding-bottom: 15px;
     font-size: 16px;
     font-weight: 800;
@@ -479,7 +626,7 @@ code {
   }
   .greyBackText1 {
     color: #1C2752;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'VerdanaBold', sans-serif;
     font-size: 12px;
     font-weight: 800;
     padding-bottom: 3px;
@@ -513,7 +660,7 @@ code {
   }
   .contactTopText1 {
     color: #37393F;
-    font-family: "Verdana", sans-serif;
+    font-family: "VerdanaBold", sans-serif;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -555,7 +702,7 @@ code {
   }
   .purpCardText1 {
     color: #fff;
-    font-family: "Verdana", sans-serif;
+    font-family: "VerdanaBold", sans-serif;
     font-size: 20px;
     font-weight: bolder;
     margin-bottom: 10px;
@@ -610,6 +757,21 @@ code {
     font-weight: 700;
     margin-bottom: 0px;
     border-bottom: 1px solid #000;
+  }
+  .homeHeroText1 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  .homeHeroText {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #fff;
   }
   .transCardFooterIcon1 {
     display: flex;
@@ -693,5 +855,162 @@ code {
     font-size: 20px !important;
     font-weight: 600;
     margin-top: 45px;
+  }
+  .tags {
+    background-color: #31355D;
+    padding: 10px;
+    color: #fff;
+    font-family: "Verdana", sans-serif;
+    font-size: 20px;
+    max-width: max-content;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+  .graybgtext {
+    color: #5845B1;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .graybgtext1 {
+    color: #1C2752;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+  .homeHeaderText1 {
+    color: #37393F;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .mrCol {
+    margin-right: 30px;
+  }
+  .homeContent {
+    padding-top: 125px;
+    background: linear-gradient(to bottom, #40DDB7 80%, rgba(255, 255, 255, 0.2) 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tag0 {
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .tag01 {
+    background-color: transparent;
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #1C2752;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .ytSection {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 40px !important;
+    margin-left: 18.75% !important;
+    margin-right: 18.75% !important;
+    box-shadow: 0px 0px 4.8px 0px rgba(216,216,216,1);
+  }
+  .homeContent1 {
+    background-color: #f4f4f4;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .serviceHeaderText {
+    color: #000;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .serviceHeaderText1 {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 40%;
+  }
+  .teamtext7 {
+    color: #1C2752;
+    font-family: 'VerdanaBold', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+  }
+  .teamtext4 {
+    color: #1C2752;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .teamtext5 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .teamtext6 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-bottom: 50px;
+  }
+  .wdpText1 {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+  }
+  .wdpDropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #DDDDDD;
+    background-color: #F8F8F8;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+    min-height: 100px;
+  }
+  .wdpDropdowntext {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .subBtn {
+    background-color: #6B77E5;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    width: 150px;
   }
 }

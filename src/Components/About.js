@@ -74,7 +74,7 @@ export default function About () {
                   <a href='/contact'><button className='contactUsBtn'>Contact Us</button></a>
                   <div>
                     <p className='aboutTextdark'>For Emergency Fixing or Appointment</p>
-                    <p className='aboutTextPurp'>09090391793</p>
+                    <p className='aboutTextPurp'>08032912543</p>
                   </div>
                 </div>
               </div>
