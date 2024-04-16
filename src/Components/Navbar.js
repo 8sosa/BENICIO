@@ -1,7 +1,8 @@
 import React from 'react'
 import { Navbar, Nav} from 'react-bootstrap'
 
-import { IoLocationOutline, IoMailOutline, IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io5";
+import { IoLocationOutline, IoMailOutline, IoCallOutline, IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io5";
+import { FaLinkedinIn } from "react-icons/fa";
 import Logo from './Images/Logo.png'
 
 export default function BenNavbar () {
@@ -19,13 +20,18 @@ export default function BenNavbar () {
                     </div>
                     <div className='d-flex flex-row'>
                         <IoMailOutline className='icons'/>
-                        <p className='text1'>BenicioGroups@gmail.com</p>
+                        <p className='text1'>info.nigeria@beniciogroups.com</p>
+                    </div>
+                    <div className='d-flex flex-row'>
+                        <IoCallOutline  className='icons'/>
+                        <p className='text1'>0803 291 2543</p>
                     </div>
                 </div>
                 <div className='follow'>
                     <IoLogoInstagram className='white'/>
                     <IoLogoFacebook className='white'/>
                     <IoLogoTwitter className='white'/>
+                    <FaLinkedinIn className='white'/>
                 </div>
             </div>
             <div className='bottomBar'>

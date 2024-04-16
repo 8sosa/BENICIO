@@ -28,12 +28,12 @@ export default function Footer () {
                   <Col>
                     <ul className='footerList'>
                       <li className='footerListHeader'>Quick Links</li>
-                      <li className='footerListItem'>About Us</li>
-                      <li className='footerListItem'>Services</li>
+                      <li className='footerListItem' href="/About-Us">About Us</li>
+                      <li className='footerListItem' href='/services'>Services</li>
                       <li className='footerListItem'>Consultations</li>
-                      <li className='footerListItem'>Testimonials</li>
-                      <li className='footerListItem'>Team</li>
-                      <li className='footerListItem'>Contact Us</li>
+                      <li className='footerListItem' href='/testimonials'>Testimonials</li>
+                      <li className='footerListItem' href='/teams'>Team</li>
+                      <li className='footerListItem' href='/contact-us'>Contact Us</li>
                     </ul>
                   </Col>
                   <Col>
@@ -48,7 +48,7 @@ export default function Footer () {
                   <Col>
                     <ul className='footerList'>
                       <li className='footerListHeader'>Contact Us</li>
-                      <li className='footerListItem'>Beniciogroups@gmail.com 08032912543</li>
+                      <li className='footerListItem'>info.nigeria@beniciogroups.com 08032912543</li>
                     </ul>
                   </Col>
                 </Row>

@@ -11,7 +11,7 @@ import Pic5 from './Images/pic5.png'
 import Pic6 from './Images/pic6.png'
 import Pic7 from './Images/pic7.png'
 import Pic12 from './Images/pic12.jpg'
-import Pic13 from './Images/pic13.png'
+import Pic46 from './Images/pic46.png'
 
 
 export default function ContactUs () {
@@ -79,29 +79,29 @@ export default function ContactUs () {
                         <div className='transCard'>
                             <div className='transCardFooter'>
                                 <div className='d-flex flex-row align-items-center'>
-                                    <div className='proPicBox'>
-                                        <img src={Pic13} alt='profile pic' />
-                                    </div>
-                                    <div xs={'auto'}>
-                                        <p className='contactTopText3'>Nancy luther</p>
-                                        <p className='contactTopText2'>NewYork</p>
-                                    </div>
+                                <div className='proPicBox'>
+                                    <img src={Pic46} alt='profile pic' className='propic'/>
+                                </div>
+                                <div xs={'auto'}>
+                                    <p className='contactTopText3'>Mrs. Esther Oladimeji</p>
+                                    <p className='contactTopText2'>Yaba, Lagos</p>
+                                </div>
                                 </div>
                                 <div className='p-3'>
-                                    <div className='grey-Bg'>
-                                        <RiDoubleQuotesL className='purple'/>
-                                    </div>
+                                <div className='grey-Bg'>
+                                    <RiDoubleQuotesL className='purple'/>
+                                </div>
                                 </div>
                             </div>
-                            <p className='transCardText'>Pellentesque vehicula eros neque, maximus mattis est sagittis facilisi.<span className='transCardText1'>”In sed pretium metus”</span>. Ppretium id urna sit amet tincidunt. Lorem ipsum dolor sit amet,tristique. Duis cursus,in elementum tristique</p>
+                            <p className='transCardText'>Their services were excellent, my water had issues with coloring and smell...Benicio group solved my water problems instantly. Currently, we use the water to cook in my household. Thank you Benicio!!</p>
                             <div className='transCardFooter'>
                                 <div className='d-flex flex-row align-items-center'>
-                                    <div className='transCardFooterIcon1'><IoIosArrowBack /></div>
-                                    <div className='transCardFooterIcon2'><IoIosArrowForward /></div>
+                                <div className='transCardFooterIcon1'><IoIosArrowBack /></div>
+                                <div className='transCardFooterIcon2'><IoIosArrowForward /></div>
                                 </div>
                                 <div className='d-flex flex-row align-items-center'>
-                                    <div className='transCardFooterIcon3'><FaPlay /></div>
-                                    <p className='transCardFooterText'>Customer review</p>
+                                <div className='transCardFooterIcon3'><FaPlay /></div>
+                                <p className='transCardFooterText'>Customer review</p>
                                 </div>
                             </div>
                         </div>

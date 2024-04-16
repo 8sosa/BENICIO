@@ -65,6 +65,14 @@ code {
   list-style-type: square;  
   color: #40DDB6;
 }
+.topListBoxpurp {
+  list-style-type: square;
+  color: #6B77E5;
+  font-size: 25px;
+}
+.proPic {
+  border-radius: 50% !important;
+}
 
 @media (min-width: 1440px) {
   .mainNavBar{
@@ -497,6 +505,7 @@ code {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 25px;
+    margin-left: -15px;
     text-align: center;
   }
   .greenCardText1 {
@@ -814,6 +823,9 @@ code {
     height: 70px;
     margin-right: 10px;
   }
+  .proPic {
+    border-radius: 50%;
+  }
   .transCardText {
     border-top: 1px solid #dcdcdc;
     margin-top: 20px;
@@ -1045,7 +1057,7 @@ code {
   .follow {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 6%;
   }
   .bottomBar {
@@ -1761,6 +1773,9 @@ code {
     width: 70px;
     height: 70px;
     margin-right: 10px;
+  }
+  .proPic {
+    border-radius: 50%;
   }
   .transCardText {
     border-top: 1px solid #dcdcdc;

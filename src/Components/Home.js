@@ -14,10 +14,9 @@ import Pic4 from './Images/pic4.png'
 import Pic5 from './Images/pic5.png'
 import Pic6 from './Images/pic6.png'
 import Pic7 from './Images/pic7.png'
-import Pic13 from './Images/pic13.png'
+import Pic46 from './Images/pic46.png'
 import Pic15 from './Images/pic15.jpg'
 import Pic19 from './Images/pic19.png'
-import Pic18 from './Images/pic18.png'
 import Pic17 from './Images/pic17.png'
 import Pic20 from './Images/pic20.png'
 import Pic21 from './Images/pic21.png'
@@ -50,7 +49,7 @@ export default function Home () {
             <h1 className='heroHeader'>The Best solution to <span className='blueish2'>your</span> water problems  </h1>
             <p className='heroHeadertext'>Providing water solutions by pioneering the installation of advance treatment plants to transform lives through sustainable water solutions</p>
             <div className='d-flex flex-row'>
-              <a href='/contact-us'><button className='contactBtnHome1'>Contact Us</button></a>
+              <a href='/contact-us'><button className='contactBtnHome1'>About Us</button></a>
               <div className='d-flex flex-row align-items-center'>
                   <div className='transCardFooterIcon3'><FaPlay /></div>
                   <p className='homeHeroText'>Watch our Videos</p>
@@ -110,9 +109,8 @@ export default function Home () {
             <Col>
               <p className='textgrey'>Based on Commercial</p>
               <h1 className='homeHeaderText1'>Borehole Drilling & Maintenance</h1>
-              <p className='greyPgraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do incididunt ut labore et dolore magna aliqua. Ut enim ad minimquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p className='greyPgraph'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <button href='/services' className='contactUsBtn'>Read More</button>
+              <p className='greyPgraph'>We handle both survey and borehole drilling. Our expert team conducts thorough surveys to determine the optimal locations for boreholes, ensuring efficient and sustainable water access. From initial assessment to drilling and ongoing maintenance, we are dedicated to delivering reliable and high-quality solutions tailored to meet our clients' specific needs.</p>
+              <button href='/services' className='contactUsBtn'>Contact Us</button>
             </Col>
             <Col>
               <img src={Pic20} alt='water' className='aboutPicBox' />
@@ -276,33 +274,33 @@ export default function Home () {
                     <p className='textgrey'><IoCreateOutline />Testimonial</p>
                     <h1 className='blackHeader'>Customers Says</h1>
                     <div className='transCard'>
-                        <div className='transCardFooter'>
-                            <div className='d-flex flex-row align-items-center'>
-                                <div className='proPicBox'>
-                                    <img src={Pic13} alt='profile pic' />
-                                </div>
-                                <div xs={'auto'}>
-                                    <p className='contactTopText3'>Nancy luther</p>
-                                    <p className='contactTopText2'>NewYork</p>
-                                </div>
-                            </div>
-                            <div className='p-3'>
-                                <div className='grey-Bg'>
-                                    <RiDoubleQuotesL className='purple'/>
-                                </div>
-                            </div>
+                      <div className='transCardFooter'>
+                        <div className='d-flex flex-row align-items-center'>
+                          <div className='proPicBox'>
+                            <img src={Pic46} alt='profile pic' className='propic'/>
+                          </div>
+                          <div xs={'auto'}>
+                              <p className='contactTopText3'>Mrs. Esther Oladimeji</p>
+                              <p className='contactTopText2'>Yaba, Lagos</p>
+                          </div>
                         </div>
-                        <p className='transCardText'>Pellentesque vehicula eros neque, maximus mattis est sagittis facilisi.<span className='transCardText1'>”In sed pretium metus”</span>. Ppretium id urna sit amet tincidunt. Lorem ipsum dolor sit amet,tristique. Duis cursus,in elementum tristique</p>
-                        <div className='transCardFooter'>
-                            <div className='d-flex flex-row align-items-center'>
-                                <div className='transCardFooterIcon1'><IoIosArrowBack /></div>
-                                <div className='transCardFooterIcon2'><IoIosArrowForward /></div>
-                            </div>
-                            <div className='d-flex flex-row align-items-center'>
-                                <div className='transCardFooterIcon3'><FaPlay /></div>
-                                <p className='transCardFooterText'>Customer review</p>
-                            </div>
+                        <div className='p-3'>
+                          <div className='grey-Bg'>
+                            <RiDoubleQuotesL className='purple'/>
+                          </div>
                         </div>
+                      </div>
+                      <p className='transCardText'>Their services were excellent, my water had issues with coloring and smell...Benicio group solved my water problems instantly. Currently, we use the water to cook in my household. Thank you Benicio!!</p>
+                      <div className='transCardFooter'>
+                        <div className='d-flex flex-row align-items-center'>
+                          <div className='transCardFooterIcon1'><IoIosArrowBack /></div>
+                          <div className='transCardFooterIcon2'><IoIosArrowForward /></div>
+                        </div>
+                        <div className='d-flex flex-row align-items-center'>
+                          <div className='transCardFooterIcon3'><FaPlay /></div>
+                          <p className='transCardFooterText'>Customer review</p>
+                        </div>
+                      </div>
                     </div>
                     <div className='purpCard'>
                         <p className='textgrey'><IoCreateOutline className='yellow'/>Any Question</p>
@@ -337,7 +335,6 @@ export default function Home () {
                     </Form>
                 </Col>
             </Row>
-           
         </section>
         <section>
             <Row>
@@ -345,29 +342,18 @@ export default function Home () {
                     <div>
                         <p className='textgrey'>Our Projects</p>
                         <h1 className='whiteHeader'>Featured Projects</h1>
-                        <p className='missText2'>Lorem Ipsum is simply dummy text of the printin typesetting  dummy text ever  when an unknown printer took a galley of type and scrambled  a type specimen book. </p>
+                        <p className='missText2'>With 10 years of experience in the water industry we have a diverse portfolio of clients and projects.</p>
                         <button href='/services' className='contactUsBtn'>More Projects</button>
                     </div>
                 </Col>
                 <Col sm={3} className='p-0'><img src={Pic19} alt='service' className='aboutPicBox'/></Col>
                 <Col sm={3} className='p-0'><img src={Pic17} alt='service' className='aboutPicBox'/></Col>
             </Row>
-            <Row>
-                <Col sm={9} className='purpbghome'>
-                    <div className='d-flex flex-row align-items-center'>
-                      <p className='tags'>Water</p>
-                      <p className='tags'>Health</p>
-                    </div>
-                    <h1 className='whiteHeader1'>Safe water .... healthy living</h1>
-                </Col>
-                <Col sm={3} className='p-0'><img src={Pic18} alt='service' className='aboutPicBox'/></Col>
-            </Row>
         </section>
         <section className='d-flex flex-column align-items-center'>
           <div className='greenCard'>
-            <p className='greenCardText'>Contact Us</p>
+            <li className='topListBoxpurp'><span className='greenCardText'>Contact Us</span></li>
             <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service? Contact Us</h1>
-            <p className='greenCardText2'>Lorem Ipsum is simply dummy text of the printin typesetting  dummy text ever  when an unknown printer took a galley of type and scrambled  a type specimen book. </p>
             <button href='/contact-us' className='contactUsBtn'>Contact Us</button>
           </div>
         </section>
