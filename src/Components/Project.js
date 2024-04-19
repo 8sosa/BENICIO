@@ -16,7 +16,7 @@ export default function Project () {
       <Container className='page'>
         <section className='projectTitleBlock'>
             <div>
-                <li className='projectTitleText'>Our Projects</li>
+                <li className='topListBox'><span className='homeHeroText1'>Our Projects</span></li>
                 <h1 className='projectTitle'>Marygoal International School</h1>
             </div>
         </section>

@@ -19,7 +19,7 @@ export default function Teams () {
       <Container className='page'>
         <section className='aboutHero'>
           <div className='aboutHeroContent'>
-            <li>Our Team</li>
+            <li className='topListBox'><span className='homeHeroText1'>Our Team</span></li>
             <h1 className='heroHeader'>Meet Our Experts</h1>
           </div>
           <div className='teamsHeroImg'>

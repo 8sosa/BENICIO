@@ -387,7 +387,6 @@ code {
     display: flex;
     flex-direction: row;
     width: 100vw !important;
-    height: 600px;
   }
   .aboutHeroContent {
     background-color: #5845B1;
