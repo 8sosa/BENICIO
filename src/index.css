@@ -16,7 +16,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -48,6 +54,11 @@ code {
 .darkbghome {
   background-color: #202D33;
   padding: 100px !important;
+  min-height: 400px;
+}
+.bghome {
+  padding: 0px !important;
+  min-height: 450px;
 }
 .purpbghome {
   background-color: #5845B1;
@@ -70,10 +81,86 @@ code {
   color: #6B77E5;
   font-size: 25px;
 }
-.proPic {
-  border-radius: 50% !important;
+.iconGreenBg {
+  background-color: #40DDB7;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-
+.productCardImg {
+  width: 100%;
+  object-fit: cover;
+}
+.paginationBtnActive {
+  background-color: #5845B1;
+  border: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px !important;
+  font-weight: 600;
+  margin: 5px;
+  color: #fff;
+}
+.paginationBtn {
+  background-color: #fff;
+  border: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px !important;
+  font-weight: 600;
+  margin: 5px;
+  color: #5845B1;
+}
+.homeePicBox {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.image-container:hover .overlay {
+  display: flex;
+}
+.read-more-btn {
+  background-color: transparent;
+  border: 5px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+}
 @media (min-width: 1440px) {
   .mainNavBar{
     width: 100%;
@@ -116,10 +203,10 @@ code {
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .navLinks {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -129,8 +216,41 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
+    background-color: transparent;
+    border-radius: 50px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
     color: #37393F;
-    margin: 0px;
+    }
+  .navLink:hover, .navLink:focus {
+    background-color: #5845B1;
+    border-radius: 50px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    color: #fff !important;
+  }
+  .dropdown-toggle {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .dropdown-toggle:hover {
+    color: #fff !important;
+  }
+  .dropdown-toggle:focus {
+    background-color: #5845B1 !important;
+    border-radius: 50px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    color: #fff !important;
   }
   .contactBtnHome {
     background-color: #40DDB6;
@@ -168,6 +288,22 @@ code {
     font-size: 14px;
     font-weight: 400;
     color: #fff;
+  }
+  .contactBtnNav {
+    background-color: #5845B1;
+    border: 0px;
+    width: 175px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 47px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .contactBtnNav:hover {
+    background-color: #40DDB7;
+    color: #000;
   }
   .footer {
     background-color: #37393F;
@@ -250,17 +386,18 @@ code {
   .aboutHero {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100vw !important;
+    height: 600px;
   }
   .aboutHeroContent {
     background-color: #5845B1;
-    padding: 150px;
+    padding: 100px !important;
     color: #fff;
   }
   .heroHeadertext {
     color: #B9B9B9;
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -268,7 +405,7 @@ code {
   .heroHeader {
     color: #fff;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 800;
   }
   .aboutHeroImg {
@@ -283,7 +420,7 @@ code {
     width: 100%;
   }
   .homeHeroImg {
-    background-image: url('./Components/Images/Pic14.jpg');
+    background-image: url('./Components/Images/pic14.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -300,10 +437,13 @@ code {
     background-color: #F4F4F4;
     color: #1C2752;
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     width: max-content;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .blackHeader {
     color: #1C2752;
@@ -315,7 +455,7 @@ code {
   .greyPgraph {
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
   }
   .greyPgraph1 {
@@ -357,6 +497,19 @@ code {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+  }
+  .callBtn {
+    background-color: #5845B1;
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
   }
   .contactUsBtn {
     background-color: #5845B1;
@@ -486,7 +639,8 @@ code {
     margin: 0px;
   }
   .clientPic {
-    margin: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
     height: 100px;
   }
   .greenCard {
@@ -543,6 +697,8 @@ code {
     padding: 2px;
     margin: 20px;
     max-width: fit-content;
+    min-height: 450px;
+    min-width: 300px !important;
   }
   .teams {
     max-width: fit-content;
@@ -566,7 +722,7 @@ code {
   .projectsTitle {
     color: #1C2752;
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 15px !important;
     font-weight: 800;
     margin-top: 20px !important;
   }
@@ -823,8 +979,8 @@ code {
     height: 70px;
     margin-right: 10px;
   }
-  .proPic {
-    border-radius: 50%;
+  .proPicBox img.propic {
+    border-radius: 50% !important;
   }
   .transCardText {
     border-top: 1px solid #dcdcdc;
@@ -909,23 +1065,24 @@ code {
     flex-direction: column;
     align-items: center;
   }
-  .tag0 {
+  .tag0.active {
     background-color: #fff;
     padding: 10px;
-    margin-right: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    border: 0px;
   }
-  .tag01 {
+  .tag0 {
     background-color: transparent;
-    padding: 10px;
-    margin-right: 20px;
     border: 1px solid #1C2752;
+    padding: 5px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-  }
+    height: 60px;
+  }  
   .ytSection {
     background-color: #fff;
     padding: 40px;
@@ -1025,6 +1182,20 @@ code {
     border: 0px;
     width: 150px;
   }
+  .carouselImg {
+      width: 100%;
+      padding-top: 61.3%; /* 16:9 aspect ratio */
+      position: relative;
+      overflow: hidden;
+  }
+  .carouselImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the image while preserving its aspect ratio */
+  }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .mainNavBar{
@@ -1068,7 +1239,7 @@ code {
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .navLinks {
     width: 45%;
@@ -1081,8 +1252,39 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 12px !important;
     font-weight: 400 !important;
+    background-color: transparent;
+    border-radius: 50px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
     color: #37393F;
-    margin: 0px;
+  }
+  .navLink:hover, .navLink:focus {
+    background-color: #5845B1;
+    border-radius: 50px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    color: #fff !important;
+  }
+  .dropdown-toggle {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .dropdown-toggle:hover {
+    color: #fff !important;
+  }
+  .dropdown-toggle:focus {
+    background-color: #5845B1 !important;
+    border-radius: 50px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    color: #fff !important;
   }
   .contactBtnHome {
     background-color: #40DDB6;
@@ -1120,6 +1322,22 @@ code {
     font-size: 14px;
     font-weight: 400;
     color: #fff;
+  }
+  .contactBtnNav {
+    background-color: #5845B1;
+    border: 0px;
+    width: 175px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 47px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .contactBtnNav:hover {
+    background-color: #40DDB7;
+    color: #000;
   }
   .footer {
     background-color: #37393F;
@@ -1235,7 +1453,7 @@ code {
     width: 100%;
   }
   .homeHeroImg {
-    background-image: url('./Components/Images/Pic14.jpg');
+    background-image: url('./Components/Images/pic14.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -1309,6 +1527,22 @@ code {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+  }
+  .callBtn {
+    background-color: #5845B1;
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .contactUsBtn {
     background-color: #5845B1;
@@ -1774,8 +2008,8 @@ code {
     height: 70px;
     margin-right: 10px;
   }
-  .proPic {
-    border-radius: 50%;
+  .proPicBox img.propic {
+    border-radius: 50% !important;
   }
   .transCardText {
     border-top: 1px solid #dcdcdc;
@@ -1860,15 +2094,16 @@ code {
     flex-direction: column;
     align-items: center;
   }
-  .tag0 {
+  .tag0.active {
     background-color: #fff;
     padding: 10px;
     margin-right: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    border: 0px;
   }
-  .tag01 {
+  .tag0 {
     background-color: transparent;
     padding: 10px;
     margin-right: 20px;
@@ -1876,6 +2111,7 @@ code {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 60px;
   }
   .ytSection {
     background-color: #fff;
@@ -1975,5 +2211,19 @@ code {
     justify-content: center;
     border: 0px;
     width: 150px;
+  }
+  .carouselImg {
+    width: 100%;
+    padding-top: 61.3%; /* 16:9 aspect ratio */
+    position: relative;
+    overflow: hidden;
+  }
+  .carouselImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the image while preserving its aspect ratio */
   }
 }

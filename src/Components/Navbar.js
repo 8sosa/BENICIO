@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav} from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
 
 import { IoLocationOutline, IoMailOutline, IoCallOutline, IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -39,14 +39,20 @@ export default function BenNavbar () {
                     <img src={Logo} alt='logo' />
                 </div>
                 <Nav className='navLinks'>
-                <Nav.Link href='/' className='navLink'>Home</Nav.Link>
-                <Nav.Link href="/About-Us" className='navLink'>About Us</Nav.Link>
-                <Nav.Link href='/services' className='navLink'>Services</Nav.Link>
-                <Nav.Link href='/testimonials' className='navLink'>Testimonials</Nav.Link>
-                <Nav.Link href='/teams' className='navLink'>Teams</Nav.Link>
+                    <Nav.Link href='/' className='navLink'>Home</Nav.Link>
+                    <Nav.Link href="/About-Us" className='navLink'>About Us</Nav.Link>
+                    <NavDropdown className='navLink' title="Services">
+                        <NavDropdown.Item href="/services">Our Services</NavDropdown.Item>
+                        <NavDropdown.Item href="#">Consultation</NavDropdown.Item>
+                    </NavDropdown>
+                    <Nav.Link href='/testimonials' className='navLink'>Testimonials</Nav.Link>
+                    <NavDropdown title="Teams" id="basic-nav-dropdown" className='navLink'>
+                        <NavDropdown.Item href="/teams">Meet out Team</NavDropdown.Item>
+                        <NavDropdown.Item href="#">Careers</NavDropdown.Item>
+                    </NavDropdown>
                 </Nav>
                 <div>
-                    <a href='/contact-us'><button className='contactBtn'>Contact Us</button></a>
+                    <a href='/contact-us'><button className='contactBtnNav'>Contact Us</button></a>
                 </div>
             </div>
         </Navbar>
