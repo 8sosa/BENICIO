@@ -42,7 +42,7 @@ const testimonials = [
 
 export default function Services () {
 
-  const [activeKey, setActiveKey] = useState(null);
+  const [activeKey, setActiveKey] = useState('first');
 
   const handleSelect = (key) => {
     setActiveKey(key);

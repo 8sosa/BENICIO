@@ -55,7 +55,7 @@ export default function Home () {
     return <div className='iconGreenBg'><IoCaretForwardSharp size={20} color="white" /></div>
   };
 
-  const [activeKey, setActiveKey] = useState(null);
+  const [activeKey, setActiveKey] = useState('first');
 
   const handleSelect = (key) => {
     setActiveKey(key);
