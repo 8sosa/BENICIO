@@ -418,12 +418,6 @@ code {
     background-repeat: no-repeat;
     width: 100%;
   }
-  .homeHeroImg {
-    background-image: url('./Components/Images/pic14.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
   .aboutContent {
     display: flex;
     flex-direction: row;
@@ -1447,12 +1441,6 @@ code {
   }
   .servicesHeroImg {
     background-image: url('./Components/Images/pic38.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
-  .homeHeroImg {
-    background-image: url('./Components/Images/pic14.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
