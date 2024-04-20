@@ -24,7 +24,7 @@ import Pic20 from './Images/pic20.png'
 import Pic49 from './Images/pic49.png'
 import Pic50 from './Images/pic50.png'
 import Pic51 from './Images/pic51.png'
-import CarouselImage1 from './Images/pic14.jpg'
+import CarouselImage1 from './Images/pic49.png'
 import CarouselImage2 from './Images/pic47.png'
 import CarouselImage3 from './Images/pic48.png'
 
