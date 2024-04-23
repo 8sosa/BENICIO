@@ -1,6 +1,8 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io5";
+import { FaLinkedinIn } from "react-icons/fa";
+
 
 import Logo from './Images/logo1.png'
 
@@ -20,6 +22,7 @@ export default function Footer () {
                 <div className='socialIcon' ><IoLogoInstagram className='white'/></div>
                 <div className='socialIcon' ><IoLogoFacebook className='white'/></div>
                 <div className='socialIcon' ><IoLogoTwitter className='white'/></div>
+                <div className='socialIcon' ><FaLinkedinIn className='white'/></div>
               </div>
             </Col>
             <Col md={8}>

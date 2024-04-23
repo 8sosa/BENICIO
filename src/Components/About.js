@@ -15,15 +15,15 @@ export default function About () {
   return (
     <>
       <Container className='page'>
-        <section className='aboutHero'>
-          <div className='aboutHeroContent'>
+        <Row className='aboutHero'>
+          <Col className='aboutHeroContent' xs={5}>
             <li className='topListBox'><span className='homeHeroText1'>About Us</span></li>
             <h1 className='heroHeader'>Know About Us</h1>
             <p>Benicio's journey is fuelled by a passion for solving the national water crisis.</p>
-          </div>
-          <div className='aboutHeroImg'>
-          </div>
-        </section>
+          </Col>
+          <Col className='aboutHeroImg' xs={7}>
+          </Col>
+        </Row>
         <section className='aboutContent'>
           <Row>
             <Col xs={6}>
@@ -185,7 +185,6 @@ export default function About () {
           <div className='greenCard'>
             <p className='greenCardText'>Contact Us</p>
             <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service? Contact Us</h1>
-            <p className='greenCardText2'>Lorem Ipsum is simply dummy text of the printin typesetting  dummy text ever  when an unknown printer took a galley of type and scrambled  a type specimen book. </p>
             <button href='/teams' className='contactUsBtn'>Contact Us</button>
           </div>
         </section>

@@ -17,7 +17,7 @@ import Pic4 from './Images/pic4.png'
 import Pic5 from './Images/pic5.png'
 import Pic6 from './Images/pic6.png'
 import Pic7 from './Images/pic7.png'
-import Pic15 from './Images/pic15.jpg'
+import Pic54 from './Images/pic54.jpg'
 import Pic19 from './Images/pic19.png'
 import Pic17 from './Images/pic17.png'
 import Pic20 from './Images/pic20.png'
@@ -93,7 +93,7 @@ export default function Home () {
             <h1 className='heroHeader'>The Best solution to <span className='blueish2'>your</span> water problems  </h1>
             <p className='heroHeadertext'>Providing water solutions by pioneering the installation of advance treatment plants to transform lives through sustainable water solutions</p>
             <div className='d-flex flex-row'>
-              <a href='/contact-us'><button className='contactBtnHome1'>About Us</button></a>
+              <a href="/About-Us"><button className='contactBtnHome1'>About Us</button></a>
               <div className='d-flex flex-row align-items-center'>
                   <div className='transCardFooterIcon3'><FaPlay /></div>
                   <p className='homeHeroText'>Watch our Videos</p>
@@ -123,7 +123,7 @@ export default function Home () {
         <section className='aboutContent'>
           <Row>
             <Col xs={6} className='mrCol'>
-              <img src={Pic15} alt='water pump' className='aboutPicBox'/>
+              <img src={Pic54} alt='water pump' className='homePicBox'/>
             </Col>
             <Col xs={5}>
               <p className='textgrey'>About Us</p>
@@ -193,14 +193,14 @@ export default function Home () {
                 </Col>
               </Nav>
             </Row>
-            <Tab.Content>
+            <Tab.Content className='cPan'>
               <Tab.Pane eventKey="first">
               <Row className='ytSection'>
                 <Col>
                   <p className='textgrey'>Our Services</p>
                   <h1 className='homeHeaderText1'>Borehole Drilling & Maintenance</h1>
-                  <p className='greyPgraph'>We handle both survey and borehole drilling. Our expert team conducts thorough surveys to determine the optimal locations for boreholes, ensuring efficient and sustainable water access. From initial assessment to drilling and ongoing maintenance, we are dedicated to delivering reliable and high-quality solutions tailored to meet our clients' specific needs.</p>
-                  <button href='/services' className='contactUsBtn'>Contact Us</button>
+                  <p className='greyPgraph2'>We handle both survey and borehole drilling. Our expert team conducts thorough surveys to determine the optimal locations for boreholes, ensuring efficient and sustainable water access. From initial assessment to drilling and ongoing maintenance, we are dedicated to delivering reliable and high-quality solutions tailored to meet our clients' specific needs.</p>
+                  <a href="/contact-us"><button className='callBtn'>Contact Us</button></a>
                 </Col>
                 <Col>
                   <img src={Pic20} alt='water' className='aboutPicBox' />
@@ -212,8 +212,8 @@ export default function Home () {
                 <Col>
                   <p className='textgrey'>Our Services</p>
                   <h1 className='homeHeaderText1'>Water Treatment Installations</h1>
-                  <p className='greyPgraph'>We have Premium water treatment technology capable of treating various water sources including borehole, well, sea, and sewage water. Our treatments include filters, ultraviolet sterilizers, reverse osmosis media/chemicals, available in different sizes and qualities.</p>
-                  <button href='/services' className='contactUsBtn'>Contact Us</button>
+                  <p className='greyPgraph2'>We have Premium water treatment technology capable of treating various water sources including borehole, well, sea, and sewage water. Our treatments include filters, ultraviolet sterilizers, reverse osmosis media/chemicals, available in different sizes and qualities.</p>
+                  <a href="/contact-us"><button className='callBtn'>Contact Us</button></a>
                 </Col>
                 <Col>
                   <img src={Pic49} alt='water' className='aboutPicBox' />
@@ -225,8 +225,8 @@ export default function Home () {
                 <Col>
                   <p className='textgrey'>Our Services</p>
                   <h1 className='homeHeaderText1'>Water Factory Setup</h1>
-                  <p className='greyPgraph'>We collaborate with manufacturers of sachet and bottle water machines to ensure availability and sustainability in water factory production. We provide affordable, quality machines, and maintenance plans for new and existing water factories nationwide.</p>
-                  <button href='/services' className='contactUsBtn'>Contact Us</button>
+                  <p className='greyPgraph2'>We collaborate with manufacturers of sachet and bottle water machines to ensure availability and sustainability in water factory production. We provide affordable, quality machines, and maintenance plans for new and existing water factories nationwide.</p>
+                  <a href="/contact-us"><button className='callBtn'>Contact Us</button></a>
                 </Col>
                 <Col>
                   <img src={Pic50} alt='water' className='aboutPicBox' />
@@ -238,8 +238,8 @@ export default function Home () {
                 <Col>
                   <p className='textgrey'>Our Services</p>
                   <h1 className='homeHeaderText1'>Community Water Project</h1>
-                  <p className='greyPgraph'>As part of our commitment to achieving SDG Goal Number 6, Benicio Innovations Limited is open to partnerships with individuals, organizations, and governments to deploy our technologies. We offer drilling and installation of water treatment plants to communities across Nigeria.</p>
-                  <button href='/services' className='contactUsBtn'>Contact Us</button>
+                  <p className='greyPgraph2'>As part of our commitment to achieving SDG Goal Number 6, Benicio Innovations Limited is open to partnerships with individuals, organizations, and governments to deploy our technologies. We offer drilling and installation of water treatment plants to communities across Nigeria.</p>
+                  <a href="/contact-us"><button className='callBtn'>Contact Us</button></a>
                 </Col>
                 <Col>
                   <img src={Pic51} alt='water' className='aboutPicBox' />
@@ -260,7 +260,7 @@ export default function Home () {
                     <Card.Body className='cardBody'>
                       <Card.Img variant="top" src={require('./Images/' + product.image)} className='productCardImg'/>
                       <Card.Title className='projectsTitle'>{product.title}</Card.Title>
-                      <div className='callBtn'>Call for price</div>
+                      <a href='/contact-us'><div className='callBtn'>Call for price</div></a>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -281,9 +281,9 @@ export default function Home () {
           <h1 className='whiteHeader'>Our Clients</h1>
           <div className='d-flex flex-row'>
             <img src={Pic4} alt='client' className='clientPic'/>
+            <img src={Pic7} alt='client' className='clientPic'/>
             <img src={Pic5} alt='client' className='clientPic'/>
             <img src={Pic6} alt='client' className='clientPic'/>
-            <img src={Pic7} alt='client' className='clientPic'/>
           </div>
         </section>
         <section className='projectContent'>
@@ -357,7 +357,7 @@ export default function Home () {
         <section>
             <Row>
               <Col sm={6} className='darkbghome'>
-                  <div>
+                  <div className='darkbghomeContent'>
                       <p className='textgrey'>Our Projects</p>
                       <h1 className='whiteHeader'>Featured Projects</h1>
                       <p className='missText2'>With 10 years of experience in the water industry we have a diverse portfolio of clients and projects.</p>
@@ -386,7 +386,7 @@ export default function Home () {
           <div className='greenCard'>
             <li className='topListBoxpurp'><span className='greenCardText'>Contact Us</span></li>
             <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service? Contact Us</h1>
-            <button href='/contact-us' className='contactUsBtn'>Contact Us</button>
+            <a href='/contact-us'><button className='callBtn'>Contact Us</button></a>
           </div>
         </section>
       </Container>

@@ -11,18 +11,18 @@ export default function BenNavbar () {
         <Navbar className='mainNavBar'>
             <div className='topBar'>
                 <div className='topNavContent'>
-                    <div className='d-flex flex-row justify-content-space-between'>
+                    <div className='topNavItems'>
                         <IoLocationOutline className='icons'/>
                         <p className='text1'><span className='bold'>Lagos</span>: 32 Abike Ewegbemi St, Oke Odo, Lagos</p>
                     </div>
                     <div>
                         <p className='text1'><span className='bold'>Akwa Ibom</span>: 11 Grace Bill Road Eket, Akwa- Ibom State</p>
                     </div>
-                    <div className='d-flex flex-row'>
+                    <div className='topNavItems'>
                         <IoMailOutline className='icons'/>
                         <p className='text1'>info.nigeria@beniciogroups.com</p>
                     </div>
-                    <div className='d-flex flex-row'>
+                    <div className='topNavItems'>
                         <IoCallOutline  className='icons'/>
                         <p className='text1'>0803 291 2543</p>
                     </div>
@@ -45,15 +45,13 @@ export default function BenNavbar () {
                         <NavDropdown.Item href="/services">Our Services</NavDropdown.Item>
                         <NavDropdown.Item href="#">Consultation</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href='/testimonials' className='navLink'>Testimonials</Nav.Link>
+                    <Nav.Link href="/ourProjects" className='navLink'>Testimonials</Nav.Link>
                     <NavDropdown title="Teams" id="basic-nav-dropdown" className='navLink'>
                         <NavDropdown.Item href="/teams">Meet out Team</NavDropdown.Item>
                         <NavDropdown.Item href="#">Careers</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
-                <div>
-                    <a href='/contact-us'><button className='contactBtnNav'>Contact Us</button></a>
-                </div>
+                <a href='/contact-us'><button className='contactBtnNav'>Contact Us</button></a>
             </div>
         </Navbar>
     </>
