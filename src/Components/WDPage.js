@@ -88,7 +88,6 @@ export default function WDPage () {
           <div className='greenCard'>
             <p className='greenCardText'>Contact Us</p>
             <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service? Contact Us</h1>
-            <p className='greenCardText2'>Lorem Ipsum is simply dummy text of the printin typesetting  dummy text ever  when an unknown printer took a galley of type and scrambled  a type specimen book. </p>
             <button href='/teams' className='contactUsBtn'>Contact Us</button>
           </div>
         </section>

@@ -10,7 +10,7 @@ import Pic4 from './Images/pic4.png'
 import Pic5 from './Images/pic5.png'
 import Pic6 from './Images/pic6.png'
 import Pic7 from './Images/pic7.png'
-import Pic12 from './Images/pic12.jpg'
+import Pic62 from './Images/pic62.png'
 import Pic46 from './Images/pic46.png'
 
 
@@ -20,7 +20,7 @@ export default function ContactUs () {
         <Container className='page'>
             <section className='aboutHero'>
             <div className='aboutHeroContent'>
-                <li>Contact Us</li>
+                <li className='topListBox'><span className='homeHeroText1'>Contact Us</span></li>
                 <h1 className='heroHeader'>Feel Free to Reach Us</h1>
             </div>
             <div className='contactHeroImg'>
@@ -28,9 +28,9 @@ export default function ContactUs () {
             </section>
             <section className='projectContent'>
                 <Row>
-                    <Col><img src={Pic12} alt='location' className='projectContentImg'/></Col>
+                    <Col><img src={Pic62} alt='location' className='projectContentImg'/></Col>
                     <Col>
-                        <p className='contactTopText'>Let’s Talk</p>
+                        <li className='topListBox'><span className='contactTopText'>Let’s Talk</span></li>
                         <p className='contactTopText1'>Get in touch with us</p>
                         <p className='contactTopText2'>Reach out to us to get your water problems solved.</p>
                         <div className='mt-5'>
@@ -152,7 +152,6 @@ export default function ContactUs () {
             <div className='greenCard'>
                 <p className='greenCardText'>Contact Us</p>
                 <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service? Contact Us</h1>
-                <p className='greenCardText2'>Lorem Ipsum is simply dummy text of the printin typesetting  dummy text ever  when an unknown printer took a galley of type and scrambled  a type specimen book. </p>
                 <button href='/teams' className='contactUsBtn'>Contact Us</button>
             </div>
             </section>
