@@ -188,7 +188,7 @@ export default function Services () {
         <section className='homeContent1'>
           <p className='textgrey'><IoCreateOutline className='yellow'/>The Gallery</p>
           <h1 className='serviceHeaderText'>Check Our Products</h1>
-          <Row md={4}>
+          <Row md={4} className='productSection9'>
             {
               currentCards.map((product) => (
                 <Col>
@@ -297,6 +297,7 @@ export default function Services () {
             <a href='/contact-us'><button className='callBtn'>Contact Us</button></a>
           </div>
         </section>
+        <iframe title='Our Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0736947615487!2d3.2640759757779065!3d6.637770421823248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90a490748365%3A0x18e2c30fe20599bc!2s32%20Abike%20Ewegbemi%20St%2C%20Oke%20Odo%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715103483413!5m2!1sen!2sng" width="100%" height="441" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </Container>
     </>
   )

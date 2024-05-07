@@ -178,6 +178,9 @@ code {
 .cPan {
   width: 100%;
 }
+.productSection9 {
+  width: 100%;
+}
 @media (min-width: 1440px) {
   .mainNavBar{
     width: 100%;
@@ -580,7 +583,7 @@ code {
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: max-content;
   }
   .greyBgText {
@@ -618,7 +621,7 @@ code {
   .missText {
     color: #797979;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     margin: 0px;
   }
@@ -627,8 +630,8 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .missText2 {
     color: #fff;
@@ -638,8 +641,9 @@ code {
     margin-top: 15px;
     margin-bottom: 30px;
   }
-  .aboutpiclogo {
+  .aboutpagelogopic {
     margin-top: 50px;
+    height: 450px;
   }
   .clientsSection {
     background-color: #5845B1;
@@ -1626,7 +1630,7 @@ code {
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     width: max-content;
   }
   .greyBgText {
@@ -1673,8 +1677,8 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .missText2 {
     color: #fff;
@@ -1684,8 +1688,9 @@ code {
     margin-top: 15px;
     margin-bottom: 30px;
   }
-  .aboutpiclogo {
+  .aboutpagelogopic {
     margin-top: 50px;
+    height: 400px;
   }
   .clientsSection {
     background-color: #5845B1;
