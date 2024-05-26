@@ -31,7 +31,7 @@ export default function Teams () {
                     <Card.Body className='d-flex flex-column align-items-center'>
                         <Card.Img variant="top" src={Pic58} />
                         <Card.Title className='teamTitle'>Samuel Sunday Akpadiaha</Card.Title>
-                        <Card.Text className='teamText'>Operation/Project Coordinator Nigeria</Card.Text>
+                        <Card.Text className='teamText'>Head of sales and operations Nigeria</Card.Text>
                     </Card.Body>
                 </Card>
             </a>
@@ -41,7 +41,7 @@ export default function Teams () {
                         <Card.Body className='d-flex flex-column align-items-center'>
                             <Card.Img variant="top" src={Pic59} />
                             <Card.Title className='teamTitle'>Miss Beatrice Alelele</Card.Title>
-                            <Card.Text className='teamText'>Operations Manager Cross - River state</Card.Text>
+                            <Card.Text className='teamText'>Operations Manager Cross- River state</Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -50,7 +50,7 @@ export default function Teams () {
                         <Card.Body className='d-flex flex-column align-items-center'>
                             <Card.Img variant="top" src={Pic42} />
                             <Card.Title className='teamTitle'>Emmanuel Daniel</Card.Title>
-                            <Card.Text className='teamText'>Operations Manager Cross - River state</Card.Text>
+                            <Card.Text className='teamText'>Operational Manager Akwa-Ibom state</Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -68,7 +68,7 @@ export default function Teams () {
                         <Card.Body className='d-flex flex-column align-items-center'>
                             <Card.Img variant="top" src={Pic44} />
                             <Card.Title className='teamTitle'>Israel Willie</Card.Title>
-                            <Card.Text className='teamText'>Operational manager, Akwa-Ibom</Card.Text>
+                            <Card.Text className='teamText'>Operational manager, Cross-River State</Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -90,7 +90,7 @@ export default function Teams () {
             <button href='/teams' className='contactUsBtn'>Contact Us</button>
           </div>
         </section>
-        <iframe title='Our Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0736947615487!2d3.2640759757779065!3d6.637770421823248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90a490748365%3A0x18e2c30fe20599bc!2s32%20Abike%20Ewegbemi%20St%2C%20Oke%20Odo%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715103483413!5m2!1sen!2sng" width="100%" height="441" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title='Our Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0736947615487!2d3.2640759757779065!3d6.637770421823248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90a490748365%3A0x18e2c30fe20599bc!2s32%20Abike%20Ewegbemi%20St%2C%20Oke%20Odo%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715103483413!5m2!1sen!2sng" width="100%" height="300" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </Container>
     </>
   )

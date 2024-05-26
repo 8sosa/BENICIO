@@ -64,15 +64,22 @@ code {
   align-items: flex-start;
   justify-content: space-evenly;
   height: 100%;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  padding-right: 60px;
 }
 .darkbghome {
   background-color: #202D33;
-  padding: 70px !important;
+  height: 100%;
   /* min-height: 400px; */
+}
+.someSection {
+  height: 300px !important;
 }
 .bghome {
   padding: 0px !important;
-  min-height: 450px;
+  height: 100%;
 }
 .purpbghome {
   background-color: #5845B1;
@@ -106,7 +113,6 @@ code {
 }
 .productCardImg {
   height: 250px;
-  object-fit: contain;
 }
 .paginationBtnActive {
   background-color: #5845B1;
@@ -163,15 +169,15 @@ code {
 }
 .read-more-btn {
   background-color: transparent;
-  border: 5px solid #fff;
+  border: 3px solid #fff;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
   color: white;
   font-family: "Inter", sans-serif;
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 35px;
+  font-weight: 700;
   cursor: pointer;
   outline: none;
 }
@@ -180,6 +186,20 @@ code {
 }
 .productSection9 {
   width: 100%;
+}
+.greenCardBtn {
+  margin-top: 20px;
+  background-color: #5845B1;
+  border: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 60px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }
 @media (min-width: 1440px) {
   .mainNavBar{
@@ -466,7 +486,7 @@ code {
   .blackHeader {
     color: #1C2752;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     margin-bottom: 25px;
   }
@@ -525,13 +545,13 @@ code {
   .callBtn {
     background-color: #5845B1;
     border: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 24px;
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     color: #fff;
   }
@@ -584,6 +604,7 @@ code {
     align-items: center;
     padding: 10px;
     margin-bottom: 10px;
+    height: 60px;
     width: max-content;
   }
   .greyBgText {
@@ -636,14 +657,14 @@ code {
   .missText2 {
     color: #fff;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .aboutpagelogopic {
     margin-top: 50px;
-    height: 450px;
+    height: 350px;
   }
   .clientsSection {
     background-color: #5845B1;
@@ -654,6 +675,7 @@ code {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 150px;
   }
   .whiteHeader1 {
     color: #fff;
@@ -665,14 +687,14 @@ code {
   .whiteHeader {
     color: #fff;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     margin: 0px;
   }
   .clientPic {
     margin-top: 20px;
     margin-right: 50px;
-    height: 75px;
+    height: 55px;
   }
   .greenCard {
     padding-top: 60px;
@@ -701,9 +723,9 @@ code {
   .greenCardText1 {
     color: #37393F;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-top: 20px;
     text-align: center;
   }
   .greenCardText2 {
@@ -731,21 +753,31 @@ code {
   }
   .projects {
     padding: 2px;
-    margin: 20px;
+    margin: 10px;
     max-width: fit-content;
     height: fit-content !important;
     min-width: 250px !important;
     text-align: center;
+    border: 0px !important;
+  }
+  .testimonials {
+    padding: 2px;
+    margin: 10px;
+    max-width: fit-content;
+    height: fit-content !important;
+    min-width: 250px !important;
+    text-align: center;
+    border: 1px solid #D2D2D2 !important;
   }
   .teams {
     max-width: fit-content;
-    min-width: 400px;
-    min-height: 350px;
+    width: 280px;
+    height: 380px;
   }
   .teamTitle {
     color: #1C2752;
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 16px !important;
     font-weight: 800;
     margin-top: 20px !important;
   }
@@ -759,7 +791,7 @@ code {
   .projectsTitle {
     color: #1C2752;
     font-family: "Inter", sans-serif;
-    font-size: 15px !important;
+    font-size: 12px !important;
     font-weight: 800;
     margin-top: 20px !important;
   }
@@ -804,7 +836,7 @@ code {
     flex-direction: column;
     padding-left: 300px;
     padding-right: 300px;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 150px;
   }
   .projectContentImg {
@@ -901,6 +933,7 @@ code {
     color: #fff;
     border-radius: 24px;
     padding: 50px;
+    height: 300px;
   }
   .purpCardText1 {
     color: #fff;
@@ -946,11 +979,18 @@ code {
     border-radius: 24px;
     padding: 40px;
     margin-bottom: 35px;
+    height: 410px;
   }
   .transCardFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .transCardFooter1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
   }
   .transCardFooterText {
     color: #000;
@@ -1026,7 +1066,7 @@ code {
     padding-bottom: 20px;
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     font-style: italic;
   }
@@ -1042,12 +1082,21 @@ code {
     padding-bottom: 68px;
     padding-left: 58px;
     padding-right: 58px;
+    height: 750px;
   }
   .contactFormField {
     padding: 20px !important;
     font-family: "Inter", sans-serif !important;
     font-size: 18px !important;
     font-weight: 400;
+    height: 60px;
+  }
+  .contactFormField1 {
+    padding: 20px !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    height: 140px;
   }
   .contactFormBtn {
     width: 100%;
@@ -1060,6 +1109,8 @@ code {
     font-size: 20px !important;
     font-weight: 600;
     margin-top: 45px;
+    height: 65px;
+    width: 460px;
   }
   .tags {
     background-color: #31355D;
@@ -1141,7 +1192,7 @@ code {
   .serviceHeaderText {
     color: #000;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
   }

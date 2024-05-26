@@ -7,20 +7,20 @@
     },
     {
         "id": 2,
-        "image": "pic9.png",
+        "image": "pic71.png",
+        "title": "Bonjour bakery",
+        "location": "Eleme, River State"
+    },
+    {
+        "id": 3,
+        "image": "pic69.png",
         "title": "Eksam tables water eket",
         "location": "Akwa Ibom State"
     },
     {
-        "id": 3,
-        "image": "pic56.png",
+        "id": 4,
+        "image": "pic70.png",
         "title": "Etyaqua tables water",
         "location": "Abak, Akwa Ibom State"
-    },
-    {
-        "id": 4,
-        "image": "pic57.png",
-        "title": "Bonjour bakery",
-        "location": "Eleme, River State"
     }
 ]

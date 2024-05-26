@@ -287,7 +287,7 @@ export default function Home () {
           </div>
         </section>
         <section className='projectContent'>
-          <Row className='mt-5'>
+          <Row>
             <Col>
                 <p className='textgrey'><IoCreateOutline size={25}/>Testimonial</p>
                 <h1 className='blackHeader'>Customers Says</h1>
@@ -309,7 +309,7 @@ export default function Home () {
                     </div>
                   </div>
                   <p className='transCardText'>{currentData.comment}</p>
-                  <div className='transCardFooter'>
+                  <div className='transCardFooter1'>
                     <div className='d-flex flex-row align-items-center'>
                       <div className='transCardFooterIcon1' onClick={handlePrev}><IoIosArrowBack /></div>
                       <div className='transCardFooterIcon2' onClick={handleNext}><IoIosArrowForward /></div>
@@ -347,7 +347,7 @@ export default function Home () {
                         <Form.Control className='contactFormField' type="text" placeholder="Location" />
                     </Form.Group>
                     <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
-                        <Form.Control className='contactFormField' as="textarea" rows={3} placeholder="What water problem are you facing?"/>
+                        <Form.Control className='contactFormField1' as="textarea" rows={3} placeholder="What water problem are you facing?"/>
                     </Form.Group>
                     <button className='contactFormBtn'>Submit</button>
                 </Form>
@@ -355,7 +355,7 @@ export default function Home () {
           </Row>
         </section>
         <section>
-            <Row>
+            <Row className='someSection'>
               <Col sm={6} className='darkbghome'>
                   <div className='darkbghomeContent'>
                       <p className='textgrey'>Our Projects</p>
@@ -385,11 +385,11 @@ export default function Home () {
         <section className='d-flex flex-column align-items-center'>
           <div className='greenCard'>
             <li className='topListBoxpurp'><span className='greenCardText'>Contact Us</span></li>
-            <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service? Contact Us</h1>
-            <a href='/contact-us'><button className='callBtn'>Contact Us</button></a>
+            <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service?</h1>
+            <a href='/contact-us'><button className='greenCardBtn'>Contact Us</button></a>
           </div>
         </section>
-        <iframe title='Our Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0736947615487!2d3.2640759757779065!3d6.637770421823248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90a490748365%3A0x18e2c30fe20599bc!2s32%20Abike%20Ewegbemi%20St%2C%20Oke%20Odo%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715103483413!5m2!1sen!2sng" width="100%" height="441" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title='Our Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0736947615487!2d3.2640759757779065!3d6.637770421823248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90a490748365%3A0x18e2c30fe20599bc!2s32%20Abike%20Ewegbemi%20St%2C%20Oke%20Odo%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715103483413!5m2!1sen!2sng" width="100%" height="300" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </Container>
     </>
   )
