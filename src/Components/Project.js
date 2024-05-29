@@ -2,15 +2,15 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Col, Container, Row} from 'react-bootstrap';
 
-import Pic4 from './Images/pic4.png'
-import Pic5 from './Images/pic5.png'
-import Pic6 from './Images/pic6.png'
-import Pic7 from './Images/pic7.png'
-import Pic9 from './Images/pic9.png'
-import Pic10 from './Images/pic10.png'
+
+import testimonialData from './Testimonials.json'
+import Pic55 from './Images/pic55.png'
 
 
 export default function Project () {
+
+    const currentCards = testimonialData;
+
   return (
     <>
       <Container className='page'>
@@ -41,7 +41,7 @@ export default function Project () {
                         <p className='greyBackText2'>Video</p>
                     </div>
                 </Col>
-                <Col xs={9}><img src={Pic10} alt='location' className='projectContentImg'/></Col>
+                <Col xs={9}><img src={Pic55} alt='location' className='projectContentImg'/></Col>
             </Row>
             <div className='projectContent1'>
                 <h1 className='blackHeader'>Project Description</h1>
@@ -65,52 +65,24 @@ export default function Project () {
             </div>
             <div>
                 <h1 className='blackHeader'>Related Projects</h1>
-                <Row md={3}>
-                    <Col>
-                        <Card className='projects'>
-                            <Card.Body className='d-flex flex-column align-items-center'>
-                                <Card.Img variant="top" src={Pic9} />
-                                <Card.Title className='projectsTitle'>Water treatment project</Card.Title>
-                                <Card.Text className='projectsText'>House,  Office</Card.Text>
+                <Row md={4}>
+                    {
+                    currentCards.map((testimonial) => (
+                        <Col>
+                        <a href='/testimonials'>
+                            <Card className='testimonials'>
+                            <Card.Body className='cardBody'>
+                                <Card.Img variant="top" src={require('./Images/' + testimonial.image)} className='productCardImg'/>
+                                <Card.Title className='projectsTitle'>{testimonial.title}</Card.Title>
+                                <Card.Text className='projectsText'>{testimonial.location}</Card.Text>
                             </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card className='projects'>
-                            <Card.Body className='d-flex flex-column align-items-center'>
-                                <Card.Img variant="top" src={Pic9} />
-                                <Card.Title className='projectsTitle'>Water treatment project</Card.Title>
-                                <Card.Text className='projectsText'>House,  Office</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card className='projects'>
-                            <Card.Body className='d-flex flex-column align-items-center'>
-                                <Card.Img variant="top" src={Pic9} />
-                                <Card.Title className='projectsTitle'>Water treatment project</Card.Title>
-                                <Card.Text className='projectsText'>House,  Office</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                            </Card>
+                        </a>
+                        </Col>
+                    ))
+                    }
                 </Row>
             </div>
-        </section>
-        <section className='clientsSection'>
-          <h1 className='whiteHeader'>Our Clients</h1>
-          <div className='d-flex flex-row'>
-            <img src={Pic4} alt='client' className='clientPic'/>
-            <img src={Pic5} alt='client' className='clientPic'/>
-            <img src={Pic6} alt='client' className='clientPic'/>
-            <img src={Pic7} alt='client' className='clientPic'/>
-          </div>
-        </section>
-        <section className='d-flex flex-column align-items-center'>
-          <div className='greenCard'>
-            <p className='greenCardText'>Contact Us</p>
-            <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service? Contact Us</h1>
-            <button href='/teams' className='contactUsBtn'>Contact Us</button>
-          </div>
         </section>
       </Container>
     </>
