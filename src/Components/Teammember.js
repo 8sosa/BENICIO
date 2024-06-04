@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Col, Container, Row} from 'react-bootstrap';
+import { Breadcrumb, Col, Container, Row} from 'react-bootstrap';
 import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
 import Pic61 from './Images/pic61.png'
@@ -16,6 +16,12 @@ export default function Teammember () {
                 <h1 className='projectTitle'>Samuel Sunday Akpadiaha</h1>
             </div>
         </section>
+        <Breadcrumb>
+            <Breadcrumb.Item href="/teams">
+                <p className='breadcrumbText'>Team</p>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item active><p className='breadcrumbText'>Samuel Sunday Akpadiaha</p></Breadcrumb.Item>
+        </Breadcrumb>
         <section className='projectContent'>
             <Row xs={2}>
                 <Col xs={5}><img src={Pic61} alt='location' className='projectContentImg'/></Col>

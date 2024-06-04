@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Col, Container, Row} from 'react-bootstrap';
+import { Breadcrumb, Card, Col, Container, Row} from 'react-bootstrap';
 
 
 import testimonialData from './Testimonials.json'
@@ -20,6 +20,12 @@ export default function Project () {
                 <h1 className='projectTitle'>Marygoal International School</h1>
             </div>
         </section>
+        <Breadcrumb>
+            <Breadcrumb.Item href="/ourProjects" >
+                <p className='breadcrumbText'>Testimonials</p>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item active><p className='breadcrumbText'>Marygoal International School</p></Breadcrumb.Item>
+        </Breadcrumb>
         <section className='projectContent'>
             <Row xs={2}>
                 <Col xs={3} className='greyBack'>

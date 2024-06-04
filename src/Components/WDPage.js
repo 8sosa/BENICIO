@@ -77,11 +77,11 @@ export default function WDPage () {
         </section>
         <section className='clientsSection'>
           <h1 className='whiteHeader'>Our Clients</h1>
-          <div className='d-flex flex-row'>
+         <div className='d-flex flex-row'>
             <img src={Pic4} alt='client' className='clientPic'/>
-            <img src={Pic5} alt='client' className='clientPic'/>
-            <img src={Pic6} alt='client' className='clientPic'/>
             <img src={Pic7} alt='client' className='clientPic'/>
+            <img src={Pic6} alt='client' className='clientPic'/>
+            <img src={Pic5} alt='client' className='clientPic'/>
           </div>
         </section>
         <section className='d-flex flex-column align-items-center'>

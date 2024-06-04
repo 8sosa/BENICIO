@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Container, Row, Col, Form, Nav, Tab  } from 'react-bootstrap';
+import { Card, Container, Row, Col, Nav, Tab  } from 'react-bootstrap';
 
-import { IoCallOutline, IoCreateOutline } from "react-icons/io5";
+import { IoCreateOutline } from "react-icons/io5";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import { RiDoubleQuotesL } from "react-icons/ri";
-import { FaPlay } from "react-icons/fa";
 import {ReactComponent as Aicon} from './Icons/a.svg'
 import {ReactComponent as Bicon} from './Icons/b.svg'
 import {ReactComponent as Cicon} from './Icons/c.svg'
@@ -23,41 +21,13 @@ import Pic49 from './Images/pic49.png'
 import Pic50 from './Images/pic50.png'
 import Pic51 from './Images/pic51.png'
 
-const testimonials = [
-  {
-    "id": 1,
-    "image": require("./Images/pic46.png"),
-    "name": "Mrs. Esther Oladimeji",
-    "location": "Yaba, Lagos",
-    "comment": "Their services were excellent, my water had issues with coloring and smell...Benicio group solved my water problems instantly. Currently, we use the water to cook in my household. Thank you Benicio!!"
-  },
-  {
-    "id": 2,
-    "image": require("./Images/pic52.png"),
-    "name": "Mr. Muhammed Ibrahim",
-    "location": "Ikeja, Lagos",
-    "comment": "I’ve not had issues with our water filters since they were serviced by Benicio Groups, excellent work and very nice customer service."
-  }
-];
-
 export default function Services () {
 
   const [activeKey, setActiveKey] = useState('first');
 
   const handleSelect = (key) => {
     setActiveKey(key);
-  };
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const currentData = testimonials[currentIndex];
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
-  };
+  };  
 
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 8;
@@ -136,7 +106,7 @@ export default function Services () {
                   <p className='textgrey'>Our Services</p>
                   <h1 className='homeHeaderText1'>Borehole Drilling & Maintenance</h1>
                   <p className='greyPgraph2'>We handle both survey and borehole drilling. Our expert team conducts thorough surveys to determine the optimal locations for boreholes, ensuring efficient and sustainable water access. From initial assessment to drilling and ongoing maintenance, we are dedicated to delivering reliable and high-quality solutions tailored to meet our clients' specific needs.</p>
-                  <a href="/contact-us"><button className='callBtn'>Contact Us</button></a>
+                  <a href="/contact-us"><button className='greenCardBtn'>Contact Us</button></a>
                 </Col>
                 <Col>
                   <img src={Pic20} alt='water' className='aboutPicBox' />
@@ -149,7 +119,7 @@ export default function Services () {
                   <p className='textgrey'>Our Services</p>
                   <h1 className='homeHeaderText1'>Water Treatment Installations</h1>
                   <p className='greyPgraph2'>We have Premium water treatment technology capable of treating various water sources including borehole, well, sea, and sewage water. Our treatments include filters, ultraviolet sterilizers, reverse osmosis media/chemicals, available in different sizes and qualities.</p>
-                  <a href="/contact-us"><button className='callBtn'>Contact Us</button></a>
+                  <a href="/contact-us"><button className='greenCardBtn'>Contact Us</button></a>
                 </Col>
                 <Col>
                   <img src={Pic49} alt='water' className='aboutPicBox' />
@@ -162,7 +132,7 @@ export default function Services () {
                   <p className='textgrey'>Our Services</p>
                   <h1 className='homeHeaderText1'>Water Factory Setup</h1>
                   <p className='greyPgraph2'>We collaborate with manufacturers of sachet and bottle water machines to ensure availability and sustainability in water factory production. We provide affordable, quality machines, and maintenance plans for new and existing water factories nationwide.</p>
-                  <a href="/contact-us"><button className='callBtn'>Contact Us</button></a>
+                  <a href="/contact-us"><button className='greenCardBtn'>Contact Us</button></a>
                 </Col>
                 <Col>
                   <img src={Pic50} alt='water' className='aboutPicBox' />
@@ -175,7 +145,7 @@ export default function Services () {
                   <p className='textgrey'>Our Services</p>
                   <h1 className='homeHeaderText1'>Community Water Project</h1>
                   <p className='greyPgraph2'>As part of our commitment to achieving SDG Goal Number 6, Benicio Innovations Limited is open to partnerships with individuals, organizations, and governments to deploy our technologies. We offer drilling and installation of water treatment plants to communities across Nigeria.</p>
-                  <a href="/contact-us"><button className='callBtn'>Contact Us</button></a>
+                  <a href="/contact-us"><button className='greenCardBtn'>Contact Us</button></a>
                 </Col>
                 <Col>
                   <img src={Pic51} alt='water' className='aboutPicBox' />
@@ -213,88 +183,20 @@ export default function Services () {
             <button onClick={() => paginate(currentPage + 1)} disabled={currentCards.length < cardsPerPage} className='paginationBtn'><IoIosArrowForward /></button>
           </div>
         </section>
-        <section className='projectContent'>
-          <Row className='mt-5'>
-            <Col>
-                <p className='textgrey'><IoCreateOutline size={25}/>Testimonial</p>
-                <h1 className='blackHeader'>Customers Says</h1>
-                <div className='transCard'>
-                  <div className='transCardFooter'>
-                    <div className='d-flex flex-row align-items-center'>
-                      <div className='proPicBox'>
-                        <img src={currentData.image} className='propic' alt='profile pic' />
-                      </div>
-                      <div xs={'auto'}>
-                          <p className='contactTopText3'>{currentData.name}</p>
-                          <p className='contactTopText2'>{currentData.location}</p>
-                      </div>
-                    </div>
-                    <div className='p-3'>
-                      <div className='grey-Bg'>
-                        <RiDoubleQuotesL className='purple'/>
-                      </div>
-                    </div>
-                  </div>
-                  <p className='transCardText'>{currentData.comment}</p>
-                  <div className='transCardFooter'>
-                    <div className='d-flex flex-row align-items-center'>
-                      <div className='transCardFooterIcon1' onClick={handlePrev}><IoIosArrowBack /></div>
-                      <div className='transCardFooterIcon2' onClick={handleNext}><IoIosArrowForward /></div>
-                    </div>
-                    <div className='d-flex flex-row align-items-center'>
-                      <div className='transCardFooterIcon3'><FaPlay /></div>
-                      <p className='transCardFooterText'>Customer review</p>
-                    </div>
-                  </div>
-                </div>
-                <div className='purpCard'>
-                    <p className='textgrey'><IoCreateOutline className='yellow'/>Any Question</p>
-                    <p className='purpCardText1'>99.9% Customer Satisfation Based</p>
-                    <p className='purpCardText2'>If you have any questions or need help contacting us, please call</p>
-                    <div className='d-flex flex-row align-items-center'>
-                        <div className='purpCardIcon'><IoCallOutline /></div>
-                        <p className='purpCardText3'>08032912543</p>
-                    </div>
-                </div>
-            </Col>
-            <Col>
-                <p className='textgrey'><IoCreateOutline size={25}/>Meet Us</p>
-                <h1 className='blackHeader'>Appointment Form</h1>
-                <Form className='contactForm'>
-                    <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                        <Form.Control className='contactFormField' type="text" placeholder="Your Name" />
-                    </Form.Group>
-                    <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                        <Form.Control className='contactFormField' type="email" placeholder="Email Address" />
-                    </Form.Group>
-                    <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                        <Form.Control className='contactFormField' type="tel" placeholder="Phone Number" />
-                    </Form.Group>
-                    <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                        <Form.Control className='contactFormField' type="text" placeholder="Location" />
-                    </Form.Group>
-                    <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
-                        <Form.Control className='contactFormField' as="textarea" rows={3} placeholder="What water problem are you facing?"/>
-                    </Form.Group>
-                    <button className='contactFormBtn'>Submit</button>
-                </Form>
-            </Col>
-          </Row>
-        </section>
         <section className='clientsSection'>
           <h1 className='whiteHeader'>Our Clients</h1>
-          <div className='d-flex flex-row'>
+         <div className='d-flex flex-row'>
             <img src={Pic4} alt='client' className='clientPic'/>
-            <img src={Pic5} alt='client' className='clientPic'/>
-            <img src={Pic6} alt='client' className='clientPic'/>
             <img src={Pic7} alt='client' className='clientPic'/>
+            <img src={Pic6} alt='client' className='clientPic'/>
+            <img src={Pic5} alt='client' className='clientPic'/>
           </div>
         </section>
         <section className='d-flex flex-column align-items-center'>
           <div className='greenCard'>
             <li className='topListBoxpurp'><span className='greenCardText'>Contact Us</span></li>
             <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service?</h1>
-            <a href='/contact-us'><button className='callBtn'>Contact Us</button></a>
+            <a href='/contact-us'><button className='greenCardBtn'>Contact Us</button></a>
           </div>
         </section>
         <iframe title='Our Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0736947615487!2d3.2640759757779065!3d6.637770421823248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90a490748365%3A0x18e2c30fe20599bc!2s32%20Abike%20Ewegbemi%20St%2C%20Oke%20Odo%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715103483413!5m2!1sen!2sng" width="100%" height="300" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
