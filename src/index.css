@@ -2362,7 +2362,7 @@ code {
     object-fit: cover; /* Scale the image while preserving its aspect ratio */
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .mainNavBar{
     width: 100%;
     display: flex;
