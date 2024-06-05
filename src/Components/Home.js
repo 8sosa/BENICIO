@@ -120,12 +120,13 @@ export default function Home () {
           </Col>
         </Row>
         <section className='aboutContent'>
-          <Row>
+          <Row className='mrsCol'>
             <Col md={6} className='mrCol'>
+              <div className='phantom'><p className='textgrey'>About Us</p></div>
               <img src={Pic20} alt='water pump' className='homePicBox'/>
             </Col>
             <Col md={5}>
-              <p className='textgrey'>About Us</p>
+            <div className='ghost'><p className='textgrey'>About Us</p></div>
               <h1 className='homeHeaderText1'>We Provide Water Solutions</h1>
               <p className='greyPgraph'>As a social enterprise, our services include community water projects, Borehole Drilling & Maintenance, Water Treatment Installations, and Water Factory Setup (Bottles & Sachet). We have been dedicated to the water treatment industry, and our success lies in consistently delivering appropriate, reliable, and cost-effective solutions to various challenges within this specialized water sector.</p>
               <p className='greyPgraph'>At Benicio innovations Limited, we ensure our treatment plants meets WHO and NAFDAC standards for drinking water by prioritize the cultivation of enduring business relationships, emphasizing communication, innovation, and excellence.</p>
@@ -138,7 +139,7 @@ export default function Home () {
                   <li className='greyPgraph1'>Solving Global Water Crisis</li>
                   <li className='greyPgraph1'>Developing Solutions to Nigeria’s Water Shortage</li>
                   <li className='greyPgraph1'>Supporting Global Health Impact</li>
-                  <li className='greyPgraph12'>Aliquam id ante suscipi fringilla.</li>
+                  <li className='greyPgraph1'>Aliquam id ante suscipi fringilla.</li>
                 </ul>
               </div>
             </Col>
@@ -357,7 +358,7 @@ export default function Home () {
         </section>
         <section className='ghost'>
             <Row className='someSection'>
-              <Col sm={6} className='darkbghome'>
+              <Col sm={12} md={6} className='darkbghome'>
                   <div className='darkbghomeContent'>
                       <p className='textgrey'>Our Projects</p>
                       <h1 className='whiteHeader'>Featured Projects</h1>
@@ -365,7 +366,7 @@ export default function Home () {
                       <button href='/services' className='contactBtnNav'><p className='bold m-0 p-0'>More Projects</p></button>
                   </div>
               </Col>
-              <Col sm={3} className='bghome'>
+              <Col sm={6} md={3} className='bghome'>
                 <div className="image-container">
                   <img src={Pic19} alt='service' className='homeePicBox'/>
                   <div className="overlay">
@@ -373,7 +374,7 @@ export default function Home () {
                   </div>
                 </div>
               </Col>
-              <Col sm={3} className='bghome'>
+              <Col sm={6} md={3} className='bghome'>
                 <div className="image-container">
                   <img src={Pic17} alt='service' className='homeePicBox'/>
                   <div className="overlay">
@@ -383,14 +384,41 @@ export default function Home () {
               </Col>
             </Row>
         </section>
-        <div className='ghost'>
-          <section className=' d-flex flex-column align-items-center'>
+        <section className='phantom'>
+            <Row className='someSection'>
+              <Col className='bghome'>
+                <div className="image-container">
+                  <img src={Pic19} alt='service' className='homeePicBox'/>
+                  <div className="overlay">
+                      <button className="read-more-btn">Read More</button>
+                  </div>
+                </div>
+              </Col>
+              <Col className='bghome'>
+                <div className="image-container">
+                  <img src={Pic17} alt='service' className='homeePicBox'/>
+                  <div className="overlay">
+                      <button className="read-more-btn">Read More</button>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+            <div className='darkbghome'>
+                  <div className='darkbghomeContent'>
+                      <p className='textgrey'>Our Projects</p>
+                      <h1 className='whiteHeader'>Featured Projects</h1>
+                      <p className='missText2'>With 10 years of experience in the water industry we have a diverse portfolio of clients and projects.</p>
+                      <button href='/services' className='contactBtnNav'><p className='bold m-0 p-0'>More Projects</p></button>
+                  </div>
+            </div>
+        </section>
+        <section className=' d-flex flex-column align-items-center'>
           <div className='greenCard'>
             <li className='topListBoxpurp'><span className='greenCardText'>Contact Us</span></li>
             <h1 className='greenCardText1'>Need An Experienced <span className='white'>Professional</span> Service?</h1>
             <a href='/contact-us'><button className='greenCardBtn'>Contact Us</button></a>
           </div>
-        </section></div>
+        </section>
         <iframe title='Our Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0736947615487!2d3.2640759757779065!3d6.637770421823248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90a490748365%3A0x18e2c30fe20599bc!2s32%20Abike%20Ewegbemi%20St%2C%20Oke%20Odo%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715103483413!5m2!1sen!2sng" className='googleMaps' width="100%" height="300" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </Container>
     </>

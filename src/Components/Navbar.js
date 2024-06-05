@@ -4,6 +4,7 @@ import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
 
 import { IoLocationOutline, IoMailOutline, IoCallOutline, IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
+import { CiMenuBurger } from "react-icons/ci";
 import Logo from './Images/Logo.png'
 
 export default function BenNavbar () {
@@ -36,8 +37,12 @@ export default function BenNavbar () {
                 </div>
             </div>
             <div className='bottomBar'>
-                <Navbar.Brand href="#home"> <img src={Logo} alt='logo' /> </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" className='ghost'/>
+                <div className='mobileMenuBottom'>
+                    <Navbar.Brand href="#home"> <img src={Logo} alt='logo' /> </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className='navbar-toggler'>
+                        <span className='menuToggle'><CiMenuBurger /></span>
+                    </Navbar.Toggle>
+                </div>
                 <Navbar.Collapse id="responsive-navbar-nav" className='responsive-navbar-nav'>
                     <Nav className='navLinks'>
                         <Nav.Link href='/' className='navLink'>Home</Nav.Link>
