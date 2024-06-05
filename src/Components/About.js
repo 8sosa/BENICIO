@@ -25,10 +25,10 @@ export default function About () {
           </Col>
         </Row>
         <section className='aboutContent'>
-          <Row>
-            <Col xs={6}>
+          <Row className='mrsCol2'>
+            <Col md={6}>
               <div className='aboutContBox'>
-                <p className='textgrey'>Welcome to Benicio Group</p>
+                <div className='ghost'><p className='textgrey'>Welcome to Benicio Group</p></div>
                 <h1 className='blackHeader'>Our Story</h1>
                 <p className='greyPgraph'>
                   Benicio's journey is fuelled by a passion for solving the national water crisis. The cases of several deaths and hospitalization of citizens due to diarrhoea and several other water-borne diseases is our drive. Our commitment is evident through partnerships with esteemed institutions like  National Association of Proprietors of Private schools (NAPPS) 
@@ -79,7 +79,8 @@ export default function About () {
                 </div>
               </div>
             </Col>
-            <Col xs={6}>
+            <Col md={6} className='mrCol'>
+              <div className='phantom'><p className='textgrey'>Welcome to Benicio Group</p></div>
               <div className='aboutPicBox'>
                 <img src={Pic2} alt='person' className='aboutPicBoxpic'/>
               </div>

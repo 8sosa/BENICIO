@@ -24,7 +24,7 @@ export default function OurProjects () {
           </div>
         </section>
         <section className='projectsContent'>
-        <Row md={4}>
+        <Row sm={2} md={4}>
             {
               currentCards.map((testimonial) => (
                 <Col>

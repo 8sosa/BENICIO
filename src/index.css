@@ -2574,6 +2574,10 @@ code {
     height: 100%;
     margin-top: 20px;
   }
+  .aboutPicBoxpic {
+    width: 100%;
+    height: 100%;
+  }
   .hpasb{
     display: flex;
     flex-direction: column;
@@ -2739,6 +2743,15 @@ code {
     color: #FFB342;
     font-size: 20px;
   }
+  .projectsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   .projects {
     padding: 2px;
     margin-bottom: 10px;
@@ -2747,6 +2760,15 @@ code {
     min-width: 150px !important;
     text-align: center;
     border: 0px !important;
+  }
+  .testimonials {
+    padding: 2px;
+    margin-bottom: 10px;
+    max-width: fit-content;
+    height: fit-content !important;
+    min-width: 150px !important;
+    text-align: center;
+    border: 1px solid #D2D2D2 !important;
   }
   .cardBody {
     display: flex;
@@ -2766,6 +2788,13 @@ code {
     font-size: 8px !important;
     font-weight: 800;
     margin-top: 10px !important;
+  }
+  .projectsText {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    margin: 0px;
   }
   .callBtn {
     background-color: #5845B1;
@@ -3201,6 +3230,10 @@ code {
   .mrsCol {
     display: flex;
   }
+  .mrsCol2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .aboutContent {
     display: flex;
     flex-direction: column;
@@ -3244,5 +3277,71 @@ code {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .aboutpagelogopic {
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+  }
+  .greyBg {
+    background-color: #F2F2F2;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: max-content;
+  }
+  .greyBgText {
+    color: #797979;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .checkIcon {
+    background-color: transparent;
+    border: 2px solid #6B77E5;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 2px;
+    margin-right: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutBtnBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .contactUsBtn {
+    background-color: #5845B1;
+    border: 0px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .aboutTextdark {
+    color: #1C2752;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #1C2752;
+    margin: 0px;
+  }
+  .aboutTextPurp {
+    color: #5845B1;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0px;
   }
 }
