@@ -53,7 +53,7 @@ export default function ContactUs () {
                                 </div>
                                 <div xs={'auto'}>
                                     <p className='contactTopText2'>Email</p>
-                                    <p className='contactTopText3'>Info@Beniciogroups.com</p>
+                                    <p className='contactTopText3'>info.nigeria@beniciogroups.com</p>
                                 </div>
                             </div>
                             <div className='d-flex flex-row align-items-center'>
