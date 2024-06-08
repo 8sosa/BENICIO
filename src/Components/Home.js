@@ -93,7 +93,7 @@ export default function Home () {
             <p className='heroHeadertext'>Providing water solutions by pioneering the installation of advance treatment plants to transform lives through sustainable water solutions</p>
             <div className='d-flex flex-row'>
               <a href="/About-Us"><button className='contactBtnHome1'>About Us</button></a>
-              <div className='d-flex flex-row align-items-center'>
+              <div className='d-none flex-row align-items-center'>
                   <div className='transCardFooterIcon3'><FaPlay /></div>
                   <p className='homeHeroText'>Watch our Videos</p>
               </div>
@@ -288,7 +288,7 @@ export default function Home () {
         </section>
         <section className='projectContent'>
           <Row className='customerFormSection'>
-            <Col className='someCol'>
+            <Col md={5} className='someCol'>
                 <p className='textgrey'><IoCreateOutline size={25}/>Testimonial</p>
                 <h1 className='blackHeader'>Customers Says</h1>
                 <div className='transCard'>
@@ -314,7 +314,7 @@ export default function Home () {
                       <div className='transCardFooterIcon1' onClick={handlePrev}><IoIosArrowBack /></div>
                       <div className='transCardFooterIcon2' onClick={handleNext}><IoIosArrowForward /></div>
                     </div>
-                    <div className='d-flex flex-row align-items-center'>
+                    <div className='d-none flex-row align-items-center'>
                       <div className='transCardFooterIcon3'><FaPlay /></div>
                       <p className='transCardFooterText'>Customer review</p>
                     </div>
@@ -330,7 +330,7 @@ export default function Home () {
                     </div>
                 </div>
             </Col>
-            <Col className='someCol'>
+            <Col md={7} className='someCol'>
                 <p className='textgrey'><IoCreateOutline size={25}/>Meet Us</p>
                 <h1 className='blackHeader'>Appointment Form</h1>
                 {/* <div className='d-flex justify-content-center'> */}
@@ -363,14 +363,14 @@ export default function Home () {
                       <p className='textgrey'>Our Projects</p>
                       <h1 className='whiteHeader'>Featured Projects</h1>
                       <p className='missText2'>With 10 years of experience in the water industry we have a diverse portfolio of clients and projects.</p>
-                      <button href='/services' className='contactBtnNav'><p className='bold m-0 p-0'>More Projects</p></button>
+                      <a href="/ourProjects"><button className='contactBtnNav'><p className='bold m-0 p-0'>More Projects</p></button></a>
                   </div>
               </Col>
               <Col sm={6} md={3} className='bghome'>
                 <div className="image-container">
                   <img src={Pic19} alt='service' className='homeePicBox'/>
                   <div className="overlay">
-                      <button className="read-more-btn">Read More</button>
+                    <a href='/testimonials'><button className="read-more-btn" href='/testimonials'>Read More</button></a>
                   </div>
                 </div>
               </Col>
@@ -378,7 +378,7 @@ export default function Home () {
                 <div className="image-container">
                   <img src={Pic17} alt='service' className='homeePicBox'/>
                   <div className="overlay">
-                      <button className="read-more-btn">Read More</button>
+                    <a href='/testimonials'><button className="read-more-btn" href='/testimonials'>Read More</button></a>
                   </div>
                 </div>
               </Col>

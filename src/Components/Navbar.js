@@ -30,10 +30,10 @@ export default function BenNavbar () {
                     </div>
                 </div>
                 <div className='follow'>
-                    <IoLogoInstagram className='white'/>
-                    <IoLogoFacebook className='white'/>
-                    <IoLogoTwitter className='white'/>
-                    <FaLinkedinIn className='white'/>
+                    <a href='https://www.instagram.com/benicioinnovations?igsh=MXZhZDhjeTJodWw5aw==' target="_blank" rel="noopener noreferrer"><IoLogoInstagram className='white'/></a>
+                    <a href='https://m.facebook.com/people/Benicio-Innovations-Limited/61557395136407/' target="_blank" rel="noopener noreferrer"><IoLogoFacebook className='white'/></a>
+                    <a href='https://twitter.com/BIL2DEWORLD' target="_blank" rel="noopener noreferrer"><IoLogoTwitter className='white'/></a>
+                    <a href='https://www.linkedin.com/company/benicio-innovations-limited/' target="_blank" rel="noopener noreferrer"><FaLinkedinIn className='white'/></a>
                 </div>
             </div>
             <div className='bottomBar'>
@@ -53,7 +53,7 @@ export default function BenNavbar () {
                         </NavDropdown>
                         <Nav.Link href="/ourProjects" className='navLink'>Testimonials</Nav.Link>
                         <NavDropdown title="Teams" id="basic-nav-dropdown" className='navLink'>
-                            <NavDropdown.Item href="/teams">Meet out Team</NavDropdown.Item>
+                            <NavDropdown.Item href="/teams">Meet our Team</NavDropdown.Item>
                             <NavDropdown.Item href="#">Careers</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>

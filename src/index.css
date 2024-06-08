@@ -61,7 +61,7 @@ code {
 }
 .text1{
   font-family: "Inter", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   color: #fff;
   margin: 0px;
@@ -117,6 +117,9 @@ code {
   flex-direction: column;
   align-items: center;
   margin-right: 40px;
+}
+.navbar-nav .nav-link.show {
+  color: initial;
 }
 .topListBox {
   list-style-type: square;  
@@ -241,6 +244,15 @@ code {
 }
 .phantom {
   display: none;
+}
+.customerFormSection{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 50px !important;
+  width: 100%;
+  margin-bottom: 50px;
+  height: fit-content;
 }
 @media (min-width: 1440px) {
   .mainNavBar{
@@ -448,7 +460,7 @@ code {
     padding-right: 30px;
     padding-bottom: 50px;
     border-radius: 25px;
-    width: 100%;
+    width: fit-content;
   }
   .footerList {
     list-style: none;
@@ -462,8 +474,9 @@ code {
   }
   .footerListItem {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
+    padding-bottom: 5px;
   }
   .footerListItemBold {
     font-family: "Inter", sans-serif;
@@ -540,6 +553,7 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 12px;
     font-weight: 400;
+    text-align: justify
   }
   .greyPgraph1 {
     color: #7E7E7E;
@@ -554,6 +568,7 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 400;
+    text-align: justify;
   }
   .greyPgraph12 {
     color: #7E7E7E;
@@ -970,7 +985,7 @@ code {
     color: #fff;
     border-radius: 24px;
     padding: 50px !important;
-    height: 300px;
+    height: fit-content;
   }
   .purpCardText1 {
     color: #fff;
@@ -1016,7 +1031,7 @@ code {
     border-radius: 24px;
     padding: 40px;
     margin-bottom: 35px;
-    height: 410px;
+    height: fit-content;
   }
   .transCardFooter {
     display: flex;
@@ -1119,7 +1134,7 @@ code {
     padding-bottom: 68px;
     padding-left: 58px;
     padding-right: 58px;
-    height: 750px;
+    height: fit-content;
   }
   .contactFormField {
     padding: 20px !important;
@@ -1133,7 +1148,7 @@ code {
     font-family: "Inter", sans-serif !important;
     font-size: 18px !important;
     font-weight: 400;
-    height: 140px;
+    max-height: 240px;
   }
   .contactFormBtn {
     width: 100%;
@@ -1147,7 +1162,6 @@ code {
     font-weight: 600;
     margin-top: 45px;
     height: 65px;
-    width: 460px;
   }
   .tags {
     background-color: #31355D;
@@ -1182,6 +1196,11 @@ code {
   }
   .mrCol {
     margin-right: 30px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .mrCol1 {
     padding: 0px;
     width: 100%;
     height: 100%;
@@ -1242,7 +1261,7 @@ code {
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: justify;
     width: 55%;
   }
   .teamtext7 {
@@ -1344,8 +1363,14 @@ code {
     flex-direction: row;
     justify-content: space-around;
   }
+  .topNavItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .icons {
     color: #40DDB6;
+    margin-right: 10px;
   }
   .topNavContent {
     display: flex;
@@ -1356,7 +1381,7 @@ code {
   .follow {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 10%;
   }
   .bottomBar {
@@ -1379,24 +1404,33 @@ code {
   }
   .navLink {
     font-family: "Inter", sans-serif;
-    font-size: 12px !important;
-    font-weight: 400 !important;
+    font-size: 10px !important;
+    font-weight: 400;
     background-color: transparent;
     border-radius: 50px !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
     color: #37393F;
-  }
+    }
   .navLink:hover, .navLink:focus {
     background-color: #5845B1;
     border-radius: 50px !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
     color: #fff !important;
+  }
+  .navLink .nav-link {
+    color: black;
+  }
+  .navLink:hover .nav-link {
+    color: white;
+  }
+  .navLink .nav-link.active {
+    color: white;
   }
   .dropdown-toggle {
     color: #000;
@@ -1404,16 +1438,6 @@ code {
     font-size: 16px;
     padding: 0px !important;
     margin: 0px !important;
-  }
-  .dropdown-toggle:hover {
-    color: #fff !important;
-  }
-  .dropdown-toggle:focus {
-    background-color: #5845B1 !important;
-    border-radius: 50px !important;
-    padding-left: 30px !important;
-    padding-right: 30px !important;
-    color: #fff !important;
   }
   .contactBtnHome {
     background-color: #40DDB6;
@@ -1455,14 +1479,16 @@ code {
   .contactBtnNav {
     background-color: #5845B1;
     border: 0px;
-    width: 175px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 47px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 60px;
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     color: #fff;
+    width: fit-content;
   }
   .contactBtnNav:hover {
     background-color: #40DDB7;
@@ -1524,7 +1550,7 @@ code {
     padding-right: 30px;
     padding-bottom: 50px;
     border-radius: 25px;
-    width: 100%;
+    width: fit-content;
   }
   .footerList {
     list-style: none;
@@ -1538,8 +1564,9 @@ code {
   }
   .footerListItem {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
+    padding-bottom: 5px;
   }
   .footerListItemBold {
     font-family: "Inter", sans-serif;
@@ -1549,17 +1576,20 @@ code {
   .aboutHero {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100vw !important;
   }
   .aboutHeroContent {
     background-color: #5845B1;
-    padding: 150px;
+    padding: 100px !important;
     color: #fff;
+  }
+  .aboutHeroCarousel {
+    padding: 0px !important;
   }
   .heroHeadertext {
     color: #B9B9B9;
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -1567,7 +1597,7 @@ code {
   .heroHeader {
     color: #fff;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 800;
   }
   .aboutHeroImg {
@@ -1593,42 +1623,47 @@ code {
     background-color: #F4F4F4;
     color: #1C2752;
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     width: max-content;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .blackHeader {
     color: #1C2752;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     margin-bottom: 25px;
-  }
-  .greyPgraph2 {
-    color: #7E7E7E;
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
   }
   .greyPgraph {
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
+    text-align: justify
   }
   .greyPgraph1 {
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 400;
     margin-bottom: 15px;
     list-style-type: none;
   }
+  .greyPgraph2 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+  }
   .greyPgraph12 {
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 400;
     list-style-type: none;
   }
@@ -1660,18 +1695,15 @@ code {
   .callBtn {
     background-color: #5845B1;
     border: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 24px;
     font-family: "Inter", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .contactUsBtn {
     background-color: #5845B1;
@@ -1721,7 +1753,8 @@ code {
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    height: 60px;
     width: max-content;
   }
   .greyBgText {
@@ -1750,7 +1783,7 @@ code {
   .missText {
     color: #797979;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     margin: 0px;
   }
@@ -1759,20 +1792,20 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .missText2 {
     color: #fff;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .aboutpagelogopic {
     margin-top: 50px;
-    height: 400px;
+    height: 350px;
   }
   .clientsSection {
     background-color: #5845B1;
@@ -1783,6 +1816,7 @@ code {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 150px;
   }
   .whiteHeader1 {
     color: #fff;
@@ -1794,18 +1828,24 @@ code {
   .whiteHeader {
     color: #fff;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     margin: 0px;
   }
   .clientPic {
-    margin: 50px;
-    height: 75px;
+    margin-top: 20px;
+    margin-right: 50px;
+    height: 55px;
   }
   .greenCard {
-    padding: 100px;
-    margin: 100px;
-    width: 60vw;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 18.7%;
+    margin-right: 18.7%;
     background-color: #40DDB6;
     border-radius: 25px;
     display: flex;
@@ -1818,14 +1858,15 @@ code {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 25px;
+    margin-left: -15px;
     text-align: center;
   }
   .greenCardText1 {
     color: #37393F;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-top: 20px;
     text-align: center;
   }
   .greenCardText2 {
@@ -1853,20 +1894,31 @@ code {
   }
   .projects {
     padding: 2px;
-    margin: 20px;
+    margin: 10px;
     max-width: fit-content;
-    height: 300px;
+    height: fit-content !important;
     min-width: 250px !important;
+    text-align: center;
+    border: 0px !important;
+  }
+  .testimonials {
+    padding: 2px;
+    margin: 10px;
+    max-width: fit-content;
+    height: fit-content !important;
+    min-width: 250px !important;
+    text-align: center;
+    border: 1px solid #D2D2D2 !important;
   }
   .teams {
     max-width: fit-content;
-    min-width: 400px;
-    min-height: 350px;
+    width: 280px;
+    height: 380px;
   }
   .teamTitle {
     color: #1C2752;
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 16px !important;
     font-weight: 800;
     margin-top: 20px !important;
   }
@@ -1880,15 +1932,14 @@ code {
   .projectsTitle {
     color: #1C2752;
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 12px !important;
     font-weight: 800;
     margin-top: 20px !important;
-    text-align: center;
   }
   .projectsText {
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     margin: 0px;
   }
@@ -1926,12 +1977,13 @@ code {
     flex-direction: column;
     padding-left: 300px;
     padding-right: 300px;
-    padding-top: 150px;
+    padding-top: 20px;
     padding-bottom: 150px;
   }
   .projectContentImg {
     width: 100%;
-    height: 100%;
+    height: 560px;
+    object-fit: cover;
   }
   .greyBackText {
     color: #1C2752;
@@ -2022,7 +2074,8 @@ code {
     background-color: #5845B1;
     color: #fff;
     border-radius: 24px;
-    padding: 50px;
+    padding: 50px !important;
+    height: fit-content;
   }
   .purpCardText1 {
     color: #fff;
@@ -2068,11 +2121,18 @@ code {
     border-radius: 24px;
     padding: 40px;
     margin-bottom: 35px;
+    height: fit-content;
   }
   .transCardFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .transCardFooter1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
   }
   .transCardFooterText {
     color: #000;
@@ -2148,7 +2208,7 @@ code {
     padding-bottom: 20px;
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     font-style: italic;
   }
@@ -2164,12 +2224,21 @@ code {
     padding-bottom: 68px;
     padding-left: 58px;
     padding-right: 58px;
+    height: fit-content;
   }
   .contactFormField {
     padding: 20px !important;
     font-family: "Inter", sans-serif !important;
     font-size: 18px !important;
     font-weight: 400;
+    height: 60px;
+  }
+  .contactFormField1 {
+    padding: 20px !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    max-height: 240px;
   }
   .contactFormBtn {
     width: 100%;
@@ -2182,6 +2251,7 @@ code {
     font-size: 20px !important;
     font-weight: 600;
     margin-top: 45px;
+    height: 65px;
   }
   .tags {
     background-color: #31355D;
@@ -2216,6 +2286,14 @@ code {
   }
   .mrCol {
     margin-right: 30px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .mrCol1 {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
   }
   .homeContent {
     padding-top: 125px;
@@ -2226,13 +2304,9 @@ code {
     flex-direction: column;
     align-items: center;
   }
-  .hppst {
-    margin-bottom: 3rem;
-  }
   .tag0.active {
     background-color: #fff;
     padding: 10px;
-    margin-right: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2240,20 +2314,18 @@ code {
   }
   .tag0 {
     background-color: transparent;
-    padding: 10px;
-    margin-right: 20px;
     border: 1px solid #1C2752;
+    padding: 5px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     height: 60px;
-  }
+  }  
   .ytSection {
     background-color: #fff;
     padding: 40px;
     margin-top: 40px !important;
-    margin-left: 18.75% !important;
-    margin-right: 18.75% !important;
     box-shadow: 0px 0px 4.8px 0px rgba(216,216,216,1);
   }
   .homeContent1 {
@@ -2269,7 +2341,7 @@ code {
   .serviceHeaderText {
     color: #000;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -2279,8 +2351,8 @@ code {
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 20px;
-    text-align: center;
-    width: 40%;
+    text-align: justify;
+    width: 55%;
   }
   .teamtext7 {
     color: #1C2752;
@@ -2348,10 +2420,10 @@ code {
     width: 150px;
   }
   .carouselImg {
-    width: 100%;
-    padding-top: 61.3%; /* 16:9 aspect ratio */
-    position: relative;
-    overflow: hidden;
+      width: 100%;
+      padding-top: 61.3%; /* 16:9 aspect ratio */
+      position: relative;
+      overflow: hidden;
   }
   .carouselImg img {
     position: absolute;
@@ -2556,7 +2628,7 @@ code {
     margin-right: 10px;
     width: 50px;
   }
-  .mrCol {
+  .mrCol , .mrCol1 {
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -2870,6 +2942,7 @@ code {
     margin-top: 50px !important;
     width: 100%;
     margin-bottom: 50px;
+    height: fit-content;
   }
   .someCol {
     margin: 20px !important;

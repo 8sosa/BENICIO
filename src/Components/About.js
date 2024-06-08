@@ -16,12 +16,12 @@ export default function About () {
     <>
       <Container className='page'>
         <Row className='aboutHero'>
-          <Col className='aboutHeroContent' xs={5}>
+          <Col className='aboutHeroContent' md={5}>
             <li className='topListBox'><span className='homeHeroText1'>About Us</span></li>
             <h1 className='heroHeader'>Know About Us</h1>
             <p>Benicio's journey is fuelled by a passion for solving the national water crisis.</p>
           </Col>
-          <Col className='aboutHeroImg' xs={7}>
+          <Col className='aboutHeroImg' md={7}>
           </Col>
         </Row>
         <section className='aboutContent'>
@@ -79,7 +79,7 @@ export default function About () {
                 </div>
               </div>
             </Col>
-            <Col md={6} className='mrCol'>
+            <Col md={6} className='mrCol1'>
               <div className='phantom'><p className='textgrey'>Welcome to Benicio Group</p></div>
               <div className='aboutPicBox'>
                 <img src={Pic2} alt='person' className='aboutPicBoxpic'/>
