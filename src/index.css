@@ -337,10 +337,10 @@ code {
   .navLink .nav-link {
     color: #37393F;
   }
-  .navLink:hover .nav-link {
+  .navLink:hover, .nav-link:hover {
     color: white;
   }
-  .navLink .nav-link.active {
+  .navLink, .nav-link.active {
     color: white;
   }
   .dropdown-toggle {
@@ -3324,6 +3324,7 @@ code {
     height: fit-content !important;
     display: flex;
     flex-direction: row;
+    width: 103vw;
   }
   .missText2 {
     color: #fff;
@@ -3420,5 +3421,19 @@ code {
   .projectContent {
     display: flex;
     justify-content: center;
-}
+  }
+  .read-more-btn {
+    background-color: transparent;
+    border: 3px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
 }
