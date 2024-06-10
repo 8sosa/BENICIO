@@ -139,7 +139,7 @@ export default function Home () {
                   <li className='greyPgraph1'>Solving Global Water Crisis</li>
                   <li className='greyPgraph1'>Developing Solutions to Nigeria’s Water Shortage</li>
                   <li className='greyPgraph1'>Supporting Global Health Impact</li>
-                  <li className='greyPgraph1'>Aliquam id ante suscipi fringilla.</li>
+                  <li className='greyPgraph1'>Solving Client Water Problems</li>
                 </ul>
               </div>
             </Col>
