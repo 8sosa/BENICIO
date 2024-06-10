@@ -335,7 +335,7 @@ code {
     color: #fff !important;
   }
   .navLink .nav-link {
-    color: black;
+    color: #37393F;
   }
   .navLink:hover .nav-link {
     color: white;
@@ -1425,7 +1425,7 @@ code {
     color: #fff !important;
   }
   .navLink .nav-link {
-    color: black;
+    color: #37393F;
   }
   .navLink:hover .nav-link {
     color: white;
@@ -2535,7 +2535,7 @@ code {
     padding-right: 30px !important;
   }
   .navLink .nav-link {
-    color: black;
+    color: #37393F;
   }
   .navLink:hover .nav-link {
     color: white;
@@ -2638,8 +2638,8 @@ code {
     align-items: flex-start;
   }
   .homePicBox {
-    width: 350px ;
-    height: 230px;
+    width: 100%;
+    height: auto;
   }
   .aboutPicBox {
     padding: 0px;
@@ -3324,7 +3324,6 @@ code {
     height: fit-content !important;
     display: flex;
     flex-direction: row;
-    width: 100%;
   }
   .missText2 {
     color: #fff;
@@ -3418,4 +3417,8 @@ code {
     font-weight: 800;
     margin: 0px;
   }
+  .projectContent {
+    display: flex;
+    justify-content: center;
+}
 }
