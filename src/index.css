@@ -15,6 +15,11 @@ a{
   color: #fff;
   text-decoration: underline !important;
 }
+.marginBottom {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem !important;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -2835,7 +2840,7 @@ code {
     border: 0px !important;
   }
   .testimonials {
-    padding: 2px;
+    padding: 10px;
     margin-bottom: 10px;
     max-width: fit-content;
     height: fit-content !important;
@@ -3346,7 +3351,7 @@ code {
     padding-right: 20px;
   }
   .projectContent1 {
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -3420,7 +3425,9 @@ code {
   }
   .projectContent {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .read-more-btn {
     background-color: transparent;
@@ -3435,5 +3442,170 @@ code {
     font-weight: 700;
     cursor: pointer;
     outline: none;
+  }
+  .teams {
+    max-width: fit-content;
+    width: 165px;
+    padding: 10px !important;
+    margin-bottom: 20px;
+    height: fit-content;
+  }
+  .teamTitle {
+    color: #1C2752;
+    font-family: "Inter", sans-serif;
+    font-size: 12px !important;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 10px !important;
+    margin-bottom: 3px !important;
+  }
+  .teamText {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 10px !important;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+  }
+  .card-body {
+    padding: 0px !important;
+  }
+  .projectTitleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+    background-color: #37393F;
+  }
+  .projectTitle {
+    font-family: 'VerdanaBold', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+  }
+  .breadcrumb {
+    display: none !important;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+    padding-left: 300px !important;
+  }
+  .breadcrumbText {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #727272;
+    text-decoration: underline;
+    text-wrap: nowrap;
+  }
+  .mobileGreyBg {
+    margin: 20px !important;
+    padding: 10px !important;
+    background-color: #F4F4F4;
+  }
+  .projectContentImg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .teamtext7 {
+    color: #1C2752;
+    font-family: 'VerdanaBold', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+  .teamtext4 {
+    color: #1C2752;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .teamtext5 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .teamtext6 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 4px;
+    margin-bottom: 50px;
+  }
+  .contactBtn {
+    background-color: #5845B1;
+    border: 0px;
+    width: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 47px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .sectionMargin {
+    margin: 20px !important;
+  }
+  .sectionPadding1 {
+    padding: 20px !important;
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .sectionPadding {
+    padding: 20px !important;
+  }
+  .marginBottom {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px !important;
+  }
+  .greyBackText {
+    color: #1C2752;
+    font-family: 'VerdanaBold', sans-serif;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .styledLine {
+    border-top: 3px solid #FFB342;
+    margin-bottom: 20px;
+  }
+  .styledLine1 {
+    border-top: 1px solid #D2D2D2;
+    margin-bottom: 20px;
+  }
+  .greyBackText1 {
+    color: #1C2752;
+    font-family: 'VerdanaBold', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    padding-bottom: 3px;
+    margin: 0px;
+  }
+  .greyBackText2 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .greyBack {
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 10px !important;
   }
 }

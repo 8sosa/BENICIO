@@ -27,8 +27,8 @@ export default function Project () {
             <Breadcrumb.Item active><p className='breadcrumbText'>Marygoal International School</p></Breadcrumb.Item>
         </Breadcrumb>
         <section className='projectContent'>
-            <Row xs={2}>
-                <Col xs={3} className='greyBack'>
+            <Row md={2} className='sectionPadding1'>
+                <Col md={3} className='greyBack'>
                     <div className='greyBack'>
                         <h1 className='greyBackText'>Project Information</h1>
                         <Row>
@@ -47,8 +47,9 @@ export default function Project () {
                         <p className='greyBackText2'>Video</p>
                     </div>
                 </Col>
-                <Col xs={9}><img src={Pic55} alt='location' className='projectContentImg'/></Col>
+                <Col md={9} className='d-flex justify-content-center p-0'><img src={Pic55} alt='location' className='projectContentImg'/></Col>
             </Row>
+            <div className='sectionMargin'>
             <div className='projectContent1'>
                 <h1 className='blackHeader'>Project Description</h1>
                 <br />
@@ -88,6 +89,7 @@ export default function Project () {
                     ))
                     }
                 </Row>
+            </div>
             </div>
         </section>
       </Container>
