@@ -27,7 +27,7 @@ export default function ContactUs () {
             </div>
             </section>
             <section className='projectContent'>
-                <Row className='space'>
+                <Row xs={1} md={2} className='space'>
                     <Col><img src={Pic62} alt='location' className='projectContentImg'/></Col>
                     <Col>
                         <li className='topListBox'><span className='contactTopText'>Let’s Talk</span></li>
@@ -69,11 +69,10 @@ export default function ContactUs () {
                                 </div>
                             </div>
                         </div>
-                        <div></div>
                     </Col>
                 </Row>
-                <Row className='mt-5'>
-                    <Col>
+                <Row className='space1 mt-5'>
+                    <Col className='someCol1'>
                         <p className='textgrey'><IoCreateOutline />Testimonial</p>
                         <h1 className='blackHeader'>Customers Says</h1>
                         <div className='transCard'>
@@ -115,7 +114,7 @@ export default function ContactUs () {
                             </div>
                         </div>
                     </Col>
-                    <Col>
+                    <Col className='someCol1'>
                         <p className='textgrey'><IoCreateOutline />Meet Us</p>
                         <h1 className='blackHeader'>Appointment Form</h1>
                         <Form className='contactForm'>

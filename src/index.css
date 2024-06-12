@@ -31,6 +31,10 @@ body {
 .space {
   margin-top: 100px !important;
   margin-bottom: 100px !important;
+  width: 100%;
+}
+.space1 {
+  width: 100%;
 }
 .breadcrumb {
   font-family: "Inter", sans-serif;
@@ -2954,6 +2958,10 @@ code {
     margin: 20px !important;
     width: fit-content !important;
   }
+  .someCol1 {
+    margin-bottom: 20px !important;
+    width: fit-content !important;
+  }
   .blackHeader {
     color: #1C2752;
     font-family: "VerdanaBold", sans-serif;
@@ -3157,7 +3165,7 @@ code {
   }
   .purple {
     color: #5845B1;
-    font-size: 30px;
+    font-size: 11px;
   }
   .ghost {
     display: none;
@@ -3595,7 +3603,7 @@ code {
   .greyBackText2 {
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     border-bottom: 1px solid #D2D2D2;
     padding-bottom: 15px;
@@ -3605,7 +3613,58 @@ code {
     background-color: #F4F4F4;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
     margin-top: 10px !important;
+  }
+  .space1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .space {
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+    width: 100%;
+  }
+  .projectContent {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contactTopText {
+    color: #37393F;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: start;
+  }
+  .topListBox {
+    list-style-type: square;  
+    color: #40DDB6;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .contactTopText1 {
+    color: #37393F;
+    font-family: "VerdanaBold", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: start;
+  }
+  .contactTopText2 {
+    color: #7E7E7E;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .contactTopText3 {
+    color: #37393F;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    text-align: start;
   }
 }
