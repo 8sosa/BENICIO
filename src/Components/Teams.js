@@ -57,15 +57,6 @@ export default function Teams () {
                 <Col>
                     <Card className='teams'>
                         <Card.Body className='d-flex flex-column align-items-center'>
-                            <Card.Img variant="top" src={Pic43} />
-                            <Card.Title className='teamTitle'>Dr Charity Enaku</Card.Title>
-                            <Card.Text className='teamText'>Microbiologist</Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className='teams'>
-                        <Card.Body className='d-flex flex-column align-items-center'>
                             <Card.Img variant="top" src={Pic44} />
                             <Card.Title className='teamTitle'>Israel Willie</Card.Title>
                             <Card.Text className='teamText'>Operational manager, Cross-River State</Card.Text>
