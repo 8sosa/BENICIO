@@ -9,7 +9,6 @@ import Pic7 from './Images/pic7.png'
 import Pic58 from './Images/pic58.png'
 import Pic59 from './Images/pic59.png'
 import Pic42 from './Images/pic42.png'
-import Pic43 from './Images/pic43.png'
 import Pic44 from './Images/pic44.png'
 
 
