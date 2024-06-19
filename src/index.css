@@ -2493,7 +2493,9 @@ code {
     display: flex;
     flex-direction: column;
     padding: 0px !important;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   .mobile-fixed-top {
     position: fixed !important;
