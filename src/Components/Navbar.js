@@ -10,7 +10,7 @@ import Logo from './Images/Logo.png'
 export default function BenNavbar () {
   return (
     <>
-        <Navbar collapseOnSelect expand="lg" className='mainNavBar'>
+        <Navbar collapseOnSelect expand="lg" className='mainNavBar mobile-fixed-top'>
             <div className='topBar'>
                 <div className='topNavContent'>
                     <div className='topNavItems'>
@@ -49,7 +49,7 @@ export default function BenNavbar () {
                         <Nav.Link href="/About-Us" className='navLink'>About Us</Nav.Link>
                         <NavDropdown className='navLink' title="Services">
                             <NavDropdown.Item href="/services">Our Services</NavDropdown.Item>
-                            <NavDropdown.Item href="#">Consultation</NavDropdown.Item>
+                            <NavDropdown.Item href="/Consultations">Consultation</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/ourProjects" className='navLink'>Testimonials</Nav.Link>
                         <NavDropdown title="Teams" id="basic-nav-dropdown" className='navLink'>

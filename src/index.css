@@ -264,6 +264,25 @@ code {
   margin-bottom: 50px;
   height: fit-content;
 }
+.accordion {
+  --bs-accordion-active-color: none !important;
+  --bs-accordion-active-bg: none !important;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.05rem #9E9E9E !important;
+}
+.accordion-header {
+  font-family: "Inter", sans-serif;
+  font-size: 15px !important;
+  font-weight: 400;
+  color: #9E9E9E;
+}
+.accordionItemBox {
+  background-color: #F8F8F8 !important;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px !important;
+  font-weight: 400;
+  color: #9E9E9E;
+}
 @media (min-width: 1440px) {
   .mainNavBar{
     width: 100%;
@@ -812,6 +831,11 @@ code {
     background-size: cover;
     width: 100%;
   }
+  .ConsultationsHeroImg {
+    background-image: url('./Components/Images/Pic73.png');
+    background-size: cover;
+    width: 100%;
+  }
   .projects {
     padding: 2px;
     margin: 10px;
@@ -1064,6 +1088,13 @@ code {
   }
   .homeHeroText1 {
     color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  .homeHeroText2 {
+    color: #37393F;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -1902,6 +1933,11 @@ code {
     background-size: cover;
     width: 100%;
   }
+  .ConsultationsHeroImg {
+    background-image: url('./Components/Images/Pic73.png');
+    background-size: cover;
+    width: 100%;
+  }
   .projects {
     padding: 2px;
     margin: 10px;
@@ -2154,6 +2190,13 @@ code {
   }
   .homeHeroText1 {
     color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  .homeHeroText2 {
+    color: #37393F;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -2452,6 +2495,21 @@ code {
     padding: 0px !important;
     position: relative;
   }
+  .mobile-fixed-top {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+  }
+  body {
+    margin: 0;
+    padding-top: 210px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   .topBar{
     width: 100%;
     background-color: #37393F;
@@ -2514,7 +2572,7 @@ code {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    background-color: #fff;
   }
   .navLinks {
     width: fit-content;
@@ -2581,6 +2639,13 @@ code {
   }
   .homeHeroText1 {
     color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+  .homeHeroText2 {
+    color: #37393F;
     font-family: "Inter", sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -3666,5 +3731,21 @@ code {
     font-weight: 500;
     margin-bottom: 0px;
     text-align: start;
+  }
+  .subBtn {
+    background-color: #6B77E5;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
 }

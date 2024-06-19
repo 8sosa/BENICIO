@@ -5,6 +5,7 @@ import NavBar from './Navbar'
 import Footer from './Footer'
 import About from './About'
 import OurProjects from './OurProjects'
+import Consultations from './Consultations'
 import Project from './Project'
 import ContactUs from './ContactUs'
 import Home from './Home'
@@ -24,6 +25,7 @@ export default function BenicioRouter() {
                 <Route path = "/services" element={<Services/>} exact/>
                 <Route path = "/ourProjects" element={<OurProjects/>} exact/>
                 <Route path = "/testimonials" element={<Project/>} exact/>
+                <Route path = "/Consultations" element={<Consultations/>} exact/>
                 <Route path = "/teams" element={<Teams />} exact/>
                 <Route path = "/teammember" element={<Teammember />} exact/>
                 <Route path = "/contact-us" element={<ContactUs/>} exact/>
