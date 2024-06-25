@@ -70,7 +70,7 @@ export default function About () {
                     </Col>
                   </Row>
                 </div>
-                <div className='aboutBtnBox'>
+                <div className='ghost aboutBtnBox'>
                   <a href='/contact'><button className='contactUsBtn'>Contact Us</button></a>
                   <div>
                     <p className='aboutTextdark'>For Emergency Fixing or Appointment</p>
@@ -83,6 +83,15 @@ export default function About () {
               <div className='phantom'><p className='textgrey'>Welcome to Benicio Group</p></div>
               <div className='aboutPicBox'>
                 <img src={Pic2} alt='person' className='aboutPicBoxpic'/>
+              </div>
+              <div className='phantom mt-5'>
+                <div className='aboutBtnBox'>
+                  <a href='/contact'><button className='contactUsBtn'>Contact Us</button></a>
+                  <div>
+                    <p className='aboutTextdark'>For Emergency Fixing or Appointment</p>
+                    <p className='aboutTextPurp'>08032912543</p>
+                  </div>
+                </div>
               </div>
             </Col>
           </Row>

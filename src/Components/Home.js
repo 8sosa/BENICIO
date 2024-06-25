@@ -87,7 +87,7 @@ export default function Home () {
     <>
       <Container className='page'>
         <Row className='aboutHero'>
-          <Col className='aboutHeroContent' md={5}>
+          <Col className='aboutHeroContent' lg={4}>
             <li className='topListBox'><span className='homeHeroText1'>Welcome to Benicio Groups</span></li>
             <h1 className='heroHeader'>The Best solution to <span className='blueish2'>your</span> water problems  </h1>
             <p className='heroHeadertext'>Providing water solutions by pioneering the installation of advance treatment plants to transform lives through sustainable water solutions</p>
@@ -99,7 +99,7 @@ export default function Home () {
               </div>
             </div>
           </Col>
-          <Col md={7} className='aboutHeroCarousel'>
+          <Col lg={8} className='aboutHeroCarousel'>
             <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
               <Carousel.Item>
                 <div className='carouselImg'>
@@ -130,7 +130,7 @@ export default function Home () {
               <h1 className='homeHeaderText1'>We Provide Water Solutions</h1>
               <p className='greyPgraph'>As a social enterprise, our services include community water projects, Borehole Drilling & Maintenance, Water Treatment Installations, and Water Factory Setup (Bottles & Sachet). We have been dedicated to the water treatment industry, and our success lies in consistently delivering appropriate, reliable, and cost-effective solutions to various challenges within this specialized water sector.</p>
               <p className='greyPgraph'>At Benicio innovations Limited, we ensure our treatment plants meets WHO and NAFDAC standards for drinking water by prioritize the cultivation of enduring business relationships, emphasizing communication, innovation, and excellence.</p>
-              <div className='hpasb mt-4'>
+              <div className='hpasb mt-4 ghost'>
                 <div className='graybg'>
                   <p className='graybgtext'>10</p>
                   <p className='graybgtext1'>Years Of Experience</p>
@@ -144,6 +144,20 @@ export default function Home () {
               </div>
             </Col>
           </Row>
+          <div className='phantom'>
+            <div className='hpasb mt-4'>
+              <div className='graybg'>
+                <p className='graybgtext'>10</p>
+                <p className='graybgtext1'>Years Of Experience</p>
+              </div>
+              <ul>
+                <li className='greyPgraph1'>Solving Global Water Crisis</li>
+                <li className='greyPgraph1'>Developing Solutions to Nigeria’s Water Shortage</li>
+                <li className='greyPgraph1'>Supporting Global Health Impact</li>
+                <li className='greyPgraph1'>Solving Client Water Problems</li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section className='homeContent'>
           <h1 className='serviceHeaderText'>Professional Services</h1>
@@ -252,7 +266,7 @@ export default function Home () {
         <section className='homeContent1'>
           <p className='textgrey'><IoCreateOutline className='yellow'/>The Gallery</p>
           <h1 className='serviceHeaderText'>Check Our Products</h1>
-          <Row sm={2} md={4} className='mt-2'>
+          <Row sm={2} lg={3} xxl={4} className='mt-2'>
             {
               currentCards.map((product) => (
                 <Col>
@@ -288,7 +302,7 @@ export default function Home () {
         </section>
         <section className='projectContent'>
           <Row className='customerFormSection'>
-            <Col md={5} className='someCol'>
+            <Col xxl={5} className='someCol'>
                 <p className='textgrey'><IoCreateOutline size={25}/>Testimonial</p>
                 <h1 className='blackHeader'>Customers Says</h1>
                 <div className='transCard'>
@@ -330,7 +344,7 @@ export default function Home () {
                     </div>
                 </div>
             </Col>
-            <Col md={7} className='someCol'>
+            <Col xxl={6} className='someCol'>
                 <p className='textgrey'><IoCreateOutline size={25}/>Meet Us</p>
                 <h1 className='blackHeader'>Appointment Form</h1>
                 {/* <div className='d-flex justify-content-center'> */}

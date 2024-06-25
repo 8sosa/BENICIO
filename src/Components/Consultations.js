@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Accordion } from 'react-bootstrap';
+import { Button, Container, Form, Row, Col, Accordion } from 'react-bootstrap';
 
 import Pic4 from './Images/pic4.png'
 import Pic5 from './Images/pic5.png'
@@ -30,7 +30,10 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="0">
                         <Accordion.Header>Does your water have taste, odour or color?</Accordion.Header>
                         <Accordion.Body>
-                        Contact Benicio!
+                          <div className='d-flex'>
+                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                          </div>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -38,7 +41,10 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="1">
                         <Accordion.Header>Are you currently consuming the water?</Accordion.Header>
                         <Accordion.Body>
-                        Contact Benicio!
+                          <div className='d-flex'>
+                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                          </div>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -46,7 +52,7 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="2">
                         <Accordion.Header>What is your water source?</Accordion.Header>
                         <Accordion.Body>
-                        Contact Benicio!
+                          <Form.Control as="textarea" />
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -54,7 +60,7 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="3">
                         <Accordion.Header>Have you run any tests before on your water supply? If yes, Share the results</Accordion.Header>
                         <Accordion.Body>
-                        Contact Benicio!
+                          <Form.Control as="textarea" />
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -62,7 +68,7 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="4">
                         <Accordion.Header>Do you have a treatment system?</Accordion.Header>
                         <Accordion.Body>
-                        Contact Benicio!
+                          <Form.Control as="textarea" />
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -70,7 +76,10 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="5">
                         <Accordion.Header>Do you have any technician who currently maintains your water treatment, if yes why did you discontinue with the company?</Accordion.Header>
                         <Accordion.Body>
-                        Contact Benicio!
+                          <div className='d-flex'>
+                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                          </div>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -78,7 +87,10 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="6">
                         <Accordion.Header>Are you currently using a surface pump?</Accordion.Header>
                         <Accordion.Body>
-                        Contact Benicio!
+                          <div className='d-flex'>
+                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                          </div>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -86,7 +98,10 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="7">
                         <Accordion.Header>Are you sharing your water source?</Accordion.Header>
                         <Accordion.Body>
-                        Contact Benicio!
+                          <div className='d-flex'>
+                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                          </div>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>

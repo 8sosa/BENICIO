@@ -72,7 +72,7 @@ export default function Project () {
             </div>
             <div>
                 <h1 className='blackHeader'>Related Projects</h1>
-                <Row md={4}>
+                <Row sm={3} lg={3} xxl={4}>
                     {
                     currentCards.map((testimonial) => (
                         <Col>

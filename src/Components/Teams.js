@@ -34,7 +34,7 @@ export default function Teams () {
                     </Card.Body>
                 </Card>
             </a>
-            <Row md={4} className='mt-5'>
+            <Row md={3} className='mt-5'>
                 <Col>
                     <Card className='teams'>
                         <Card.Body className='d-flex flex-column align-items-center'>

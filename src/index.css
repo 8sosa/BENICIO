@@ -76,6 +76,9 @@ code {
   margin: 0px;
   text-wrap: nowrap;
 }
+.width100 {
+  max-width: 100%;
+}
 .page {
   margin: 0px !important;
   padding: 0px !important;
@@ -1386,6 +1389,12 @@ code {
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .greyBack {
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
   .mainNavBar{
     width: 100%;
     display: flex;
@@ -1401,8 +1410,9 @@ code {
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
   }
   .topNavItems {
     display: flex;
@@ -1418,6 +1428,7 @@ code {
     flex-direction: row;
     justify-content: space-evenly;
     width: 90%;
+    justify-content: center;
   }
   .follow {
     display: flex;
@@ -1427,8 +1438,8 @@ code {
   }
   .bottomBar {
     width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -1445,7 +1456,7 @@ code {
   }
   .navLink {
     font-family: "Inter", sans-serif;
-    font-size: 10px !important;
+    font-size: 12px !important;
     font-weight: 400;
     background-color: transparent;
     border-radius: 50px !important;
@@ -1545,8 +1556,8 @@ code {
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 18.75%;
-    padding-right: 18.75%;
+    padding-left: 13.75%;
+    padding-right: 13.75%;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -1605,7 +1616,7 @@ code {
   }
   .footerListItem {
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     padding-bottom: 5px;
   }
@@ -1621,7 +1632,7 @@ code {
   }
   .aboutHeroContent {
     background-color: #5845B1;
-    padding: 100px !important;
+    padding: 50px !important;
     color: #fff;
   }
   .aboutHeroCarousel {
@@ -1630,7 +1641,7 @@ code {
   .heroHeadertext {
     color: #B9B9B9;
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -1638,7 +1649,7 @@ code {
   .heroHeader {
     color: #fff;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 45px;
+    font-size: 25px;
     font-weight: 800;
   }
   .aboutHeroImg {
@@ -1657,8 +1668,8 @@ code {
     flex-direction: row;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 18.75%;
-    padding-right: 18.75%;
+    padding-left: 13.75%;
+    padding-right: 13.75%;
   }
   .textgrey {
     background-color: #F4F4F4;
@@ -1682,7 +1693,7 @@ code {
   .greyPgraph {
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     text-align: justify
   }
@@ -1691,13 +1702,13 @@ code {
     font-family: "Inter", sans-serif;
     font-size: 10px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     list-style-type: none;
   }
   .greyPgraph2 {
     color: #7E7E7E;
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     text-align: justify;
   }
@@ -1881,8 +1892,8 @@ code {
   .greenCard {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-top: 100px;
     margin-bottom: 100px;
     margin-left: 18.7%;
@@ -1940,10 +1951,9 @@ code {
   }
   .projects {
     padding: 2px;
-    margin: 10px;
+    margin-bottom: 15px;
     max-width: fit-content;
     height: fit-content !important;
-    min-width: 250px !important;
     text-align: center;
     border: 0px !important;
   }
@@ -1993,8 +2003,8 @@ code {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 13.5%;
+    padding-right: 13.5%;
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -2021,8 +2031,8 @@ code {
   .projectContent {
     display: flex;
     flex-direction: column;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 13.5%;
+    padding-right: 13.5%;
     padding-top: 20px;
     padding-bottom: 150px;
   }
@@ -2319,22 +2329,22 @@ code {
   .graybgtext {
     color: #5845B1;
     font-family: "Inter", sans-serif;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 0px;
   }
   .graybgtext1 {
     color: #1C2752;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 18px;
+    font-size: 10px;
     text-align: center;
   }
   .homeHeaderText1 {
     color: #1C2752;
     font-family: "VerdanaBold", sans-serif;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: start;
   }
   .mrCol {
@@ -2374,7 +2384,24 @@ code {
     justify-content: center;
     align-items: center;
     height: 60px;
+    max-width: fit-content;
   }  
+  .customerFormSection{
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    margin-top: 50px !important;
+    width: 100%;
+    margin-bottom: 50px;
+    height: fit-content;
+  }
+  .someCol {
+    margin: 20px !important;
+  }
+  .someCol1 {
+    margin-bottom: 20px !important;
+    width: fit-content !important;
+  }
   .ytSection {
     background-color: #fff;
     padding: 40px;
@@ -2383,8 +2410,8 @@ code {
   }
   .homeContent1 {
     background-color: #f4f4f4;
-    padding-left: 18.7% !important;
-    padding-right: 18.7% !important;
+    padding-left: 13.5% !important;
+    padding-right: 13.5% !important;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
@@ -2461,6 +2488,14 @@ code {
     font-size: 15px;
     margin-bottom: 0px;
   }
+  .graybg {
+    background-color: #F4F4F4;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+  }
   .subBtn {
     background-color: #6B77E5;
     color: #fff;
@@ -2486,8 +2521,14 @@ code {
     height: 100%;
     object-fit: cover; /* Scale the image while preserving its aspect ratio */
   }
+  .someSection {
+    height: fit-content !important;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 }
-@media (min-width: 601px) and (max-width: 1023px){
+@media (min-width: 600px) and (max-width: 1023px) {
   .mainNavBar{
     width: 100%;
     display: flex;
@@ -2586,7 +2627,7 @@ code {
   }
   .navLink {
     font-family: "Inter", sans-serif;
-    font-size: 10px !important;
+    font-size: 15px !important;
     font-weight: 400;
     background-color: transparent;
     border-radius: 50px !important;
@@ -2729,7 +2770,7 @@ code {
   }
   .hpasb{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .graybg {
@@ -3235,7 +3276,7 @@ code {
     font-size: 11px;
   }
   .ghost {
-    display: none;
+    display: none !important;
   }
   .googleMaps {
     width: 100%;
@@ -3386,13 +3427,13 @@ code {
   }
   .mrsCol2 {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
   .aboutContent {
     display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -3404,7 +3445,7 @@ code {
     height: fit-content !important;
     display: flex;
     flex-direction: row;
-    width: 103vw;
+    width: 100%;
   }
   .missText2 {
     color: #fff;
@@ -3582,7 +3623,6 @@ code {
   }
   .projectContentImg {
     width: 100%;
-    height: 250px;
     object-fit: cover;
   }
   .teamtext7 {
@@ -3635,6 +3675,7 @@ code {
     display: flex;
     width: 100%;
     flex-direction: column-reverse;
+    align-items: center;
   }
   .sectionPadding {
     padding: 20px !important;
@@ -3682,6 +3723,7 @@ code {
     flex-direction: column;
     padding: 10px;
     margin-top: 10px !important;
+    width: 100% !important;
   }
   .space1 {
     width: 100%;
@@ -4499,7 +4541,7 @@ code {
     font-size: 11px;
   }
   .ghost {
-    display: none;
+    display: none !important;
   }
   .googleMaps {
     width: 100%;

@@ -14,8 +14,8 @@ export default function Footer () {
           <Row md={2}>
             <Col md={4}>
               <Row className='d-flex flex-row align-items-center'>
-                <Col xs={2} md={'auto'} className='fitter'><img src={Logo} alt='logo' href="/"/></Col>
-                <Col xs={10} md={'auto'} className='fitter'><h1 className='footerBrandName'>Benicio Groups</h1></Col>
+                <Col xs={2} md={4} className='fitter'><img src={Logo} alt='logo' href="/"/></Col>
+                <Col xs={10} md={8} className='fitter'><h1 className='footerBrandName'>Benicio Groups</h1></Col>
               </Row>
               <p className='footerBrandSlogan'>Safe water .... healthy living</p>
               <div className='d-flex flex-row'>
@@ -27,7 +27,7 @@ export default function Footer () {
             </Col>
             <Col md={8}>
               <div className='footerCard'>
-                <Row sm={3}>
+                <Row sm={3} className='width100'>
                   <Col>
                     <ul className='footerList'>
                       <li className='footerListHeader'>Quick Links</li>
