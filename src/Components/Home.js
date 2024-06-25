@@ -266,10 +266,10 @@ export default function Home () {
         <section className='homeContent1'>
           <p className='textgrey'><IoCreateOutline className='yellow'/>The Gallery</p>
           <h1 className='serviceHeaderText'>Check Our Products</h1>
-          <Row sm={2} lg={3} xxl={4} className='mt-2'>
+          <Row sm={2} md={3} xxl={4} className='mt-2'>
             {
               currentCards.map((product) => (
-                <Col>
+                <Col className='d-flex justify-content-center'>
                   <Card className='projects'>
                     <Card.Body className='cardBody'>
                       <Card.Img variant="top" src={require('./Images/' + product.image)} className='productCardImg'/>

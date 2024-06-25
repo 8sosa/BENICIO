@@ -2781,7 +2781,6 @@ code {
     align-items: center;
     margin-right: 0px;
     margin-bottom: 10px;
-    width: 100%;
   }
   .graybgtext {
     color: #5845B1;
@@ -3431,7 +3430,7 @@ code {
   }
   .aboutContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 20px;
@@ -3476,7 +3475,7 @@ code {
   .aboutpagelogopic {
     margin-top: 50px;
     height: auto;
-    width: 100%;
+    width: 200px
   }
   .greyBg {
     background-color: #F2F2F2;
@@ -3582,9 +3581,6 @@ code {
     font-weight: 400;
     text-align: center;
     margin: 0px;
-  }
-  .card-body {
-    padding: 0px !important;
   }
   .projectTitleBlock {
     display: flex;
