@@ -26,85 +26,91 @@ export default function OurProjects () {
         <h1 className='blackHeader mb-5'>Please fill the form below</h1>
         <Accordion>
             <Row xs={1} md={2}>
-                <Col>
-                    <Accordion.Item className="accordionItemBox" eventKey="0">
-                        <Accordion.Header>Does your water have taste, odour or color?</Accordion.Header>
-                        <Accordion.Body>
-                          <div className='d-flex'>
-                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
-                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
-                          </div>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Col>
-                <Col>
-                    <Accordion.Item className="accordionItemBox" eventKey="1">
-                        <Accordion.Header>Are you currently consuming the water?</Accordion.Header>
-                        <Accordion.Body>
-                          <div className='d-flex'>
-                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
-                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
-                          </div>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Col>
-                <Col>
-                    <Accordion.Item className="accordionItemBox" eventKey="2">
-                        <Accordion.Header>What is your water source?</Accordion.Header>
-                        <Accordion.Body>
-                          <Form.Control as="textarea" />
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Col>
-                <Col>
-                    <Accordion.Item className="accordionItemBox" eventKey="3">
-                        <Accordion.Header>Have you run any tests before on your water supply? If yes, Share the results</Accordion.Header>
-                        <Accordion.Body>
-                          <Form.Control as="textarea" />
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Col>
-                <Col>
-                    <Accordion.Item className="accordionItemBox" eventKey="4">
-                        <Accordion.Header>Do you have a treatment system?</Accordion.Header>
-                        <Accordion.Body>
-                          <Form.Control as="textarea" />
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Col>
-                <Col>
-                    <Accordion.Item className="accordionItemBox" eventKey="5">
-                        <Accordion.Header>Do you have any technician who currently maintains your water treatment, if yes why did you discontinue with the company?</Accordion.Header>
-                        <Accordion.Body>
-                          <div className='d-flex'>
-                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
-                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
-                          </div>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Col>
-                <Col>
-                    <Accordion.Item className="accordionItemBox" eventKey="6">
-                        <Accordion.Header>Are you currently using a surface pump?</Accordion.Header>
-                        <Accordion.Body>
-                          <div className='d-flex'>
-                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
-                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
-                          </div>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Col>
-                <Col>
-                    <Accordion.Item className="accordionItemBox" eventKey="7">
-                        <Accordion.Header>Are you sharing your water source?</Accordion.Header>
-                        <Accordion.Body>
-                          <div className='d-flex'>
-                            <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
-                            <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
-                          </div>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                </Col>
+              <Col>
+                <Form.Control placeholder="Fullname?" aria-label="Fullname" aria-describedby="basic-addon1" className="accordionItemBox"/>
+              </Col>
+              <Col>
+                <Form.Control placeholder="Phone Number..." aria-label="Phone Number" aria-describedby="basic-addon1" className="accordionItemBox"/>
+              </Col>
+              <Col>
+                  <Accordion.Item className="accordionItemBox" eventKey="0">
+                      <Accordion.Header>Does your water have taste, odour or colour?</Accordion.Header>
+                      <Accordion.Body>
+                        <div className='d-flex'>
+                          <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                          <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                        </div>
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Col>
+              <Col>
+                  <Accordion.Item className="accordionItemBox" eventKey="1">
+                      <Accordion.Header>Are you currently consuming the water?</Accordion.Header>
+                      <Accordion.Body>
+                        <div className='d-flex'>
+                          <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                          <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                        </div>
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Col>
+              <Col>
+                  <Accordion.Item className="accordionItemBox" eventKey="2">
+                      <Accordion.Header>What is your water source?</Accordion.Header>
+                      <Accordion.Body>
+                        <Form.Control as="textarea" />
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Col>
+              <Col>
+                  <Accordion.Item className="accordionItemBox" eventKey="3">
+                      <Accordion.Header>Have you run any tests before on your water supply? If yes, Share the results</Accordion.Header>
+                      <Accordion.Body>
+                        <Form.Control as="textarea" />
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Col>
+              <Col>
+                  <Accordion.Item className="accordionItemBox" eventKey="4">
+                      <Accordion.Header>Do you have a treatment system?</Accordion.Header>
+                      <Accordion.Body>
+                        <Form.Control as="textarea" />
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Col>
+              <Col>
+                  <Accordion.Item className="accordionItemBox" eventKey="5">
+                      <Accordion.Header>Do you have any technician who currently maintains your water treatment, if yes why did you discontinue with the company?</Accordion.Header>
+                      <Accordion.Body>
+                        <div className='d-flex'>
+                          <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                          <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                        </div>
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Col>
+              <Col>
+                  <Accordion.Item className="accordionItemBox" eventKey="6">
+                      <Accordion.Header>Are you currently using a surface pump?</Accordion.Header>
+                      <Accordion.Body>
+                        <div className='d-flex'>
+                          <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                          <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                        </div>
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Col>
+              <Col>
+                  <Accordion.Item className="accordionItemBox" eventKey="7">
+                      <Accordion.Header>Are you sharing your water source?</Accordion.Header>
+                      <Accordion.Body>
+                        <div className='d-flex'>
+                          <Button variant="outline-secondary" className='d-flex m-2'>Yes</Button>
+                          <Button variant="outline-secondary" className='d-flex m-2'>No</Button>
+                        </div>
+                      </Accordion.Body>
+                  </Accordion.Item>
+              </Col>
             </Row>
         </Accordion>
         <div className='subBtn'>Submit</div>

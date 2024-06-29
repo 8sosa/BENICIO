@@ -17,7 +17,7 @@ export default function BenNavbar () {
                         <IoLocationOutline className='icons'/>
                         <p className='text1'><span className='bold'>Lagos</span>: 32 Abike Ewegbemi St, Oke Odo, Lagos</p>
                     </div>
-                    <div>
+                    <div className='topNavItems'>
                         <p className='text1'><span className='bold'>Akwa Ibom</span>: 11 Grace Bill Road Eket, Akwa- Ibom State</p>
                     </div>
                     <div className='topNavItems'>
@@ -54,7 +54,6 @@ export default function BenNavbar () {
                         <Nav.Link href="/ourProjects" className='navLink'>Testimonials</Nav.Link>
                         <NavDropdown title="Teams" id="basic-nav-dropdown" className='navLink'>
                             <NavDropdown.Item href="/teams">Meet our Team</NavDropdown.Item>
-                            <NavDropdown.Item href="#">Careers</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <a href='/contact-us' className='d-flex align-items'><button className='contactBtnNav'>Contact Us</button></a>

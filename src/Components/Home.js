@@ -87,7 +87,7 @@ export default function Home () {
     <>
       <Container className='page'>
         <Row className='aboutHero'>
-          <Col className='aboutHeroContent' lg={4}>
+          <Col className='aboutHeroContent' lg={4} xxl={5}>
             <li className='topListBox'><span className='homeHeroText1'>Welcome to Benicio Groups</span></li>
             <h1 className='heroHeader'>The Best solution to <span className='blueish2'>your</span> water problems  </h1>
             <p className='heroHeadertext'>Providing water solutions by pioneering the installation of advance treatment plants to transform lives through sustainable water solutions</p>
@@ -99,7 +99,7 @@ export default function Home () {
               </div>
             </div>
           </Col>
-          <Col lg={8} className='aboutHeroCarousel'>
+          <Col lg={8} xxl={7} className='aboutHeroCarousel'>
             <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
               <Carousel.Item>
                 <div className='carouselImg'>

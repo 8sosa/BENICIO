@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 import Pic4 from './Images/pic4.png'
 import Pic5 from './Images/pic5.png'
@@ -63,6 +64,47 @@ export default function Teams () {
                     </Card>
                 </Col>
             </Row>
+        </section>
+        <section className='projectsContent'>
+        <span className='homeHeroText2'>Come join us</span>
+        <h1 className='blackHeader mb-4'>Career Openings</h1>
+        <span className='jobOpenText mb-4'>We’re always looking for creative, talented self-starters to join the JMC family. Check out our open roles below and fill out an application.</span>
+        <Row className='jobOpen'>
+          <Col className='jobOpenText1 m-3'>Sales Representative</Col>
+          <Col className='d-flex flex-column m-3'>
+            <span className='jobOpenText2'>Experience</span>
+            <span className='jobOpenText1'>3 Years</span>
+          </Col>
+          <Col className='d-flex flex-column m-3'>
+            <span className='jobOpenText2'>Deadline</span>
+            <span className='jobOpenText1'>2024-07-08</span>
+          </Col>
+          <Col><IoIosArrowRoundForward className='d4'/></Col>
+        </Row>
+        <Row className='jobOpen'>
+          <Col className='jobOpenText1 m-3'>State Sales Coordinator</Col>
+          <Col className='d-flex flex-column m-3'>
+            <span className='jobOpenText2'>Experience</span>
+            <span className='jobOpenText1'>1 Years</span>
+          </Col>
+          <Col className='d-flex flex-column m-3'>
+            <span className='jobOpenText2'>Deadline</span>
+            <span className='jobOpenText1'>2024-09-08</span>
+          </Col>
+          <Col><IoIosArrowRoundForward className='d4'/></Col>
+        </Row>
+        <Row className='jobOpen'>
+          <Col className='jobOpenText1 m-3'>Zonal Sales Coordinator</Col>
+          <Col className='d-flex flex-column m-3'>
+            <span className='jobOpenText2'>Experience</span>
+            <span className='jobOpenText1'>2 Years</span>
+          </Col>
+          <Col className='d-flex flex-column m-3'>
+            <span className='jobOpenText2'>Deadline</span>
+            <span className='jobOpenText1'>2024-08-08</span>
+          </Col>
+          <Col><IoIosArrowRoundForward className='d4'/></Col>
+        </Row>
         </section>
         <section className='clientsSection'>
           <h1 className='whiteHeader'>Our Clients</h1>

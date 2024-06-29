@@ -12,7 +12,6 @@ import Home from './Home'
 import Services from './Services'
 import Teams from './Teams'
 import Teammember from './Teammember'
-import WDPage from './WDPage'
 
 
 export default function BenicioRouter() {
@@ -29,7 +28,6 @@ export default function BenicioRouter() {
                 <Route path = "/teams" element={<Teams />} exact/>
                 <Route path = "/teammember" element={<Teammember />} exact/>
                 <Route path = "/contact-us" element={<ContactUs/>} exact/>
-                <Route path = "/servWDP" element={<WDPage/>} exact/>
             </Routes>
             <Footer />
         </Router>
