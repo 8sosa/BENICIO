@@ -51,10 +51,8 @@ export default function BenNavbar () {
                             <NavDropdown.Item href="/services">Our Services</NavDropdown.Item>
                             <NavDropdown.Item href="/Consultations">Consultation</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="/ourProjects" className='navLink'>Testimonials</Nav.Link>
-                        <NavDropdown title="Teams" id="basic-nav-dropdown" className='navLink'>
-                            <NavDropdown.Item href="/teams">Meet our Team</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link href="/projects" className='navLink'>Testimonials</Nav.Link>
+                        <Nav.Link href="/teams" className='navLink'>Teams</Nav.Link>
                     </Nav>
                     <a href='/contact-us' className='d-flex align-items'><button className='contactBtnNav'>Contact Us</button></a>
                 </Navbar.Collapse>

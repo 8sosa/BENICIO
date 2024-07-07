@@ -86,8 +86,8 @@ export default function Home () {
   return (
     <>
       <Container className='page'>
-        <Row className='aboutHero'>
-          <Col className='aboutHeroContent' lg={4} xxl={5}>
+        <div className='aboutHero'>
+          <div className='aboutHeroContent'>
             <li className='topListBox'><span className='homeHeroText1'>Welcome to Benicio Groups</span></li>
             <h1 className='heroHeader'>The Best solution to <span className='blueish2'>your</span> water problems  </h1>
             <p className='heroHeadertext'>Providing water solutions by pioneering the installation of advance treatment plants to transform lives through sustainable water solutions</p>
@@ -98,8 +98,8 @@ export default function Home () {
                   <p className='homeHeroText'>Watch our Videos</p>
               </div>
             </div>
-          </Col>
-          <Col lg={8} xxl={7} className='aboutHeroCarousel'>
+          </div>
+          <div className='aboutHeroCarousel'>
             <Carousel prevIcon={<CustomPrevIcon />} nextIcon={<CustomNextIcon />}>
               <Carousel.Item>
                 <div className='carouselImg'>
@@ -117,8 +117,8 @@ export default function Home () {
                 </div>
               </Carousel.Item>
             </Carousel>
-          </Col>
-        </Row>
+          </div>
+        </div>
         <section className='aboutContent'>
           <Row className='mrsCol'>
             <Col md={6} className='mrCol'>
@@ -301,8 +301,8 @@ export default function Home () {
           </div>
         </section>
         <section className='projectContent'>
-          <Row className='customerFormSection'>
-            <Col xxl={5} className='someCol'>
+          <div className='customerFormSection'>
+            <div className='someCol'>
                 <p className='textgrey'><IoCreateOutline size={25}/>Testimonial</p>
                 <h1 className='blackHeader'>Customers Says</h1>
                 <div className='transCard'>
@@ -343,11 +343,10 @@ export default function Home () {
                         <p className='purpCardText3'>08032912543</p>
                     </div>
                 </div>
-            </Col>
-            <Col xxl={6} className='someCol'>
+            </div>
+            <div className='someCol'>
                 <p className='textgrey'><IoCreateOutline size={25}/>Meet Us</p>
                 <h1 className='blackHeader'>Appointment Form</h1>
-                {/* <div className='d-flex justify-content-center'> */}
                   <Form className='contactForm'>
                     <Form.Group className="mb-4" controlId="Name.ControlInput1">
                         <Form.Control className='contactFormField' type="text" placeholder="Your Name" />
@@ -367,8 +366,8 @@ export default function Home () {
                     <button className='contactFormBtn'>Submit</button>
                   </Form>
                 {/* </div> */}
-            </Col>
-          </Row>
+            </div>
+          </div>
         </section>
         <section className='ghost'>
             <Row className='someSection'>
@@ -377,14 +376,14 @@ export default function Home () {
                       <p className='textgrey'>Our Projects</p>
                       <h1 className='whiteHeader'>Featured Projects</h1>
                       <p className='missText2'>With 10 years of experience in the water industry we have a diverse portfolio of clients and projects.</p>
-                      <a href="/ourProjects"><button className='contactBtnNav'><p className='bold m-0 p-0'>More Projects</p></button></a>
+                      <a href="/projects"><button className='contactBtnNav'><p className='bold m-0 p-0'>More Projects</p></button></a>
                   </div>
               </Col>
               <Col sm={6} md={3} className='bghome'>
                 <div className="image-container">
                   <img src={Pic19} alt='service' className='homeePicBox'/>
                   <div className="overlay">
-                    <a href='/testimonials'><button className="read-more-btn" href='/testimonials'>Read More</button></a>
+                    <a href='/projects'><button className="read-more-btn" href='/projects'>Read More</button></a>
                   </div>
                 </div>
               </Col>
@@ -392,7 +391,7 @@ export default function Home () {
                 <div className="image-container">
                   <img src={Pic17} alt='service' className='homeePicBox'/>
                   <div className="overlay">
-                    <a href='/testimonials'><button className="read-more-btn" href='/testimonials'>Read More</button></a>
+                    <a href='/projects'><button className="read-more-btn" href='/projects'>Read More</button></a>
                   </div>
                 </div>
               </Col>

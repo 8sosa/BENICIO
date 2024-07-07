@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Samuel Sunday Akpadiaha",
+        "role": "Head of sales and operations Nigeria",
+        "image": "pic58.png",
+        "description": "Samuel Akpadiaha is the Operation/Project Coordinator of Benicio Innovations Limited, with more than 10 years in solving water related problems nationwide.",
+        "years": "With more than 10 years of experience in solving water related problems nationwide.",
+        "phone": "+234 803 291 2543",
+        "email": "sakpadiaha@beniciogroups.com",
+        "qualification": "B.Sc Physics/Electronics from Cross River University of Technology in Calabar, Nigeria. Additionally, he holds an MBA from OAU and several diplomas in Health Safety and Environment, Project Management, and Human Resources. Samuel is not only a strategic thinker but also an exemplary leader with an empathetic heart dedicated to mitigating the impact of poor water quality and water scarcity in the country.",
+        "experience": "Under Samuel's visionary leadership, Benicio Innovations underwent a revolution in water treatment approaches, leaving an indelible mark on the nation. Driven by a passion for innovation, he continues to shape the landscape of water treatment, ensuring a sustainable and impactful future for the nation and Africa at large."
+    },
+    {
+        "id": 2,
+        "name": "Miss Beatrice Alelele",
+        "role": "Operations Manager Cross- River state",
+        "image": "pic59.png"
+   },
+    {
+        "id": 3,
+        "name": "Emmanuel Daniel",
+        "role": "Operational Manager Akwa-Ibom state",
+        "image": "pic42.png"
+    },
+    {
+        "id": 4,
+        "name": "Israel Willie",
+        "role": "Operational manager, Cross-River State",
+        "image": "pic44.png"
+    }
+]

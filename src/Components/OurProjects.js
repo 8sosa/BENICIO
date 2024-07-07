@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 
-import Pic4 from './Images/pic4.png'
-import Pic5 from './Images/pic5.png'
-import Pic6 from './Images/pic6.png'
-import Pic7 from './Images/pic7.png'
-import testimonialData from './Testimonials.json'
+import Pic4 from './Images/pic4.png';
+import Pic5 from './Images/pic5.png';
+import Pic6 from './Images/pic6.png';
+import Pic7 from './Images/pic7.png';
+import projectData from './Projects.json';
 
 export default function OurProjects () {
 
-  const currentCards = testimonialData;
+  const currentCards = projectData;
 
   return (
     <>
@@ -24,23 +25,21 @@ export default function OurProjects () {
           </div>
         </section>
         <section className='projectsContent'>
-        <Row sm={2} md={3} xxl={4}>
-            {
-              currentCards.map((testimonial) => (
-                <Col>
-                  <a href='/testimonials'>
-                    <Card className='testimonials'>
-                      <Card.Body className='cardBody'>
-                        <Card.Img variant="top" src={require('./Images/' + testimonial.image)} className='productCardImg'/>
-                        <Card.Title className='projectsTitle'>{testimonial.title}</Card.Title>
-                        <Card.Text className='projectsText'>{testimonial.location}</Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </a>
-                </Col>
-              ))
-            }
-          </Row>
+          <div className='projectsContentCard'>
+          {
+            currentCards.map((project) => (
+              <Link to={`/projects/${project.link}`} key={project.id}>
+                <Card className='testimonials'>
+                  <Card.Body className='cardBody'>
+                    <Card.Img variant="top" src={require('./Images/' + project.image)} className='productCardImg'/>
+                    <Card.Title className='projectsTitle'>{project.projectTitle}</Card.Title>
+                    <Card.Text className='projectsText'>{project.location}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Link>
+            ))
+          }
+          </div>
         </section>
         <section className='clientsSection'>
           <h1 className='whiteHeader'>Our Clients</h1>

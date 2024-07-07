@@ -33,8 +33,8 @@ export default function Footer () {
                       <li className='footerListHeader'>Quick Links</li>
                       <a className="footerLink" href="/About-Us"><li className='footerListItem'>About Us</li></a>
                       <a className="footerLink" href='/services'><li className='footerListItem'>Services</li></a>
-                      <a className="footerLink" href="/ourProjects" ><li className='footerListItem'>Projects</li></a>
-                      <a className="footerLink" href='/testimonials'><li className='footerListItem'>Testimonials</li></a>
+                      <a className="footerLink"  href='/Consultations'><li className='footerListItem'>Consulation</li></a>
+                      <a className="footerLink" href="/projects" ><li className='footerListItem'>Projects</li></a>
                       <a className="footerLink" href='/teams'><li className='footerListItem'>Team</li></a>
                       <a className="footerLink"  href='/contact-us'><li className='footerListItem'>Contact Us</li></a>
                     </ul>

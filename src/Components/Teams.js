@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -8,12 +9,13 @@ import Pic5 from './Images/pic5.png'
 import Pic6 from './Images/pic6.png'
 import Pic7 from './Images/pic7.png'
 import Pic58 from './Images/pic58.png'
-import Pic59 from './Images/pic59.png'
-import Pic42 from './Images/pic42.png'
-import Pic44 from './Images/pic44.png'
 
+import teamData from './Team.json'
 
 export default function Teams () {
+
+  const team = teamData;
+  const headId = 1;
   return (
     <>
       <Container className='page'>
@@ -26,7 +28,7 @@ export default function Teams () {
           </div>
         </section>
         <section className='projectsContent'>
-            <a href='/teammember'>
+            <a href='/teams/1'>
                 <Card className='teams'>
                     <Card.Body className='d-flex flex-column align-items-center'>
                         <Card.Img variant="top" src={Pic58} />
@@ -35,76 +37,72 @@ export default function Teams () {
                     </Card.Body>
                 </Card>
             </a>
-            <Row md={3} className='mt-5'>
-                <Col>
-                    <Card className='teams'>
-                        <Card.Body className='d-flex flex-column align-items-center'>
-                            <Card.Img variant="top" src={Pic59} />
-                            <Card.Title className='teamTitle'>Miss Beatrice Alelele</Card.Title>
-                            <Card.Text className='teamText'>Operations Manager Cross- River state</Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className='teams'>
-                        <Card.Body className='d-flex flex-column align-items-center'>
-                            <Card.Img variant="top" src={Pic42} />
-                            <Card.Title className='teamTitle'>Emmanuel Daniel</Card.Title>
-                            <Card.Text className='teamText'>Operational Manager Akwa-Ibom state</Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className='teams'>
-                        <Card.Body className='d-flex flex-column align-items-center'>
-                            <Card.Img variant="top" src={Pic44} />
-                            <Card.Title className='teamTitle'>Israel Willie</Card.Title>
-                            <Card.Text className='teamText'>Operational manager, Cross-River State</Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
+            <Row className='projectsContentCard mt-5'>
+              {
+                team.map((teamMember) => (
+                  teamMember.id !== headId ? (
+                    <Col>
+                      <Link to={`/teams/${teamMember.id}`} key={teamMember.id}>
+                        <Card className='teams'>
+                            <Card.Body className='d-flex flex-column align-items-center'>
+                                <Card.Img variant="top" src={require('./Images/' + teamMember.image)} />
+                                <Card.Title className='teamTitle'>{teamMember.name}</Card.Title>
+                                <Card.Text className='teamText'>{teamMember.role}</Card.Text>
+                            </Card.Body>
+                        </Card>
+                      </Link>
+                    </Col>
+                  ) : null
+                ))
+              }
             </Row>
         </section>
-        <section className='projectsContent'>
+        <section className='projectsContent' id='Career'>
         <span className='homeHeroText2'>Come join us</span>
         <h1 className='blackHeader mb-4'>Career Openings</h1>
         <span className='jobOpenText mb-4'>We’re always looking for creative, talented self-starters to join the JMC family. Check out our open roles below and fill out an application.</span>
-        <Row className='jobOpen'>
-          <Col className='jobOpenText1 m-3'>Sales Representative</Col>
-          <Col className='d-flex flex-column m-3'>
-            <span className='jobOpenText2'>Experience</span>
-            <span className='jobOpenText1'>3 Years</span>
-          </Col>
-          <Col className='d-flex flex-column m-3'>
-            <span className='jobOpenText2'>Deadline</span>
-            <span className='jobOpenText1'>2024-07-08</span>
-          </Col>
-          <Col><IoIosArrowRoundForward className='d4'/></Col>
-        </Row>
-        <Row className='jobOpen'>
-          <Col className='jobOpenText1 m-3'>State Sales Coordinator</Col>
-          <Col className='d-flex flex-column m-3'>
-            <span className='jobOpenText2'>Experience</span>
-            <span className='jobOpenText1'>1 Years</span>
-          </Col>
-          <Col className='d-flex flex-column m-3'>
-            <span className='jobOpenText2'>Deadline</span>
-            <span className='jobOpenText1'>2024-09-08</span>
-          </Col>
-          <Col><IoIosArrowRoundForward className='d4'/></Col>
-        </Row>
-        <Row className='jobOpen'>
-          <Col className='jobOpenText1 m-3'>Zonal Sales Coordinator</Col>
-          <Col className='d-flex flex-column m-3'>
-            <span className='jobOpenText2'>Experience</span>
-            <span className='jobOpenText1'>2 Years</span>
-          </Col>
-          <Col className='d-flex flex-column m-3'>
-            <span className='jobOpenText2'>Deadline</span>
-            <span className='jobOpenText1'>2024-08-08</span>
-          </Col>
-          <Col><IoIosArrowRoundForward className='d4'/></Col>
-        </Row>
+        <a href='#Career' className='widthm100'>
+          <Row className='jobOpen'>
+            <Col className='jobOpen1 m-1'><p className='jobOpenText1'>Sales Representative</p></Col>
+            <Col className='jobOpen2 d-flex flex-column m-1'>
+              <span className='jobOpenText2'>Experience</span>
+              <span className='jobOpenText1'>3 Years</span>
+            </Col>
+            <Col className='jobOpen3 d-flex flex-column m-1'>
+              <span className='jobOpenText2'>Deadline</span>
+              <span className='jobOpenText1'>2024-07-08</span>
+            </Col>
+            <Col className='jobOpen4 d-flex flex-row justify-content-end'><IoIosArrowRoundForward className='d4'/></Col>
+          </Row>
+        </a>
+        <a href='#Career' className='widthm100'>
+          <Row className='jobOpen'>
+            <Col className='jobOpen1 m-1'><p className='jobOpenText1'>State Sales Coordinator</p></Col>
+            <Col className='jobOpen2 d-flex flex-column m-3'>
+              <span className='jobOpenText2'>Experience</span>
+              <span className='jobOpenText1'>1 Years</span>
+            </Col>
+            <Col className='jobOpen3 d-flex flex-column m-3'>
+              <span className='jobOpenText2'>Deadline</span>
+              <span className='jobOpenText1'>2024-09-08</span>
+            </Col>
+            <Col className='jobOpen4 d-flex flex-row justify-content-end'><IoIosArrowRoundForward className='d4'/></Col>
+          </Row>
+        </a>
+        <a href='#Career' className='widthm100'>
+          <Row className='jobOpen'>
+            <Col className='jobOpen1 m-1'><p className='jobOpenText1'>Zonal Sales Coordinator</p></Col>
+            <Col className='jobOpen2 d-flex flex-column m-3'>
+              <span className='jobOpenText2'>Experience</span>
+              <span className='jobOpenText1'>2 Years</span>
+            </Col>
+            <Col className='jobOpen3 d-flex flex-column m-3'>
+              <span className='jobOpenText2'>Deadline</span>
+              <span className='jobOpenText1'>2024-08-08</span>
+            </Col>
+            <Col className='jobOpen4 d-flex flex-row justify-content-end'><IoIosArrowRoundForward className='d4'/></Col>
+          </Row>
+        </a>
         </section>
         <section className='clientsSection'>
           <h1 className='whiteHeader'>Our Clients</h1>

@@ -12,9 +12,15 @@ import Home from './Home'
 import Services from './Services'
 import Teams from './Teams'
 import Teammember from './Teammember'
+import projectData from './Projects.json';
+import teamData from './Team.json'
+
 
 
 export default function BenicioRouter() {
+    const currentProject = projectData;
+    const team = teamData;
+
     return (
         <Router>
             <NavBar />
@@ -22,10 +28,19 @@ export default function BenicioRouter() {
                 <Route path = "/" element={<Home />} exact/>
                 <Route path = "/About-Us" element={<About/>} exact/>
                 <Route path = "/services" element={<Services/>} exact/>
-                <Route path = "/ourProjects" element={<OurProjects/>} exact/>
-                <Route path = "/testimonials" element={<Project/>} exact/>
+                <Route path = "/projects" element={<OurProjects/>} exact/>
+                {
+                    currentProject.map((project) => (
+                        <Route key={project.id} path={`/projects/${project.link}`} element={<Project project={project}/>} exact/>
+                    ))
+                }
                 <Route path = "/Consultations" element={<Consultations/>} exact/>
                 <Route path = "/teams" element={<Teams />} exact/>
+                {
+                    team.map((teamMember) => (
+                        <Route key={teamMember.id} path={`/teams/${teamMember.id}`} element={<Teammember teamMember={teamMember}/>}exact/>
+                    ))
+                }
                 <Route path = "/teammember" element={<Teammember />} exact/>
                 <Route path = "/contact-us" element={<ContactUs/>} exact/>
             </Routes>

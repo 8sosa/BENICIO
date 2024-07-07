@@ -13,7 +13,7 @@ export default function OurProjects () {
   return (
     <>
       <Container className='page'>
-        <section className='aboutHero'>
+        <section className='aboutHero' id='top'>
           <div className='aboutHeroContent'>
             <li className='topListBox'><span className='homeHeroText1'>Water diagnosis</span></li>
             <h1 className='heroHeader'>Let’s understand the issues you’re facing</h1>
@@ -113,7 +113,7 @@ export default function OurProjects () {
               </Col>
             </Row>
         </Accordion>
-        <div className='subBtn'>Submit</div>
+        <a href='#top'><div className='subBtn'>Submit</div></a>
         </section>
         <section className='clientsSection'>
           <h1 className='whiteHeader'>Our Clients</h1>
