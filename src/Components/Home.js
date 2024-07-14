@@ -421,7 +421,7 @@ export default function Home () {
                       <p className='textgrey'>Our Projects</p>
                       <h1 className='whiteHeader'>Featured Projects</h1>
                       <p className='missText2'>With 10 years of experience in the water industry we have a diverse portfolio of clients and projects.</p>
-                      <button href='/services' className='contactBtnNav'><p className='bold m-0 p-0'>More Projects</p></button>
+                      <button href='/projects' className='contactBtnNav'><p className='bold m-0 p-0'>More Projects</p></button>
                   </div>
             </div>
         </section>
