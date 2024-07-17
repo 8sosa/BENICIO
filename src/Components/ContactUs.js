@@ -133,7 +133,7 @@ export default function ContactUs () {
                             <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
                                 <Form.Control className='contactFormField' as="textarea" rows={3} placeholder="What water problem are you facing?"/>
                             </Form.Group>
-                            <button className='contactFormBtn'>Submit</button>
+                            <button className='contactFormBtn' type="submit">Submit</button>
                         </Form>
                     </Col>
                 </Row>
