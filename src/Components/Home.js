@@ -347,21 +347,22 @@ export default function Home () {
             <div className='someCol'>
                 <p className='textgrey'><IoCreateOutline size={25}/>Meet Us</p>
                 <h1 className='blackHeader'>Appointment Form</h1>
-                <Form className='contactForm'>
-                  <Form.Group className="mb-4" controlId="Name.ControlInput1">
-                      <Form.Control className='contactFormField' type="text" placeholder="Your Name" />
+                <Form className='contactForm' action="https://formspree.io/f/xanwnkyl"
+                method="POST" >
+                  <Form.Group className="mb-4" controlId="Name">
+                      <Form.Control className='contactFormField' name='Name' type="text" placeholder="Your Name" />
                   </Form.Group>
-                  <Form.Group className="mb-4" controlId="Email.ControlInput1">
-                      <Form.Control className='contactFormField' type="email" placeholder="Email Address" />
+                  <Form.Group className="mb-4" controlId="Email">
+                      <Form.Control className='contactFormField' name='Email' type="email" placeholder="Email Address" />
                   </Form.Group>
-                  <Form.Group className="mb-4" controlId="Number.ControlInput1">
-                      <Form.Control className='contactFormField' type="tel" placeholder="Phone Number" />
+                  <Form.Group className="mb-4" controlId="Number">
+                      <Form.Control className='contactFormField' name='Number' type="tel" placeholder="Phone Number" />
                   </Form.Group>
-                  <Form.Group className="mb-4" controlId="Location.ControlInput1">
-                      <Form.Control className='contactFormField' type="text" placeholder="Location" />
+                  <Form.Group className="mb-4" controlId="Location">
+                      <Form.Control className='contactFormField' name='Location' type="text" placeholder="Location" />
                   </Form.Group>
-                  <Form.Group className="mb-4" controlId="problem.ControlTextarea1">
-                      <Form.Control className='contactFormField1' as="textarea" rows={3} placeholder="What water problem are you facing?"/>
+                  <Form.Group className="mb-4" controlId="Problem">
+                      <Form.Control className='contactFormField1' name='Problem' as="textarea" rows={3} placeholder="What water problem are you facing?"/>
                   </Form.Group>
                   <button className='contactFormBtn' type='submit'>Submit</button>
                 </Form>
