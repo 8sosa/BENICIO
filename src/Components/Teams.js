@@ -61,7 +61,7 @@ export default function Teams () {
         <span className='homeHeroText2'>Come join us</span>
         <h1 className='blackHeader mb-4'>Career Openings</h1>
         <span className='jobOpenText mb-4'>We’re always looking for creative, talented self-starters to join the Benicio Group family. Check out our open roles below and fill out an application.</span>
-        <a href='#Career' className='widthm100'>
+        <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNtE6ty1d67qd63zOyeFbR6ux9XL1qcFE_qaQIGPkn32fWaQ/viewform?usp=sf_link' className='widthm100' target='_blank'>
           <Row className='jobOpen'>
             <Col className='jobOpen1 m-1 '><p className='jobOpenText1'>Sales Representative</p></Col>
             <Col className='jobOpen2 d-flex flex-column m-1 align-items-start'>
@@ -75,7 +75,7 @@ export default function Teams () {
             <Col className='jobOpen4 d-flex flex-row justify-content-end fitted'><IoIosArrowRoundForward className='d4'/></Col>
           </Row>
         </a>
-        <a href='#Career' className='widthm100'>
+        <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNtE6ty1d67qd63zOyeFbR6ux9XL1qcFE_qaQIGPkn32fWaQ/viewform?usp=sf_link' className='widthm100' target='_blank'>
           <Row className='jobOpen'>
             <Col className='jobOpen1 m-1'><p className='jobOpenText1'>State Sales Coordinator</p></Col>
             <Col className='jobOpen2 d-flex flex-column align-items-start m-1'>
@@ -89,7 +89,7 @@ export default function Teams () {
             <Col className='jobOpen4 d-flex flex-row justify-content-end fitted'><IoIosArrowRoundForward className='d4'/></Col>
           </Row>
         </a>
-        <a href='#Career' className='widthm100'>
+        <a href='https://docs.google.com/forms/d/e/1FAIpQLSeNtE6ty1d67qd63zOyeFbR6ux9XL1qcFE_qaQIGPkn32fWaQ/viewform?usp=sf_link' className='widthm100' target='_blank'>
           <Row className='jobOpen'>
             <Col className='jobOpen1 m-1'><p className='jobOpenText1'>Zonal Sales Coordinator</p></Col>
             <Col className='jobOpen2 d-flex flex-column align-items-start m-1'>
