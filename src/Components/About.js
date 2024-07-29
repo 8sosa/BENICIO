@@ -53,19 +53,19 @@ export default function About () {
                     <Col className='mb-4'>
                       <div className='d-flex flex-row align-items-center'>
                         <div className='socialIcon' ><IoCheckmark className='white'/></div>
-                        <p className='checkText'>We provide 24/7 service</p>
+                        <p className='checkText'>Great Technology</p>
                       </div>
                     </Col>
                     <Col className='mb-4'>
                       <div className='d-flex flex-row align-items-center'>
                         <div className='socialIcon' ><IoCheckmark className='white'/></div>
-                        <p className='checkText'>We provide 24/7 service</p>
+                        <p className='checkText'>Qualified Agents</p>
                       </div>
                     </Col>
                     <Col className='mb-4'>
                       <div className='d-flex flex-row align-items-center'>
                         <div className='socialIcon' ><IoCheckmark className='white'/></div>
-                        <p className='checkText'>We provide 24/7 service</p>
+                        <p className='checkText'>10 Years Experience</p>
                       </div>
                     </Col>
                   </Row>

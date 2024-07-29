@@ -91,11 +91,12 @@ code {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
 }
 .jobOpen1 {
   flex: 2;
+  min-width: 35%;
 }
 .jobOpen2 {
   flex: 1;
@@ -317,7 +318,7 @@ code {
     font-family: 'VerdanaBold';
     font-size: 24px;
     font-weight: 400;
-    text-wrap: nowrap;
+    text-wrap: wrap;
   }
   .jobOpenText2 {
     color: #d4d4d4;
@@ -916,7 +917,7 @@ code {
     width: 100%;
   }
   .projects {
-    padding: 2px;
+    padding: 10px;
     margin: 10px;
     max-width: fit-content;
     height: fit-content !important;
@@ -1487,7 +1488,7 @@ code {
     font-family: 'VerdanaBold';
     font-size: 20px;
     font-weight: 400;
-    text-wrap: nowrap;
+    text-wrap: wrap;
   }
   .jobOpenText2 {
     color: #d4d4d4;
@@ -1757,9 +1758,14 @@ code {
     background-color: #5845B1;
     padding: 50px !important;
     color: #fff;
+    min-width: 30%;
+    max-width: 50%;
   }
   .aboutHeroCarousel {
     padding: 0px !important;
+    max-width: 70%;
+    min-width: 50%;
+    object-fit: cover;
   }
   .heroHeadertext {
     color: #B9B9B9;
@@ -2073,7 +2079,7 @@ code {
     width: 100%;
   }
   .projects {
-    padding: 2px;
+    padding: 10px;
     margin-bottom: 15px;
     max-width: fit-content;
     height: fit-content !important;
@@ -2657,7 +2663,7 @@ code {
     font-family: 'VerdanaBold';
     font-size: 18px;
     font-weight: 400;
-    text-wrap: nowrap;
+    text-wrap: wrap;
   }
   .jobOpenText2 {
     color: #d4d4d4;
@@ -3091,7 +3097,7 @@ code {
     padding-bottom: 25px;
   }
   .projects {
-    padding: 2px;
+    padding: 10px;
     margin-bottom: 10px;
     max-width: fit-content;
     height: fit-content !important;
@@ -3944,7 +3950,7 @@ code {
     font-family: 'VerdanaBold';
     font-size: 14px;
     font-weight: 400;
-    text-wrap: nowrap;
+    text-wrap: wrap;
   }
   .jobOpenText2 {
     color: #d4d4d4;
@@ -4379,7 +4385,7 @@ code {
     padding-bottom: 25px;
   }
   .projects {
-    padding: 2px;
+    padding: 10px;
     margin-bottom: 10px;
     max-width: fit-content;
     height: fit-content !important;

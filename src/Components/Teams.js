@@ -63,12 +63,12 @@ export default function Teams () {
         <span className='jobOpenText mb-4'>We’re always looking for creative, talented self-starters to join the JMC family. Check out our open roles below and fill out an application.</span>
         <a href='#Career' className='widthm100'>
           <Row className='jobOpen'>
-            <Col className='jobOpen1 m-1'><p className='jobOpenText1'>Sales Representative</p></Col>
-            <Col className='jobOpen2 d-flex flex-column m-1'>
+            <Col className='jobOpen1 m-1 '><p className='jobOpenText1'>Sales Representative</p></Col>
+            <Col className='jobOpen2 d-flex flex-column m-1 align-items-start'>
               <span className='jobOpenText2'>Experience</span>
               <span className='jobOpenText1'>3 Years</span>
             </Col>
-            <Col className='jobOpen3 d-flex flex-column m-1'>
+            <Col className='jobOpen3 d-flex flex-column m-1 align-items-start'>
               <span className='jobOpenText2'>Deadline</span>
               <span className='jobOpenText1'>2024-07-08</span>
             </Col>
@@ -78,11 +78,11 @@ export default function Teams () {
         <a href='#Career' className='widthm100'>
           <Row className='jobOpen'>
             <Col className='jobOpen1 m-1'><p className='jobOpenText1'>State Sales Coordinator</p></Col>
-            <Col className='jobOpen2 d-flex flex-column m-3'>
+            <Col className='jobOpen2 d-flex flex-column align-items-start m-1'>
               <span className='jobOpenText2'>Experience</span>
               <span className='jobOpenText1'>1 Years</span>
             </Col>
-            <Col className='jobOpen3 d-flex flex-column m-3'>
+            <Col className='jobOpen3 d-flex flex-column align-items-start m-1'>
               <span className='jobOpenText2'>Deadline</span>
               <span className='jobOpenText1'>2024-09-08</span>
             </Col>
@@ -92,11 +92,11 @@ export default function Teams () {
         <a href='#Career' className='widthm100'>
           <Row className='jobOpen'>
             <Col className='jobOpen1 m-1'><p className='jobOpenText1'>Zonal Sales Coordinator</p></Col>
-            <Col className='jobOpen2 d-flex flex-column m-3'>
+            <Col className='jobOpen2 d-flex flex-column align-items-start m-1'>
               <span className='jobOpenText2'>Experience</span>
               <span className='jobOpenText1'>2 Years</span>
             </Col>
-            <Col className='jobOpen3 d-flex flex-column m-3'>
+            <Col className='jobOpen3 d-flex flex-column align-items-start m-1'>
               <span className='jobOpenText2'>Deadline</span>
               <span className='jobOpenText1'>2024-08-08</span>
             </Col>
