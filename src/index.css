@@ -4412,7 +4412,7 @@ code {
   }
   .productCardImg {
     height: 200px;
-    width: 150px;
+    max-width: 150px;
   }
   .projectsTitle {
     color: #1C2752;
