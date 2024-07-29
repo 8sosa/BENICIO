@@ -29,10 +29,10 @@ export default function OurProjects () {
           <Accordion>
               <Row xs={1} md={2}>
                 <Col> 
-                  <Form.Control placeholder="Fullname?" aria-label="Fullname" aria-describedby="Fullname" name='Fullname' className="accordionItemBox"/>
+                  <Form.Control placeholder="Full Name?" aria-label="Fullname" aria-describedby="Fullname" name='Fullname' className="accordionItemBox"/>
                 </Col>
                 <Col>
-                  <Form.Control placeholder="Phone Number..." aria-label="Phone Number" aria-describedby="Phone Number" name='Phone_Number' className="accordionItemBox"/>
+                  <Form.Control placeholder="Phone Number and Email Address" aria-label="Phone Number" aria-describedby="Phone Number" name='Phone_Number' className="accordionItemBox"/>
                 </Col>
                 <Col>
                     <Accordion.Item className="accordionItemBox" eventKey="0">
@@ -42,14 +42,14 @@ export default function OurProjects () {
                             <Form.Check
                               type="radio"
                               label="Yes"
-                              name="Does_your_water_have_taste_odour_or_colour?"
+                              name="Does your water have taste odour or colour?"
                               id="waterTasteOdourColourYes"
                               className='m-2'
                             />
                             <Form.Check
                               type="radio"
                               label="No"
-                              name="Does_your_water_have_taste_odour_or_colour?"
+                              name="Does your water have taste odour or colour?"
                               id="waterTasteOdourColourNo"
                               className='m-2'
                             />
