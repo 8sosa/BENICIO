@@ -11,6 +11,9 @@
 a{
   text-decoration: none !important;
 }
+.fitted {
+  width: fit-content;
+}
 .footerLink {
   color: #fff;
   text-decoration: underline !important;
