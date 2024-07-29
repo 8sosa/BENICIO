@@ -72,7 +72,7 @@ export default function Teams () {
               <span className='jobOpenText2'>Deadline</span>
               <span className='jobOpenText1'>2024-07-08</span>
             </Col>
-            <Col className='jobOpen4 d-flex flex-row justify-content-end'><IoIosArrowRoundForward className='d4'/></Col>
+            <Col className='jobOpen4 d-flex flex-row justify-content-end fitted'><IoIosArrowRoundForward className='d4'/></Col>
           </Row>
         </a>
         <a href='#Career' className='widthm100'>
@@ -86,7 +86,7 @@ export default function Teams () {
               <span className='jobOpenText2'>Deadline</span>
               <span className='jobOpenText1'>2024-09-08</span>
             </Col>
-            <Col className='jobOpen4 d-flex flex-row justify-content-end'><IoIosArrowRoundForward className='d4'/></Col>
+            <Col className='jobOpen4 d-flex flex-row justify-content-end fitted'><IoIosArrowRoundForward className='d4'/></Col>
           </Row>
         </a>
         <a href='#Career' className='widthm100'>
@@ -100,7 +100,7 @@ export default function Teams () {
               <span className='jobOpenText2'>Deadline</span>
               <span className='jobOpenText1'>2024-08-08</span>
             </Col>
-            <Col className='jobOpen4 d-flex flex-row justify-content-end'><IoIosArrowRoundForward className='d4'/></Col>
+            <Col className='jobOpen4 d-flex flex-row justify-content-end fitted'><IoIosArrowRoundForward className='d4'/></Col>
           </Row>
         </a>
         </section>
