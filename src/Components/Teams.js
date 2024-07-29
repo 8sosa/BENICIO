@@ -60,7 +60,7 @@ export default function Teams () {
         <section className='projectsContent' id='Career'>
         <span className='homeHeroText2'>Come join us</span>
         <h1 className='blackHeader mb-4'>Career Openings</h1>
-        <span className='jobOpenText mb-4'>We’re always looking for creative, talented self-starters to join the JMC family. Check out our open roles below and fill out an application.</span>
+        <span className='jobOpenText mb-4'>We’re always looking for creative, talented self-starters to join the Benicio Group family. Check out our open roles below and fill out an application.</span>
         <a href='#Career' className='widthm100'>
           <Row className='jobOpen'>
             <Col className='jobOpen1 m-1 '><p className='jobOpenText1'>Sales Representative</p></Col>

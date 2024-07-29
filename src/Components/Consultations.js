@@ -24,14 +24,15 @@ export default function OurProjects () {
         <section className='projectsContent'>
         <li className='topListBox'><span className='homeHeroText2'>Water diagnosis</span></li>
         <h1 className='blackHeader mb-5'>Please fill the form below</h1>
-        <Form className='d-flex flex-column align-items-center'>
+        <Form className='d-flex flex-column align-items-center' action="https://formspree.io/f/mpwawnwz"
+          method="POST">
           <Accordion>
               <Row xs={1} md={2}>
-                <Col>
-                  <Form.Control placeholder="Fullname?" aria-label="Fullname" aria-describedby="Fullname" name='Fullname' className="accordionItemBox"/>
+                <Col> 
+                  <Form.Control placeholder="Full Name?" aria-label="Fullname" aria-describedby="Fullname" name='Fullname' className="accordionItemBox"/>
                 </Col>
                 <Col>
-                  <Form.Control placeholder="Phone Number..." aria-label="Phone Number" aria-describedby="Phone Number" name='Phone_Number' className="accordionItemBox"/>
+                  <Form.Control placeholder="Phone Number and Email Address" aria-label="Phone Number" aria-describedby="Phone Number" name='Phone_Number' className="accordionItemBox"/>
                 </Col>
                 <Col>
                     <Accordion.Item className="accordionItemBox" eventKey="0">
@@ -41,14 +42,14 @@ export default function OurProjects () {
                             <Form.Check
                               type="radio"
                               label="Yes"
-                              name="water_Taste_Odour_Colour"
+                              name="Does your water have taste odour or colour?"
                               id="waterTasteOdourColourYes"
                               className='m-2'
                             />
                             <Form.Check
                               type="radio"
                               label="No"
-                              name="water_Taste_Odour_Colour"
+                              name="Does your water have taste odour or colour?"
                               id="waterTasteOdourColourNo"
                               className='m-2'
                             />
@@ -64,14 +65,14 @@ export default function OurProjects () {
                             <Form.Check
                               type="radio"
                               label="Yes"
-                              name="currentlyConsuming"
+                              name="Are you currently consuming the water?"
                               id="currentlyConsumingYes"
                               className='m-2'
                             />
                             <Form.Check
                               type="radio"
                               label="No"
-                              name="currentlyConsuming"
+                              name="Are you currently consuming the water?"
                               id="currentlyConsumingNo"
                               className='m-2'
                             />
@@ -83,7 +84,7 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="2">
                         <Accordion.Header>What is your water source?</Accordion.Header>
                         <Accordion.Body>
-                          <Form.Control as="textarea" name='water_source'/>
+                          <Form.Control as="textarea" name='What is your water source?'/>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -91,7 +92,7 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="3">
                         <Accordion.Header>Have you run any tests before on your water supply? If yes, Share the results</Accordion.Header>
                         <Accordion.Body>
-                          <Form.Control as="textarea" name='previous_tests'/>
+                          <Form.Control as="textarea" name='Have you run any tests before on your water supply? If yes, Share the results'/>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -99,7 +100,7 @@ export default function OurProjects () {
                     <Accordion.Item className="accordionItemBox" eventKey="4">
                         <Accordion.Header>Do you have a treatment system?</Accordion.Header>
                         <Accordion.Body>
-                          <Form.Control as="textarea" name='treatment_system'/>
+                          <Form.Control as="textarea" name='Do you have a treatment system?'/>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Col>
@@ -111,14 +112,14 @@ export default function OurProjects () {
                             <Form.Check
                               type="radio"
                               label="Yes"
-                              name="technician_Maintenance"
+                              name="Do you have any technician who currently maintains your water treatment, if yes why did you discontinue with the company?"
                               id="technicianMaintenanceYes"
                               className='m-2'
                             />
                             <Form.Check
                               type="radio"
                               label="No"
-                              name="technician_Maintenance"
+                              name="Do you have any technician who currently maintains your water treatment, if yes why did you discontinue with the company?"
                               id="technicianMaintenanceNo"
                               className='m-2'
                             />
@@ -134,14 +135,14 @@ export default function OurProjects () {
                           <Form.Check
                             type="radio"
                             label="Yes"
-                            name="surface_Pump"
+                            name="Are you currently using a surface pump?"
                             id="surfacePumpYes"
                             className='m-2'
                           />
                           <Form.Check
                             type="radio"
                             label="No"
-                            name="surface_Pump"
+                            name="Are you currently using a surface pump?"
                             id="surfacePumpNo"
                             className='m-2'
                           />
@@ -157,14 +158,14 @@ export default function OurProjects () {
                           <Form.Check
                             type="radio"
                             label="Yes"
-                            name="sharing_Water_Source"
+                            name="Are you sharing your water source?"
                             id="sharingWaterSourceYes"
                             className='m-2'
                           />
                           <Form.Check
                             type="radio"
                             label="No"
-                            name="sharing_Water_Source"
+                            name="Are you sharing your water source?"
                             id="sharingWaterSourceNo"
                             className='m-2'
                           />

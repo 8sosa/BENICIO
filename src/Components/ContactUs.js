@@ -117,24 +117,25 @@ export default function ContactUs () {
                     <Col className='someCol1'>
                         <p className='textgrey'><IoCreateOutline />Meet Us</p>
                         <h1 className='blackHeader'>Appointment Form</h1>
-                        <Form className='contactForm'>
-                            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                                <Form.Control className='contactFormField' type="text" placeholder="Your Name" />
-                            </Form.Group>
-                            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                                <Form.Control className='contactFormField' type="email" placeholder="Email Address" />
-                            </Form.Group>
-                            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                                <Form.Control className='contactFormField' type="tel" placeholder="Phone Number" />
-                            </Form.Group>
-                            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                                <Form.Control className='contactFormField' type="text" placeholder="Location" />
-                            </Form.Group>
-                            <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
-                                <Form.Control className='contactFormField' as="textarea" rows={3} placeholder="What water problem are you facing?"/>
-                            </Form.Group>
-                            <button className='contactFormBtn' type="submit">Submit</button>
-                        </Form>
+                        <Form className='contactForm' action="https://formspree.io/f/xanwnkyl"
+                method="POST" >
+                  <Form.Group className="mb-4" controlId="Name">
+                      <Form.Control className='contactFormField' name='Name' type="text" placeholder="Your Name" />
+                  </Form.Group>
+                  <Form.Group className="mb-4" controlId="Email">
+                      <Form.Control className='contactFormField' name='Email' type="email" placeholder="Email Address" />
+                  </Form.Group>
+                  <Form.Group className="mb-4" controlId="Number">
+                      <Form.Control className='contactFormField' name='Number' type="tel" placeholder="Phone Number" />
+                  </Form.Group>
+                  <Form.Group className="mb-4" controlId="Location">
+                      <Form.Control className='contactFormField' name='Location' type="text" placeholder="Location" />
+                  </Form.Group>
+                  <Form.Group className="mb-4" controlId="Problem">
+                      <Form.Control className='contactFormField1' name='Problem' as="textarea" rows={3} placeholder="What water problem are you facing?"/>
+                  </Form.Group>
+                  <button className='contactFormBtn' type='submit'>Submit</button>
+                </Form>
                     </Col>
                 </Row>
             </section>
