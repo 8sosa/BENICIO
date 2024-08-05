@@ -62,6 +62,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navLink.active {
+  font-weight: bold;
+  text-decoration: underline !important; /* Example active color */
+}
+
 .bold {
   font-weight: bold;
 }
